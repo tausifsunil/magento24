@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Customerprice
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="ict_contact_for_quote" resource="default" comment="Contact For Quote">
+        <column xsi:type="int" name="id" nullable="false" unsigned="false" identity="true" comment="ID"/>
+        <column xsi:type="varchar" name="firstname" nullable="false" length="255" default="0" comment="First Name"/>
+        <column xsi:type="varchar" name="lastname" nullable="false" length="255" default="0" comment="Last Name"/>
+        <column xsi:type="varchar" name="email" nullable="false" length="255" default="0" comment="Email"/>
+        <column xsi:type="varchar" name="telephone" nullable="false" length="255" default="0" comment="Telephone"/>
+        <column xsi:type="varchar" name="zipcode" nullable="false" length="255" default="0" comment="Zip Code"/>
+        <column xsi:type="text" name="message" nullable="false" comment="Message"/>
+        <column xsi:type="datetime" name="created_at" nullable="false" default="CURRENT_TIMESTAMP" on_update="false" comment="Created At"/>
+        <column xsi:type="datetime" name="updated_at" nullable="false" default="CURRENT_TIMESTAMP" on_update="true" comment="Updated At"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+</schema>

@@ -1,0 +1,34 @@
+<?php
+$product = $block->getProduct();
+$viewModel = $block->getData('viewModel');
+
+if ($product->getProductswitch()) {
+    $md=$product->getProducttext();
+    echo $block->escapeHtml($md);
+    if ($cus = $product->getProductselect()) {
+            $customAttr =  $product->getResource()->getAttribute('productselect');
+        if ($customAttr->usesSource()) {
+            $cus = $customAttr->getSource()->getOptionText($cus);
+            echo $block->escapeHtml($cus);
+        }
+    }
+
+    $data=explode(',', $product->getData('productmultiselect'));
+    $cust = $product->getProductmultiselect();
+    $customAttr =  $product->getResource()->getAttribute('productmultiselect');
+    $tags=[];
+    if ($customAttr->usesSource()) {
+        foreach ($data as $value) {
+                $cust = $customAttr->getSource()->getOptionText($value);
+                $tags[] = $cust;
+        }
+    }
+
+    $demo=implode(' ', $tags);
+    echo $block->escapeHtml($demo);
+
+    $widget=$product->getProductwidget();?>
+    <?= /* @noEscape */ $viewModel->getSettingValue()
+    ->productAttribute($block->getProduct(), $widget, 'productwidget');?><?php
+}
+?>

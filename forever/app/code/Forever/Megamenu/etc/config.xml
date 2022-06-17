@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+	    <megamenu>
+            <module>
+                <enabled>1</enabled>
+            </module>
+            <desktop>
+                <deskposition>vertical</deskposition>
+            </desktop>
+            <mobile>
+                <mobposition>accordian</mobposition>
+            </mobile>
+	    </megamenu>
+	</default>
+</config>

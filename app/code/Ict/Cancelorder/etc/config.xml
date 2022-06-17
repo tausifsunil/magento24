@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Copyright © Icreative Technologies. All rights reserved.
+*
+* @author : Icreative Technologies
+* @package : Ict_Cancelorder
+* @copyright : Copyright © Icreative Technologies (http://icreativetechnologies.com/)
+*/
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
+    <default>
+		<cancelorder>
+			<general>
+				<enable>1</enable>
+				<buttonlabel>Cancel Order</buttonlabel>
+				<formtitle>Cancel Your Order</formtitle>
+				<commentlabel>Why do you want to cancel this order ?</commentlabel>
+				<commentnote>After submitting this form, your order will be canceled immediately.</commentnote>
+				<cancelordertemplate>0</cancelordertemplate>
+			</general>
+		</cancelorder>
+	</default>
+</config>

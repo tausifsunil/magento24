@@ -1,0 +1,65 @@
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Controller/Adminhtml/Action.php
+-----------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AND 9 WARNINGS AFFECTING 10 LINES
+-----------------------------------------------------------------------------------------------------------------------------
+ 10 | WARNING | Property name "$_jsHelper" should not be prefixed with an underscore to indicate visibility
+ 15 | WARNING | Property name "$_resultForwardFactory" should not be prefixed with an underscore to indicate visibility
+ 20 | WARNING | Property name "$_resultLayoutFactory" should not be prefixed with an underscore to indicate visibility
+ 29 | WARNING | Property name "$_resultPageFactory" should not be prefixed with an underscore to indicate visibility
+ 34 | WARNING | Property name "$_resultRedirectFactory" should not be prefixed with an underscore to indicate visibility
+ 36 | WARNING | Property name "$_megamenuFactory" should not be prefixed with an underscore to indicate visibility
+ 38 | WARNING | Property name "$_megamenuCollectionFactory" should not be prefixed with an underscore to indicate visibility
+ 44 | WARNING | Property name "$_coreRegistry" should not be prefixed with an underscore to indicate visibility
+ 51 | WARNING | Property name "$_fileFactory" should not be prefixed with an underscore to indicate visibility
+ 77 | ERROR   | Method name "_isAllowed" must not be prefixed with an underscore to indicate visibility
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Controller/Adminhtml/Menu/Addrow.php
+------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------------------------
+ 39 | ERROR | Method name "_isAllowed" must not be prefixed with an underscore to indicate visibility
+------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Controller/Adminhtml/Menu/MassDelete.php
+------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------------------------
+ 46 | ERROR | Method name "_isAllowed" must not be prefixed with an underscore to indicate visibility
+------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Model/ResourceModel/Megamenu/Collection.php
+-----------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-----------------------------------------------------------------------------------------------------
+ 8 | ERROR | Method name "_construct" must not be prefixed with an underscore to indicate visibility
+-----------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Model/ResourceModel/Megamenu.php
+-----------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-----------------------------------------------------------------------------------------------------
+ 8 | ERROR | Method name "_construct" must not be prefixed with an underscore to indicate visibility
+-----------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Block/Menu.php
+-------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AND 6 WARNINGS AFFECTING 7 LINES
+-------------------------------------------------------------------------------------------------------------------------------
+  25 | WARNING | Property name "$_menu" should not be prefixed with an underscore to indicate visibility
+  42 | WARNING | Property name "$_magicmenuCollectionFactory" should not be prefixed with an underscore to indicate visibility
+  44 | WARNING | Property name "$_urlMedia" should not be prefixed with an underscore to indicate visibility
+  46 | WARNING | Property name "$_dirMedia" should not be prefixed with an underscore to indicate visibility
+  50 | WARNING | Property name "$_sysCfg" should not be prefixed with an underscore to indicate visibility
+  60 | WARNING | Property name "$_helper" should not be prefixed with an underscore to indicate visibility
+ 149 | ERROR   | Method name "_getActiveClasses" must not be prefixed with an underscore to indicate visibility
+-------------------------------------------------------------------------------------------------------------------------------
+
+Time: 229ms; Memory: 18MB
+

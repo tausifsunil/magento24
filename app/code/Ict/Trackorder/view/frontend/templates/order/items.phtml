@@ -1,0 +1,98 @@
+<?php
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Trackorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+
+/** @var \Magento\Sales\Block\Order\Items $block */
+
+?>
+<?php $viewModel = $block->getData('viewModel') ?>
+<?php $_order = $block->getOrder() ?>
+<?php $_giftMessage; ?>
+<div class="table-wrapper order-items">
+    <table
+        class="data table table-order-items"
+        id="my-orders-table"
+        summary="<?= $block->escapeHtml(__('Items')); ?>">
+        <caption class="table-caption"><?= $block->escapeHtml(__('Items')); ?></caption>
+        <thead>
+            <tr>
+                <th class="col name"><?= $block->escapeHtml(__('Product Name')); ?></th>
+                <th class="col sku"><?= $block->escapeHtml(__('SKU')); ?></th>
+                <th class="col price"><?= $block->escapeHtml(__('Price')); ?></th>
+                <th class="col qty"><?= $block->escapeHtml(__('Qty')); ?></th>
+                <th class="col subtotal"><?= $block->escapeHtml(__('Subtotal')); ?></th>
+            </tr>
+        </thead>
+        <?php $_items = $_order->getItemsCollection(); ?>
+        <?php $_index = 0; ?>
+        <?php $_count = $_items->count(); ?>
+        <?php $_giftMessage = ''?>
+        <?php foreach ($_items as $_item): ?>
+            <?php if ($_item->getParentItem()) {
+                continue;
+            } ?>
+            <tbody>
+                <?= /* @noEscape */ $block->getItemHtml($_item); ?>
+                <?php $isMessagesAllowed = $viewModel->getIsMessagesAllowed('order_item', $_item); ?>
+                <?php if ($isMessagesAllowed && $_item->getGiftMessageId()): ?>
+                    <?php $_giftMessage = $viewModel->getGiftMessageForEntity($_item); ?>
+                    <tr>
+                        <td class="col options" colspan="5">
+                            <a href="#"
+                               id="order-item-gift-message-link-<?= /* @noEscape */ $_item->getId(); ?>"
+                               class="action show"
+                               aria-controls="order-item-gift-message-<?= /* @noEscape */ $_item->getId(); ?>"
+                               data-item-id="<?= /* @noEscape */ $_item->getId(); ?>">
+                                <?= $block->escapeHtml(__('Gift Message')); ?>
+                            </a>
+                            <?php $_giftMessage = $viewModel->getGiftMessageForEntity($_item); ?>
+                            <div class="order-gift-message" 
+                                id="order-item-gift-message-<?= /* @noEscape */ $_item->getId(); ?>"
+                                role="region" aria-expanded="false" tabindex="-1">
+                                <a href="#"
+                                   title="<?= $block->escapeHtml(__('Close')); ?>"
+                                   aria-controls="order-item-gift-message-<?= /* @noEscape */ $_item->getId()?>"
+                                   data-item-id="<?= /* @noEscape */ $_item->getId(); ?>"
+                                   class="action close">
+                                    <?= $block->escapeHtml(__('Close')); ?>
+                                </a>
+                                <dl class="item-options">
+                                    <dt class="item-sender">
+                                        <strong class="label"><?= $block->escapeHtml(__('From')); ?></strong>
+                                        <?= $block->escapeHtml($_giftMessage->getSender()); ?>
+                                    </dt>
+                                    <dt class="item-recipient">
+                                        <strong class="label">
+                                            <?= $block->escapeHtml(__('To')); ?>
+                                        </strong>
+                                        <?= $block->escapeHtml($_giftMessage->getRecipient()); ?>
+                                    </dt>
+                                    <dd class="item-message">
+                                        <?= /* @noEscape */ $viewModel->getEscapedGiftMessage($_item); ?>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </td>
+                    </tr>
+                <?php endif ?>
+            </tbody>
+        <?php endforeach; ?>
+        <tfoot>
+            <?= /* @noEscape */ $block->getChildHtml('order_totals'); ?>
+        </tfoot>
+    </table>
+</div>
+<?php if ($_giftMessage): ?>
+<script type="text/x-magento-init">
+    {
+        "a.action.show, a.action.close": {
+            "giftMessage": {}
+        }
+    }
+</script>
+<?php endif; ?>

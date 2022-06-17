@@ -1,0 +1,29 @@
+<?php
+$isEnableModule = $block->getConfigValue();
+?>
+<?php if ($isEnableModule == 1): ?>
+<div class="testimonial-container">
+    <div class="testimonial-title-block">
+        <h3>TESTIMONIALS</h3>
+    </div>
+    <div>
+        <div class="testimonial-grid-wrapper" id="testimonial-grid">
+        <?php foreach ($block->getItems() as $question): ?>
+            <div class="testimonial-customer">
+                <div class="customer-inner">
+                    <div class="testimonial-avatar">
+                        <img src="<?= $block->getMediaUrl() .'testimonials/image/'.$question->getImage();?>" alt="customer" width="160" height="160">
+                    </div>
+                    <div class="testimonial-detail">
+                        <h4 class="entry-name"><?= $question->getName();?></h4>
+                        <div class="entry-comment">
+                            <p><?= $question->getMessage();?></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach;?>
+        </div>
+    </div>
+</div>
+<?php endif;?>

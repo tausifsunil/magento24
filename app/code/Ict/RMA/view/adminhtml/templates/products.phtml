@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_RMA
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+
+/** @var \Ict\RMA\Block\Adminhtml\Edit\Products $block */
+
+$rmaProductIds = $block->getProductIds();
+$rmaCollection = $block->getRmaCollection();
+$reasons = explode(",", $rmaCollection->getReason());
+$i = 1;
+$j = 0;
+?>
+<div class="admin__field__rma">
+    <div class="product-title admin__field-label"><?= /* @noEscape */ __('Products') ?></div>
+    <div class="admin__field-control product-column">
+    <?php foreach ($rmaProductIds as $value): ?>
+        <div class="parent-container products container-<?= /* @noEscape */ $i ?>">
+            <div class="child-container product-image container-<?= /* @noEscape */ $i ?>">
+                <img class="product-image"
+                    src="<?= /* @noEscape */ $block->getProductImageUrl($value)?>"
+                    alt="<?= /* @noEscape */ __('Product Image') ?>"
+                    width="100px" height="100px">
+            </div>
+            <div class="child-container product-detail container-<?= /* @noEscape */ $i ?>">
+                <span class="product-name">
+                    <?= /* @noEscape */ __($block->getRmaProductName($value)) ?>
+                </span>
+                <span class="product-sku">
+                    <?= /* @noEscape */ __($block->getRmaProductSku($value)) ?>
+                </span>
+                <span class="rma-reason custom-<?= /* @noEscape */ $reasons[$j] ?>">
+                    <?= /* @noEscape */ __('<b>Reason</b> : ' . $block->getRmaReason($reasons[$j])) ?>
+                </span>
+            </div>
+        </div>
+        <?php $i++; ?>
+        <?php $j++; ?>
+    <?php endforeach; ?>
+    </div>
+</div>
+

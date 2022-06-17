@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Trackorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="trackorder" frontName="trackorder">
+            <module name="Ict_Trackorder" />
+        </route>
+    </router>
+</config>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Cancelorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+ -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+		<script src="Ict_Cancelorder::cancelorder.js" />
+		<css src="Ict_Cancelorder::cacelorder.css" />
+	</head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Sales\Block\Order\Recent" name="customer_account_dashboard_top" after="customer_account_dashboard_hello" template="Ict_Cancelorder::order/recent.phtml"/>
+        </referenceContainer>
+        <referenceBlock name="customer_account_dashboard_top">
+            <arguments>
+                <argument name="viewModel" xsi:type="object">Ict\Cancelorder\ViewModel\CancelorderViewModel</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

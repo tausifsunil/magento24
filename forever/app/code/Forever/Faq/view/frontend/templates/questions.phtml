@@ -1,0 +1,19 @@
+<?php
+/** @var $block \Forever\Faq\Block\Questions */
+$isEnableModule = $block->getConfigValue();
+?>
+<?php if ($isEnableModule == 1): ?>
+<div class="faq-container">
+    <?php foreach ($block->getItems() as $question): ?>
+        <div class="faq-list">
+            <div class="faq-questions">
+                <h4 class="faq-title"><?= /* @noEscape */ $question->getTitle();?></h4>  
+            </div>
+            <div class="faq-answers">
+                <?= /* @noEscape */ $question->getAnswer();?>
+             </div>
+        </div>        
+    <?php endforeach;?>
+</div>
+<?php endif;?>
+

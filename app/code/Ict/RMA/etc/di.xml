@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_RMA
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="ict_rma_listing_data_source" xsi:type="string">Ict\RMA\Model\ResourceModel\Rma\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Ict\RMA\Model\ResourceModel\Rma\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">rma</argument>
+            <argument name="resourceModel" xsi:type="string">Ict\RMA\Model\ResourceModel\Rma</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="ict_rma_status_listing_data_source" xsi:type="string">Ict\RMA\Model\ResourceModel\RmaStatus\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Ict\RMA\Model\ResourceModel\RmaStatus\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">rma_status</argument>
+            <argument name="resourceModel" xsi:type="string">Ict\RMA\Model\ResourceModel\RmaStatus</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="ict_rma_package_condition_listing_data_source" xsi:type="string">Ict\RMA\Model\ResourceModel\RmaPackageCondition\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Ict\RMA\Model\ResourceModel\RmaPackageCondition\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">rma_package_condition</argument>
+            <argument name="resourceModel" xsi:type="string">Ict\RMA\Model\ResourceModel\RmaPackageCondition</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="ict_rma_reason_listing_data_source" xsi:type="string">Ict\RMA\Model\ResourceModel\RmaReason\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Ict\RMA\Model\ResourceModel\RmaReason\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">rma_reason</argument>
+            <argument name="resourceModel" xsi:type="string">Ict\RMA\Model\ResourceModel\RmaReason</argument>
+        </arguments>
+    </virtualType>
+</config>

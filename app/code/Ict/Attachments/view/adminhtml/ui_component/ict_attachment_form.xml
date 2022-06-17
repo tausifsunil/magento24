@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">ict_attachment_form.ict_attachment_form_data_source</item>
+            <item name="deps" xsi:type="string">ict_attachment_form.ict_attachment_form_data_source</item>
+        </item>
+        <item name="label" xsi:type="string" translate="true">Edit Item</item>
+        <item name="config" xsi:type="array">
+            <item name="dataScope" xsi:type="string">data</item>
+            <item name="namespace" xsi:type="string">ict_attachment_form</item>
+        </item>
+        <item name="spinner" xsi:type="string">general_information</item>
+        <item name="buttons" xsi:type="array">
+            <item name="back" xsi:type="string">Ict\Attachments\Block\Adminhtml\Index\Edit\ProductAttachment\Button\Back</item>
+            <item name="delete" xsi:type="string">Ict\Attachments\Block\Adminhtml\Index\Edit\ProductAttachment\Button\Delete</item>
+            <item name="reset" xsi:type="string">Ict\Attachments\Block\Adminhtml\Index\Edit\ProductAttachment\Button\Reset</item>
+            <item name="savecontinue" xsi:type="string">Ict\Attachments\Block\Adminhtml\Index\Edit\ProductAttachment\Button\SaveAndContinue</item>
+            <item name="save" xsi:type="string">Ict\Attachments\Block\Adminhtml\Index\Edit\ProductAttachment\Button\Save</item>
+        </item>
+        <item name="template" xsi:type="string">templates/form/collapsible</item>
+    </argument>
+    <dataSource name="ict_attachment_form_data_source">
+        <argument name="dataProvider" xsi:type="configurableObject">
+            <argument name="class" xsi:type="string">Ict\Attachments\Model\ProductAttachment\DataProvider</argument>
+            <argument name="name" xsi:type="string">ict_attachment_form_data_source</argument>
+            <argument name="primaryFieldName" xsi:type="string">attachment_id</argument>
+            <argument name="requestFieldName" xsi:type="string">id</argument>
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="submit_url" xsi:type="url" path="attachment/index/save" />
+                </item>
+            </argument>
+        </argument>
+        <argument name="data" xsi:type="array">
+            <item name="js_config" xsi:type="array">
+                <item name="component" xsi:type="string">Magento_Ui/js/form/provider</item>
+            </item>
+        </argument>
+    </dataSource>
+    <fieldset name="general_information">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="collapsible" xsi:type="boolean">false</item>
+                <item name="label" xsi:type="string" translate="true">Attachment Information</item>
+                <item name="sortOrder" xsi:type="number">20</item>
+            </item>
+        </argument>
+        <field name="name">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="label" xsi:type="string" translate="true">Attachment Name</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="source" xsi:type="string">name</item>
+                    <item name="dataScope" xsi:type="string">name</item>
+                    <item name="required" xsi:type="boolean">true</item>
+                </item>
+            </argument>
+        </field>
+        <!-- <field formElement="imageUploader" name="file" sortOrder="140">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">Attachment</item>
+                </item>
+            </argument>
+            <settings>
+                <label translate="true">Attachment Image</label>
+                <dataType>text</dataType>
+                <dataScope>file</dataScope>
+                <elementTmpl>ui/form/element/uploader/image</elementTmpl>
+                <visible>true</visible>
+                <required>true</required>
+            </settings>
+            <formElements>
+                <imageUploader>
+                    <settings>
+                        <required>false</required>
+                        <uploaderConfig>
+                            <param xsi:type="url" name="url" path="attachment/index/upload" />
+                        </uploaderConfig>
+                        <previewTmpl>Ict_Attachments/image-preview</previewTmpl>
+                        <openDialogTitle>Media Gallery</openDialogTitle>
+                        <initialMediaGalleryOpenSubpath>attachment</initialMediaGalleryOpenSubpath>
+                        <allowedExtensions>jpg jpeg gif png</allowedExtensions>
+                        <maxFileSize>4194304</maxFileSize>
+                    </settings>
+                </imageUploader>
+            </formElements>
+        </field> -->
+        <fieldset name="attachment">
+            <settings>
+                <label translate="true">Image</label>
+                <collapsible>false</collapsible>
+                <opened>true</opened>
+            </settings>
+            <field name="file" formElement="fileUploader">
+                <settings>
+                    <label translate="true">Attachment</label>
+                </settings>
+                <formElements>
+                    <fileUploader>
+                        <settings>
+                            <uploaderConfig>
+                                <param xsi:type="string" name="url">attachment/index/upload</param>
+                            </uploaderConfig>
+                        </settings>
+                    </fileUploader>
+                </formElements>
+            </field>
+        </fieldset>
+        <!-- <field name="file">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="source" xsi:type="string">contact</item>
+                    <item name="label" xsi:type="string" translate="true">Attachment Image</item>
+                    <item name="visible" xsi:type="boolean">true</item>
+                    <item name="formElement" xsi:type="string">fileUploader</item>
+                    <item name="elementTmpl" xsi:type="string">ui/form/element/uploader/uploader</item>
+                    <item name="previewTmpl" xsi:type="string">Ict_Attachments/image-preview</item>
+                    <item name="required" xsi:type="boolean">true</item>
+                    <item name="uploaderConfig" xsi:type="array">
+                        <item name="url" xsi:type="url" path="attachment/index/upload"/>
+                    </item>
+                </item>
+            </argument>
+        </field> -->
+    </fieldset>
+    <!-- <fieldset name="file">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="label" xsi:type="string" translate="true">Attachments</item>
+                <item name="collapsible" xsi:type="boolean">false</item>
+                <item name="sortOrder" xsi:type="number">30</item>
+            </item>
+        </argument>
+        <container name="image_container" >
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">170</item>
+                </item>
+            </argument>
+            <htmlContent name="html_content">
+                <argument name="block" xsi:type="object">Ict\Attachments\Block\Adminhtml\AttachmentImages</argument>
+            </htmlContent>
+        </container>
+    </fieldset> -->
+    <fieldset name="products">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="label" xsi:type="string" translate="true">Select Products</item>
+                <item name="collapsible" xsi:type="boolean">false</item>
+                <item name="sortOrder" xsi:type="number">40</item>
+            </item>
+        </argument>
+        <container name="products_container" >
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">170</item>
+                </item>
+            </argument>
+            <htmlContent name="html_content">
+                <argument name="block" xsi:type="object">Ict\Attachments\Block\Adminhtml\AssignProducts</argument>
+            </htmlContent>
+        </container>
+    </fieldset>
+</form>

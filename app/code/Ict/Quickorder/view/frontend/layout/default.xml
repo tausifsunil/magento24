@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+* Copyright © Icreative Technologies. All rights reserved.
+*
+* @author : Icreative Technologies
+* @package : Ict_Quickorder
+* @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+*/
+ -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="header.links">
+			<block class="Magento\Framework\View\Element\Html\Link" name="quick-order" before="-" ifconfig="quickorder/general/enable">
+				<arguments>
+					<argument name="label" xsi:type="string" translate="true">Quick Order</argument>
+					<argument name="path" xsi:type="string" translate="true">quickorder/index/quickorder</argument>
+				</arguments>
+			</block>
+		</referenceBlock>
+    </body>
+</page>

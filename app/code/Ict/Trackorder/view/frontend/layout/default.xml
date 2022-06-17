@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Trackorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+<body>
+<referenceBlock name="header.links">
+   <block class="Magento\Framework\View\Element\Html\Link" name="trackorder-link" before="-" ifconfig="trackorder/general/is_enabled">
+		<arguments>
+			 <argument name="label" xsi:type="string" translate="true">TrackOrder</argument>
+			 <argument name="path" xsi:type="string" translate="true">trackorder/order/index</argument>
+		</arguments>
+   </block>
+  </referenceBlock>
+</body>
+</page>

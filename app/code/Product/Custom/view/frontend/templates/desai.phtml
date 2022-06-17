@@ -1,0 +1,9 @@
+<?php
+$product = $block->getProduct();
+$viewModel = $block->getData('viewModel');
+if ($product->getProductswitch()){
+	$demo=$product->getProductfeatureswidget();
+	$del=$viewModel->getSettingValue()->productAttribute($block->getProduct(), $demo, 'productfeatureswidget');
+	echo $del;
+}
+?>

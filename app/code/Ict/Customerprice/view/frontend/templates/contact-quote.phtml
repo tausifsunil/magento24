@@ -1,0 +1,113 @@
+<?php
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Customerprice
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+
+/** @var $block \Ict\Customerprice\Block\ContactQuote */
+?>
+<?php
+$isEnable = $block->isEnable();
+$baseUrl = $block->getStoreBaseUrl();
+$loginButton = $block->getLoginButtonText();
+$contactQuoteButton = $block->getContactButtonText();
+$enableContactQuote = $block->getContactButtonEnable();
+?>
+<?php if ($isEnable): ?>
+    <?php if (!$block->getCustomerLogin()): ?>
+        <div class="login-to-see">
+            <a href="<?= /* @noEscape */ $baseUrl . 'customer/account/'; ?>">
+                <?= /* @noEscape */ __($loginButton) ?>
+            </a>
+        </div>
+        <?php if ($enableContactQuote == 1): ?>
+            <div class="contact-quote-wrapper">
+                <a href="javascript:void(0)" class="contact-quote">
+                    <?= /* @noEscape */ __($contactQuoteButton) ?>
+                </a>
+            </div>
+
+            <form id="contact-quote-form"
+                action="<?= /* @noEscape */ $block->getUrl('customerprice/index/save'); ?>"
+                method="post"
+                style="display: none;">
+                <div class="form-info">
+                    <strong>
+                        <?= /* @noEscape */ __("Contact For Quote") ?>
+                    </strong>
+                    <div class="close">
+                        <?= /* @noEscape */ __("close") ?>
+                    </div>
+                    <input type="text"
+                        name="firstname"
+                        placeholder="<?= /* @noEscape */ __('Enter your first name') ?>"
+                        data-validate="{required:true}" >
+                    <input type="text"
+                        name="lastname"
+                        placeholder="<?= /* @noEscape */ __('Enter your last name') ?>"
+                        data-validate="{required:true}" >
+                    <input type="text"
+                        name="telephone"
+                        placeholder="<?= /* @noEscape */ __('Enter your contact number') ?>"
+                        data-validate="{required:true}" >
+                    <input type="text"
+                        name="email"
+                        placeholder="<?= /* @noEscape */ __('Enter your email address') ?>"
+                        data-validate="{required:true, 'validate-email':true}" >
+                    <input type="text"
+                        name="zipcode"
+                        placeholder="<?= /* @noEscape */ __('Enter your zip code') ?>"
+                        data-validate="{required:true}" >
+                    <textarea name="message"
+                        placeholder="<?= /* @noEscape */ __('Please tell us about your requirement') ?>"
+                        data-validate="{required:true}" ></textarea>
+                    <input type="submit" name="submit" value="Submit">
+                </div>
+            </form>
+        <?php endif; ?>
+    <?php endif; ?>
+<?php endif; ?>
+
+<script type="text/x-magento-init">
+    {
+        "#contact-quote-form": {
+            "validation": {}
+        }
+    }
+</script>
+
+<script type="text/javascript">
+require(["jquery", "jquery/ui"], function($){  
+    jQuery(document).ready(function(){
+        jQuery('body').on('keydown','input[name="telephone"], input[name="zipcode"], .product-qty', function(e){
+            if (jQuery.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190,8,9]) !== -1
+                || (e.keyCode === 67 && (e.ctrlKey === true || e.metaKey === true))
+                ||(e.keyCode === 86 && (e.ctrlKey === true || e.metaKey === true))
+                || (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true))
+                 // Allow: home, end, left, right, down, up
+                ||(e.keyCode >= 35 && e.keyCode <= 40)) {
+                     // let it happen, don't do anything
+                     return;
+            }
+            // Ensure that it is a number and stop the keypress
+            if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57))
+                && (e.keyCode < 96 || e.keyCode > 105)
+                || (jQuery(this).val().length > 13)) {
+                e.preventDefault();
+            }
+        });
+
+        jQuery("body").on("click",".contact-quote",function(){
+            jQuery("#contact-quote-form").show();
+        });
+
+        jQuery("body").on("click","#contact-quote-form .close",function(){
+            jQuery("#contact-quote-form").hide();
+        });
+
+    });
+});
+</script>

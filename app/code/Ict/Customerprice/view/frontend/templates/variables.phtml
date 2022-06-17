@@ -1,0 +1,29 @@
+<?php
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Customerprice
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+
+/** @var $block \Ict\Customerprice\Block\ContactQuote */
+?>
+<?php
+$baseUrl = $block->getStoreBaseUrl();
+$enable = $block->getLoginButtonEnable();
+$loginButton = $block->getLoginButtonText();
+$customer = $block->getCustomerLogin();
+
+if ($customer) {
+    $isCustomerLoggedIn = 1;
+} else {
+    $isCustomerLoggedIn = 0;
+}
+?>
+<input type="hidden"
+    id="login-button-text"
+    value="<?= /* @noEscape */ __($loginButton) ?>"
+    data-baseurl="<?= /* @noEscape */ __($baseUrl) ?>"
+    data-enable="<?= /* @noEscape */ __($enable) ?>"
+    data-customer="<?= /* @noEscape */ __($isCustomerLoggedIn) ?>" />

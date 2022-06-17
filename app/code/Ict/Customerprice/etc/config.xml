@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Customerprice
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
+    <default>
+		<ict_customerprice>
+			<general>
+				<enable>1</enable>
+				<buttontext>LOGIN TO SEE PRICE AND ADD TO CART</buttontext>
+				<enablecontactquote>1</enablecontactquote>
+				<successmsg>Your inquiry for the quote has been submitted successfully.</successmsg>
+				<errormsg>Something went wrong. We Can not process your request right now.</errormsg>
+				<contactquote>Contact For Quote</contactquote>
+			</general>
+		</ict_customerprice>
+	</default>
+</config>

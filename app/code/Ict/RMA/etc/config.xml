@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <ict_rma>
+            <rma>
+                <enabled>1</enabled>
+                <bank_detail_enabled>0</bank_detail_enabled>
+            </rma>
+        </ict_rma>
+    </default>
+</config>

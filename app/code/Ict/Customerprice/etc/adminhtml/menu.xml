@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Customerprice
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Ict_Customerprice::parent"
+            title="Contact Quote"
+            module="Ict_Customerprice"
+            sortOrder="15"
+            resource="Ict_Customerprice::parent"
+        />
+        <add id="Ict_Customerprice::contactquote"
+            title="Ict Contact Quote"
+            module="Ict_Customerprice"
+            sortOrder="20"
+            parent="Ict_Customerprice::parent"
+            action="customerprice/index/index"
+            resource="Ict_Customerprice::contactquote"
+        />
+    </menu>
+</config>

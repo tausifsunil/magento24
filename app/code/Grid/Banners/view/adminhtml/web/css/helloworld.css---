@@ -1,0 +1,6 @@
+.admin__menu .level-0.item-helloworld > a:before {
+    content: url('../image/icon.jpeg');
+    height: 28px;
+    margin: 0 auto;
+    width: 30px;
+}

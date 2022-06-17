@@ -1,0 +1,39 @@
+<?php
+/**
+ * Catalog Product view template
+ *
+ * @var $block Magento\Catalog\Block\Product\View
+ */
+$product = $block->getProduct(); 
+if ($select = $product->getProductoption()): 
+    $selectAttr =  $product->getResource()->getAttribute('productoption');
+        if ($selectAttr->usesSource())
+            {
+                $select = $selectAttr->getSource()->getOptionText($select);
+                $productoption = strtolower(str_replace(' ', '_', $select));
+            }
+    // echo "$select";
+     endif; ?>
+<?php
+$viewModel = $block->getViewmodel();
+$productlabel = $viewModel->getProductlabel($product);
+$confproductlabel=$viewModel->getScopeconfig('productlabel/general/productlabelenable');
+if ($confproductlabel && !empty($productlabel[0])):
+    ?>
+    <div class="product_label_wrapper <?= /* @noEscape */ $productoption ?>">
+        <?php
+        foreach ($productlabel as $productlabelvalue): 
+            if ($productlabelvalue):?>
+                    <span class="productlabel <?= /* @noEscape */
+                    is_numeric($productlabelvalue) ? 'discount' :strtolower(str_replace(' ', '', $productlabelvalue)) ?>">
+                        <?php if (is_numeric($productlabelvalue)):
+                            $sign = '% off';?>
+                            <?= /* @noEscape */ $productlabelvalue.$sign ?>
+                        <?php else: ?>    
+                            <?= /* @noEscape */ $productlabelvalue ?>
+                        <?php endif; ?>    
+                    </span>
+            <?php endif; ?>
+        <?php endforeach ?>
+    </div>
+<?php endif; ?>

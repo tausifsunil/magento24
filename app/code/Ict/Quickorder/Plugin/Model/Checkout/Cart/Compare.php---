@@ -1,0 +1,42 @@
+<?php
+
+namespace Ict\Quickorder\Plugin\Model\Checkout\Cart;
+ 
+ 
+use Magento\Framework\Exception\LocalizedException;
+ 
+class Compare
+{
+    protected $checkoutSession;
+
+    public function __construct(
+        \Magento\Checkout\Model\Session $checkoutSession
+    ) {
+         $this->checkoutSession = $checkoutSession;
+    }
+    
+    public function test(){
+        echo "123";die;
+    }
+
+    public function aroundCompareOptions(\Magento\Quote\Model\Quote\Item $subject, \closure $proceed, $options1, $options2)
+    {
+        // $this->test();
+        echo'123';die();
+        if($this->checkoutSession->getQuickAddTocart()){
+            foreach ($options1 as $option) {
+                $code = $option->getCode();
+                if (in_array($code, $this->_notRepresentOptions)) {
+                    continue;
+                }
+                if (!isset($options2[$code])
+                ) {
+                    return false;
+                }
+            }
+            return true;
+        }else{
+            return $proceed($options1, $options2);
+        }
+    }
+}

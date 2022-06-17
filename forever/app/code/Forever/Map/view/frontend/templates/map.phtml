@@ -1,0 +1,54 @@
+<?php
+/** @var \Forever\Map\Block\Map $block */
+$viewModel = $block->getViewModel();
+$isEnableModule = $viewModel->getConfigValue('fgooglemaps/general/enabled');
+?>
+<style type="text/css">
+    /* Set the size of the div element that contains the map */
+    #map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    }
+</style>
+<?php if ($isEnableModule == 1): ?>
+ <!--The div element for the map -->    
+<section id="map-frame" class="row justify-content-center">
+    <div id="map" class="col-12 px-0">
+    </div>    
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        var latitude = 
+        '<?= /** @noEscape */ $viewModel->getConfigValue('fgooglemaps/map_setting/location_setting/latitude') ?>';
+        var longitude = 
+        '<?= /** @noEscape */ $viewModel->getConfigValue('fgooglemaps/map_setting/location_setting/longitude') ?>';
+        // The location of Uluru
+        // alert(latitude);
+        var mapLatLng = new google.maps.LatLng(latitude, longitude);
+        // The map, centered at Uluru
+        var mapOptions = {
+                        zoom: 5,
+                        center: mapLatLng,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,                        
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        // map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+        var marker = new google.maps.Marker({
+            position: mapLatLng,
+            animation: google.maps.Animation.DROP
+        });
+        marker.setMap(map);
+        var infowindow = new google.maps.InfoWindow({
+        content:"<?= /** @noEscape */ $viewModel->getConfigValue('fgooglemaps/map_setting/location_setting/address') ?>"
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map,marker);
+        });
+      }
+    </script>
+</section>
+<?php endif;?>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script src="https://maps.googleapis.com/maps/api/js?key=<?= /** @noEscape */ $viewModel->getConfigValue('fgooglemaps/map_setting/api_key') ?>&callback=initMap" async defer></script><?php //phpcs:ignore ?>

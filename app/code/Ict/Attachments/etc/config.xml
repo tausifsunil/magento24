@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <product_attachment>
+            <general>
+                <enable>1</enable>
+                <product_tab>1</product_tab>
+                <tab_name>Product Attachment</tab_name>
+            </general>
+        </product_attachment>
+    </default>
+</config>

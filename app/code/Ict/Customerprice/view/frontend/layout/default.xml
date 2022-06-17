@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Customerprice
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Ict_Customerprice::css/customerprice.css" />
+        <script src="Ict_Customerprice::js/customerprice.js" />
+    </head>
+    <referenceContainer name="before.body.end">
+    	<block class="Ict\Customerprice\Block\ContactQuote" name="customerprice.variable" template="Ict_Customerprice::variables.phtml" after="absolute_footer" />
+    </referenceContainer>
+</page>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Customerprice
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Catalog\Block\Product\ListProduct" type="Ict\Customerprice\Block\Product\ListProduct" />
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="ict_customerprice_listing_data_source" xsi:type="string">Ict\Customerprice\Model\ResourceModel\Customerprice\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Ict\Customerprice\Model\ResourceModel\Customerprice\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">ict_contact_for_quote</argument>
+            <argument name="resourceModel" xsi:type="string">Ict\Customerprice\Model\ResourceModel\Customerprice</argument>
+        </arguments>
+    </virtualType>
+</config>

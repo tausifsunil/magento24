@@ -1,0 +1,54 @@
+<?php
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Quickorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+
+?>
+<div class="build-order-main"> 
+    <div class="title"><?= $block->escapeHtml(__('QUICK ORDER')) ?></div>
+    <p class="desc"><?= $block->escapeHtml(__('Begin quick order by typing the product or SKU below.')) ?></p>
+    <form id="form-validate" autocomplate="off">
+        <div class="all-items">
+            <div class="item">
+                <div class="field">
+                    <input type="text"
+                        class="sku"
+                        name="sku[0]"
+                        placeholder="Enter Product/SKU"
+                        data-validate="{required:true}"
+                        autocomplete="off"/>
+                </div>
+                <div class="field">
+                    <input type="number"
+                        class="qty"
+                        name="qty[0]"
+                        placeholder="Qty."
+                        data-validate="{required:true}"
+                        autocomplete="off"/>
+                </div>
+                <div class="product-options"></div>
+            </div>
+        </div>
+    </form>
+    <div class="add-product-field">
+        <a href="javascript:void(0)"><?= $block->escapeHtml(__('Add product fields')) ?></a>
+    </div>
+    <div class="add-to-cart"><?= $block->escapeHtml(__('ADD TO CART')) ?></div>
+    <div class="loader" style="display:none;">
+    <img src="<?= $block->escapeHtml($block->getViewFileUrl('Ict_Quickorder::images/loader-1.gif')); ?>" />
+    </div>
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "quickorder": {
+            "quickOrderUrl": "<?= $block->escapeHtml($block->getUrl('quickorder/index/index')) ?>",
+            "addtocartUrl": "<?= $block->escapeHtml($block->getUrl('quickorder/index/addtocart')) ?>"
+        }
+        }
+    }
+</script>

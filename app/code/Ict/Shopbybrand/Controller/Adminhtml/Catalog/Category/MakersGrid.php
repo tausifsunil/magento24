@@ -1,0 +1,45 @@
+<?php
+/**
+ * @author Ict Team
+ * @copyright Copyright (c) 2017 Ict (http://icreativetechnologies.com/)
+ * @package Ict_Shopbybrand
+ */
+
+namespace Ict\Shopbybrand\Controller\Adminhtml\Catalog\Category;
+
+use Magento\Catalog\Controller\Adminhtml\Category;
+use Magento\Backend\App\Action\Context;
+// use Magento\Backend\Model\View\Result\RedirectFactory;
+use Magento\Framework\View\Result\LayoutFactory;
+
+class MakersGrid extends Category
+{
+
+    protected $resultLayoutFactory;
+
+    public function __construct(
+        Context $context,
+        // RedirectFactory $resultRedirectFactory,
+        LayoutFactory $resultLayoutFactory
+    )
+    {
+        parent::__construct($context, $resultRedirectFactory);
+        // $this->resultLayoutFactory = $resultLayoutFactory;
+    }
+
+    /**
+     * @return \Magento\Framework\View\Result\Layout
+     */
+
+    public function execute(){
+        $this->_initCategory();
+        $resultLayout = $this->resultLayoutFactory->create();
+        /** @var \Ict\Shopbybrand\Block\Adminhtml\Catalog\Category\Tab\Maker $makersBlock */
+        $makersBlock = $resultLayout->getLayout()->getBlock('category.ict_shopbybrand.maker.grid');
+        if ($makersBlock) {
+            $makersBlock->setCategoryMakers($this->getRequest()->getPost('category_ict_shopbybrand_makers', null));
+        }
+        return $resultLayout;
+    }
+}
+

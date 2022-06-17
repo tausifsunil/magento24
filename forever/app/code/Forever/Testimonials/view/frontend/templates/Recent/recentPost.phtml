@@ -1,0 +1,36 @@
+<?php
+// echo "here";
+use Forever\Testimonials\Block\Recent\RecentPost;
+$postsRecent = $block->getRecentPost();
+// echo "<pre>"; print_r($postsRecent->getData());exit();
+$isEnableModule = $block->getConfigData('testimonials/general/enable');
+?>
+<?php if ($isEnableModule == 1): ?>
+        <?php if ($postsRecent->getSize()): ?>
+            <?php foreach ($postsRecent as $post): ?>
+            <div class="customers">
+                <div class="customer">
+                    <div class="customer-inner">
+                        <div class="testimonial-avatar">
+                            <img src="<?= $block->getMediaUrl() .'testimonials/image/'.$post->getImage();?>" alt="customer" width="160" height="160">
+                        </div>
+                        <div class="testimonial-detail">
+                            <h4 class="entry-name"><?= $post->getName();?></h4>
+                            <div class="stars">
+                                <div class="review">&nbsp;</div>
+                                <div class="review">&nbsp;</div>
+                                <div class="review">&nbsp;</div>
+                                <div class="review">&nbsp;</div>
+                                <div class="review">&nbsp;</div>
+                            </div>
+                                <div class="entry-comment">
+                                    <p><?= $post->getMessage();?></p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <?php endforeach;?>
+        <?php endif;?>        
+<?php endif;?>

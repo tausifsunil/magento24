@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Trackorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd" layout="1column">
+	<update handle="trackorder_order_item_renderers"/>
+	<update handle="trackorder_order_item_price"/>
+    <body>
+        <referenceContainer name="content">
+			<block class="Ict\Trackorder\Block\Order\Info" name="order_status" template="Ict_Trackorder::order/order_status.phtml" />
+        	<block class="Magento\Sales\Block\Order\View" as="sales.order.items" name="sales.order.items">
+				<block class="Magento\Sales\Block\Order\Items" name="order_items" template="Ict_Trackorder::order/items.phtml">
+    				<block class="Magento\Framework\View\Element\RendererList" name="sales.order.items.renderers" as="renderer.list"/>
+					<block class="Magento\Sales\Block\Order\Totals" name="order_totals" template="Ict_Trackorder::order/totals.phtml">
+						<arguments>
+							<argument name="label_properties" xsi:type="string">colspan="4" class="mark"</argument>
+							<argument name="value_properties" xsi:type="string">class="amount"</argument>
+						</arguments>
+						<block class="Magento\Tax\Block\Sales\Order\Tax" name="tax" template="Ict_Trackorder::order/tax.phtml"/>
+					</block>
+				</block>
+			</block>
+            <block class="Magento\Sales\Block\Order\Info" as="info" name="sales.order.info" after="sales.order.view"/>
+		</referenceContainer>
+		<referenceBlock name="tax">
+            <arguments>
+                <argument name="viewModel" xsi:type="object">Ict\Trackorder\ViewModel\TrackorderViewModel</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="order_items">
+            <arguments>
+                <argument name="viewModel" xsi:type="object">Ict\Trackorder\ViewModel\TrackorderViewModel</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

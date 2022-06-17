@@ -1,0 +1,106 @@
+/* Customer Price CSS */
+/* PRODUCT DETAIL PAGE CSS */
+.product.details.product-item-details a.product-item-link {
+    width: 100% !important;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600 !important;
+}
+a.seeprice {
+    padding: 4px 0 4px 0;
+    background: #1979c3;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin-top: 13px;
+    letter-spacing:2px;
+}
+a.seeprice:hover{
+    color:#fff;
+}
+.product-info-main .product-reviews-summary{
+    float:none !important;
+}
+.catalog-product-view .product-info-main .login-to-see a{
+    padding: 23px 0 23px 0;
+    background: #1979c3;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin-top: 13px;
+    letter-spacing: 2px;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+.catalog-product-view .contact-quote-wrapper a {
+    padding: 11px 11px 11px 11px;
+    background: #fff;
+    border: 1px solid #000;
+    color: #000;
+    letter-spacing: 2px;
+    margin-top: 25px !important;
+    text-decoration: none;
+    display: block;
+    width: 41%;
+    text-align: center;
+}
+.catalog-product-view .form-info input[type="text"] {
+    margin-top: 15px;
+}
+.catalog-product-view .form-info textarea {
+    margin-top: 15px;
+}
+.catalog-product-view .form-info input[type="submit"] {
+    margin-top: 11px;
+    background: #1979c3;
+    color: #fff;
+    width: 33%;
+    text-align: center;
+    /* margin: 0 auto; */
+    padding: 12px 0 12px 0;
+    box-shadow: none;
+    border: 1px solid #1979c3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.catalog-product-view form#contact-quote-form .form-info {
+    max-width: 385px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    bottom: auto;
+    background: #fff;
+    padding: 20px 30px 32px 30px;
+    position: absolute;
+    transform: translatey(-50%);
+}
+.catalog-product-view form#contact-quote-form {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(88, 89, 91, 0.3);
+    position: fixed;
+    z-index: 9999;
+}
+.catalog-product-view form#contact-quote-form .form-info .close {
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    font-size: 0;
+}
+.catalog-product-view form#contact-quote-form .form-info .close::after{
+    font-size: 21px;
+    content: 'x';
+    background: #2b6fa3;
+    padding: 0px 8px 5px 8px;
+    color: #fff;
+}
+.catalog-product-view form#contact-quote-form .form-info strong {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+/*29-8-17 PRODUCT DETAIL PAGE CSS END*/

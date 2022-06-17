@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Grid_Banners::view" title="Grid" module="Grid_Banners" sortOrder="50" resource="Grid_Banners::view"/>
+        <add id="Grid_Banners::menu" title="Banners" module="Grid_Banners" sortOrder="20" parent="Grid_Banners::view" action="banners/index/index" resource="Grid_Banners::menu"/>
+    </menu>
+</config>

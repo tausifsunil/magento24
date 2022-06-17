@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_RMA
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+     <template id="rma_templates" label="Admin Confirmation" file="rma.html" type="html" module="Ict_RMA" area="frontend"/>
+     <template id="rma_templates_user" label="Customer Confirmation" file="rmaCustomer.html" type="html" module="Ict_RMA" area="frontend"/>
+     <template id="rma_edit_templates_admin" label="Admin Updation" file="rma_edit.html" type="html" module="Ict_RMA" area="frontend"/>
+     <template id="rma_edit_templates" label="Customer Updation" file="rma_edit_customer.html" type="html" module="Ict_RMA" area="frontend"/>
+</config>

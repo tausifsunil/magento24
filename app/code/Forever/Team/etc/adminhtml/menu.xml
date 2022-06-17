@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add 
+        id="Forever_Team::elements" 
+        title="Team" 
+        module="Forever_Team" 
+        sortOrder="10" 
+        resource="Forever_Team::elements" />
+        
+        <add 
+        id="Forever_Team::index" 
+        title="Team" 
+        module="Forever_Team" 
+        sortOrder="20" 
+        parent="Forever_Team::elements" 
+        action="team/index" 
+        resource="Forever_Team::index"/>
+    </menu>
+</config>

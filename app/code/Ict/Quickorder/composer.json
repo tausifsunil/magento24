@@ -1,0 +1,21 @@
+{
+  "name": "ict/quickorder",
+  "description": "Allows to order multiple products quickly using search box",
+  "type": "magento2-module",
+  "version": "2.0.1",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "require": {
+    "php": "~7.3.0||~7.4.0"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Ict\\Quickorder\\": ""
+    }
+  }
+}

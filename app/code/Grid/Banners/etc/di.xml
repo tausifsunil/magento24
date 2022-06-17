@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ *
+ * Created By: MageDelight Pvt. Ltd.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <!-- For Blog -->
+    <virtualType name="GridBannersBlogFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\FilterPool">
+        <arguments>
+            <argument name="appliers" xsi:type="array">
+                <item name="regular" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\RegularFilter</item>
+                <item name="fulltext" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\FulltextFilter</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="GridBannersBlogFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Grid\Banners\Model\ResourceModel\Blog\Collection</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">GridBannersBlogFilterPool</argument>
+        </arguments>
+    </virtualType>
+    <type name="Grid\Banners\Model\ResourceModel\Blog\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">grid_banners</argument>
+            <argument name="eventPrefix" xsi:type="string">grid_banners_blog_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">blog_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Grid\Banners\Model\ResourceModel\Blog</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="grid_banners_blog_listing_data_source" xsi:type="string">Grid\Banners\Model\ResourceModel\Blog\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="BannerImageUploader" type="Magento\Catalog\Model\ImageUploader">
+        <arguments>
+            <argument name="baseTmpPath" xsi:type="string">banners/image</argument>
+            <argument name="basePath" xsi:type="string">banners/image</argument>
+            <argument name="allowedExtensions" xsi:type="array">
+                <item name="jpg" xsi:type="string">jpg</item>
+                <item name="jpeg" xsi:type="string">jpeg</item>
+                <item name="gif" xsi:type="string">gif</item>
+                <item name="png" xsi:type="string">png</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <type name="Grid\Banners\Controller\Adminhtml\Index\Uploader">
+       <arguments>
+          <argument name="imageUploader" xsi:type="object">BannerImageUploader</argument>
+       </arguments>
+    </type>
+</config>

@@ -1,0 +1,80 @@
+.cancelorder-popup .cancelorder-details {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(88, 89, 91, 0.3);
+    position: fixed;
+    z-index: 9999;
+}
+.cancelorder-popup .cancelorder-wrapper {
+    max-width: 385px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    bottom: auto;
+    background: #fff;
+    padding: 20px 30px 32px 30px;
+    position: absolute;
+    transform: translatey(-50%);
+}
+.cancelorder-details strong {
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+.cancelorder-details span.close {
+    cursor: pointer;
+    position: absolute;
+    font-size: 0px;
+    top: 7px;
+    right: 10px;
+}
+.cancelorder-details span.close::after{
+    font-size: 21px;
+    content: 'x';
+    background: #2b6fa3;
+    padding: 0px 8px 5px 8px;
+    color: #fff;
+}
+.cancelorder-details form#cancel-form {
+    margin-top: 10px;
+}
+.cancelorder-details textarea {
+    height: 209px;
+    margin-top: 12px;
+    float:left;
+}
+.cancelorder-details .field a {
+    cursor: pointer;
+    margin-top: 11px;
+    background: #1979c3;
+    color: #fff;
+    width: 46%;
+    text-align: center;
+    padding: 12px 0 12px 0;
+    box-shadow: none;
+    border: 1px solid #1979c3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    float: left;
+}
+.cancelorder-details .field.note {
+    color: rgba(128, 128, 128, 0.63);
+    letter-spacing: 1px;
+    float: left;
+    white-space: initial !important;
+}
+.cancelorder-details .field label {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.cancelorder-details .field label {
+    float: left;
+}
+.cancelorder-details .cancelorder-wrapper div#comment-error {
+    float: left;
+    width: 100%;
+}

@@ -1,0 +1,362 @@
+
+*, *:before, *:after {
+     box-sizing: border-box;
+}
+
+.rma-index-view .add_new {
+    text-align: right;
+}
+
+.rma-index-view .add_new a {
+    background-image: none;
+    background: #1979c3;
+    border: 1px solid #1979c3;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    padding: 7px 15px;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    vertical-align: middle;
+}
+  
+.rma-index-view .add_new a:hover {
+    background: #006bb4;
+    border: 1px solid #006bb4;
+    color: #fff;
+}
+
+.rma-index-view .rma-collection {
+margin-top: 20px;
+}
+
+.rma-index-view .rma-collection .row-content tr:first-of-type {
+    background-color: #f5f5f5;
+}
+    
+
+/*****CREATE NEW RETURN PAGE DESIGN****/
+
+.rma-index-index .column.main .column.main {
+    width: 100%;
+}
+
+.rma-index-index .form-rma,
+.rma-index-guest .form-rma{
+    margin: 0px -15px;
+}
+
+.rma-index-index .form-rma .left-content fieldset,
+.rma-index-guest .form-rma .left-content fieldset {
+    margin: 0px;
+}
+
+.rma-index-index .form-rma .left-content .all_products,
+.rma-index-guest .form-rma .left-content .all_products {
+    margin-top: 20px;
+}
+
+
+
+.rma-index-index .form-rma .left-content,
+.rma-index-index .form-rma .right-content,
+.rma-index-guest .form-rma .left-content,
+.rma-index-guest .form-rma .right-content {
+    float: left;
+    width: 50%;
+    padding: 0px 15px;
+    margin-bottom: 0px;
+}
+
+
+.rma-index-index .products .checkbox,.rma-index-guest .products .checkbox   {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #333;
+}
+
+.rma-index-index .products input[type="checkbox"],
+.rma-index-guest .products input[type="checkbox"] {
+    opacity: 0;
+    margin: 0px;
+    height: 18px;
+    width: 18px;
+}
+
+.rma-index-index .products .checkbox span,
+.rma-index-guest .products .checkbox span{
+    position: absolute;
+    width: 7px;
+    height: 11px;
+    border: 2px solid #fff;
+    top: 0px;
+    left: 5px;
+    transform: rotate(45deg);
+    border-color: transparent #fff #Fff transparent;
+    display: none;
+}
+
+.rma-index-index .products .checkbox input:checked + span,
+.rma-index-guest .products .checkbox input:checked + span {
+    display: block;
+}
+
+.rma-index-index .pro-images,
+.rma-index-index .pro-name-sku,
+.rma-index-guest .pro-images,
+.rma-index-guest .pro-name-sku{
+    float: left;
+}
+    
+
+.rma-index-index .products select, .rma-index-guest .products select {
+    float: left;
+    margin-top: 25px;
+}
+
+
+.rma-index-index .pro-name-sku, .rma-index-guest .pro-name-sku  {
+    padding-left: 10px;
+}
+
+
+.rma-index-index .pro_img, .rma-index-guest .pro_img  {
+margin: 0px 9px;
+}
+
+.rma-index-index .pro_img img, .rma-index-guest .pro_img img {
+    vertical-align: middle;
+    max-width: 90px;
+}
+
+.rma-index-index .actions-toolbar, .rma-index-guest .actions-toolbar {
+    float: right;
+    margin-top: 20px;
+}
+
+
+.rma-index-index .pro_name, .rma-index-guest .pro_name {
+    display: block;
+    font-size: 21px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.rma-index-index #loading-mask, .rma-index-guest #loading-mask {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255);
+    opacity: 0.6;
+    z-index: 55;
+}
+
+.rma-index-index #loading-mask .loader, .rma-index-guest #loading-mask .loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/******* RMA INDEX GUEST PAGE SOME ADDITIONAL CHANGE *******/
+
+.rma-index-guest .legend>span{
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.rma-index-guest .products .legend {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+
+/******** RMA DETAIL PAGE DESIGN 5-3-2018 *******/
+
+/*.rma-index-index .form-rma>.fieldset.create.account {
+    float: left;
+    width: 50%;
+    padding: 0px 15px;
+    margin-bottom: 0px;
+}
+*/
+
+.rma-index-index .rma_product .pro-info {
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #c6c6c6;
+    font-weight: 300;
+}
+
+.rma-index-index .rma_product .pro_name, .rma-index-index .rma_product .reason {
+    font-weight: 600;
+}
+
+
+.rma-index-index .rma_product .pro_img {
+    float: left;
+    margin: 0px;
+    width: 50%;
+    max-width: 180px;
+}
+
+.rma-index-index .rma_product .pro_sku:after {
+content: "";
+display: block;
+margin-bottom: 5px;
+}
+
+.rma-index-index .message-container {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.rma-index-index .form-rma .fieldset.create.account .field {
+    float: left;
+    width: 100%;
+}
+
+
+.rma-index-index .form-rma .fieldset.create.account .field .label:first-child {
+    padding-right: 20px;
+}
+
+.rma-index-index .form-rma .fieldset.create.account .field .label {
+    width: 50%;
+    max-width: 180px;
+    float: left;
+}
+    
+
+.rma-index-index .form-rma .fieldset.create.account .field [for='file_upload'] {
+    width: auto;
+}
+
+
+.rma-index-index .fieldset .field .label img {
+width: 100%;
+height: auto;
+}
+
+
+.rma-index-index .fieldset .field span.label {
+    font-weight: normal;
+}
+
+
+.rma-index-index .message-container .message-left,.rma-index-index .message-container .message-right  {
+    float: left;
+    width: 100%;
+}
+
+.rma-index-index .message-container .messages span {
+    display: block;
+}
+
+.rma-index-index .message-container .messages span:nth-of-type(2) {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+
+
+.rma-index-index .message-container .message-left .customer_names{
+text-align: right;
+font-weight: bold;
+text-transform: capitalize;
+}
+    
+.rma-index-index .message-container .message-left .messages {
+float: right;
+width: 40%;
+padding: 20px;
+background-color: #f5f5f5;
+border-radius: 10px;
+}
+
+.rma-index-index .message-container .message-right .customer_names {
+    font-weight: bold;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+
+.rma-index-index .message-container .message-right .messages {
+    float: left;
+    width: 40%;
+    padding: 20px;
+    background-color: #1979c3;
+    color: #fff;
+    border-radius: 10px;
+}
+.rma-index-index .product-count {
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+}
+.rma-index-index .product-count .pro_img {
+    width: 30%;
+}
+
+
+
+@media (max-width: 991px) {
+    .rma-index-index .products select {
+        max-width: 100%;
+    }
+}
+        
+
+@media (max-width: 767px) {
+
+.rma-index-index .actions-toolbar, .rma-index-guest .actions-toolbar {
+    margin-top: 0px;
+}
+.rma-index-index .form-rma .left-content, .rma-index-index .form-rma .right-content, .rma-index-guest .form-rma .left-content, .rma-index-guest .form-rma .right-content   {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+.rma-index-index .form-rma .fieldset .legend,
+.rma-index-guest .form-rma .fieldset .legend {
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.rma-index-index .actions-toolbar, .rma-index-guest .actions-toolbar {
+    padding-right: 15px;
+}
+
+.rma-index-index .message-container  .messages  {
+    width: 70% !important;
+    border-radius: 3px;
+    padding: 9px 15px;
+}
+}
+
+
+@media (max-width: 414px) {
+
+/*.rma-index-index .form-rma>.fieldset.create.account .field .label {
+    width: 145px;
+    padding-right: 10px;
+}*/
+.rma-index-index .product-count .pro_img {
+    width: 30%;
+    padding-right: 10px;
+}
+.rma-index-index .product-count .pro_img img {
+    width: 100%;
+}
+}

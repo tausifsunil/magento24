@@ -1,0 +1,62 @@
+<?php
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Cancelorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+?>
+<?php
+    $id = $block->getOrderId();
+    $referer = $block->getRefererUrl();
+    $title = $block->getConfig('cancelorder/general/formtitle');
+    $label = $block->getConfig('cancelorder/general/commentlabel');
+    $note = $block->getConfig('cancelorder/general/commentnote');
+    $buttonlabel = $block->getConfig('cancelorder/general/buttonlabel');
+?>
+<div class="cancelorder-details">
+    <div class="cancelorder-wrapper">
+        <strong class="title"><?= /* @noEscape */ $title ?></strong>
+        <span class="close">Close</span>
+        <form 
+            action="<?= /* @noEscape */ $block->getBaseUrl() . 'cancelorder/index/cancelorder'; ?>" 
+            id="cancelorder-form"
+            autocomplete="off" 
+            method="post">
+            <div class="field">
+                <label><?= /* @noEscape */ $label ?></label>
+                <textarea name="comment"  class="input-text" data-validate="{required:true}"></textarea>
+            </div>
+            <div class="field note"><?= /* @noEscape */ $note ?></div>
+            <input type="hidden" name="referer" value="<?= /* @noEscape */ $referer; ?>" />
+            <input type="hidden" name="orderid" value="<?= /* @noEscape */ $id; ?>" />
+            <div class="field">
+                <a herf="javascript:void(0)" name="cancel" ><?= /* @noEscape */ $buttonlabel ?></a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+require([
+    'jquery',
+    'mage/validation'
+], function($){
+
+    var dataForm = jQuery('#cancelorder-form');
+    var ignore = null;
+
+    dataForm.mage('validation', {
+        ignore: ignore ? ':hidden:not(' + ignore + ')' : ':hidden'
+    }).find('input:text').attr('autocomplete', 'off');
+
+    jQuery('body').on('click','a[name="cancel"]', function() {
+        dataForm.validation('isValid');
+        console.log(dataForm.validation('isValid'));
+        if(dataForm.validation('isValid') == true){
+            jQuery('#cancelorder-form').trigger('submit');
+        }
+    });
+});
+</script>

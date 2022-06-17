@@ -1,0 +1,15 @@
+<?php
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Trackorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+
+/** @var \Magento\Sales\Block\Order\Item\Renderer\DefaultRenderer $block */
+
+$_item = $block->getItem();
+?>
+<?php $_order = $block->getItem()->getOrderItem()->getOrder() ?>
+<?= /* @noEscape */ $_order->formatPrice($block->getTotalAmount($_item)); ?>

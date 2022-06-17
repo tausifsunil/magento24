@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<update id="forever" title="Forever Menu" module="Forever_Megamenu" sortOrder="10" resource="Forever_Megamenu::forever"/>
+
+	        <add id="Forever_Megamenu::megamenu" title="Mega Menu" module="Forever_Megamenu" sortOrder="10" parent="forever" resource="Forever_Megamenu::megamenu" action="megamenu/menu"/>				
+    </menu>
+</config>

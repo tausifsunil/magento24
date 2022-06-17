@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_RMA
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Ict_RMA::parent"
+            title="Ict RMA System"
+            module="Ict_RMA"
+            sortOrder="10"
+            resource="Ict_RMA::parent"
+        />
+        <add id="Ict_RMA::rma"
+            title="RMA Management"
+            module="Ict_RMA"
+            sortOrder="20"
+            parent="Ict_RMA::parent"
+            action="rma/index/index"
+            resource="Ict_RMA::rma"
+        />
+        <add id="Ict_RMA::rmaPackagecondition"
+            title="RMA Package Condition"
+            module="Ict_RMA"
+            sortOrder="40"
+            parent="Ict_RMA::parent"
+            action="rma/index/packagecondition"
+            resource="Ict_RMA::rmaPackagecondition"
+        />
+        <add id="Ict_RMA::rmaReason"
+            title="RMA Reason"
+            module="Ict_RMA"
+            sortOrder="50"
+            parent="Ict_RMA::parent"
+            action="rma/index/reason"
+            resource="Ict_RMA::rmaReason"
+        />
+    </menu>
+</config>

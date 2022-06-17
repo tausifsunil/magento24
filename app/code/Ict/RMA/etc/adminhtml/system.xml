@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_RMA
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <tab id="ict" sortOrder="1">
+            <label>Ict Extension</label>
+        </tab>
+        <section id="ict_rma" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>RMA</label>
+            <tab>ict</tab>
+            <resource>Ict_RMA::rma</resource>
+            <group id="rma" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enabled" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable RMA</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="bank_detail_enabled" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Bank Detail</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="ict_rma/rma/enabled">1</field>
+                    </depends>
+                    <comment>By disable this option, bank details won't be appear in the storefront RMA form.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

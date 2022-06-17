@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Trackorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="ict" translate="label" sortOrder="1">
+            <label>Ict Extension</label>
+        </tab>
+        <section id="trackorder" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Track Order</label>
+            <tab>ict</tab>
+            <resource>Ict_Trackorder::config_trackorder</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Order Tracking Configuration</label>
+								
+				<field id="is_enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Enable Module</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="active_status_color" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Active Status</label>
+					<frontend_model>Ict\Trackorder\Block\Adminhtml\Order\Status\Color</frontend_model>
+                    <comment>Order Active status will displayed in this color.</comment>
+                </field>
+				
+				<field id="complete_status_color" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Finished Status</label>
+					<frontend_model>Ict\Trackorder\Block\Adminhtml\Order\Status\Color</frontend_model>
+                    <comment>Order statuses which are visited will displayed in this color.</comment>
+                </field>
+				
+				<field id="pending_status_color" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Pending Status</label>
+					<frontend_model>Ict\Trackorder\Block\Adminhtml\Order\Status\Color</frontend_model>
+                    <comment>Order statuses needs to process will be displayed in this color.</comment>
+                </field>
+				
+				<field id="onhold_status_color" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>On Hold Status</label>
+					<frontend_model>Ict\Trackorder\Block\Adminhtml\Order\Status\Color</frontend_model>
+                    <comment>Order status which are On Hold will displayed in this color.</comment>
+                </field>
+				
+				<field id="cancel_status_color" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Canceled Status</label>
+					<frontend_model>Ict\Trackorder\Block\Adminhtml\Order\Status\Color</frontend_model>
+                    <comment>Canceled Order status will displayed in this color.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <!-- <add id="Forever_QuickView::parent" title="QuickView" module="Forever_QuickView" sortOrder="100" resource="Forever_QuickView::parent"/>
+        <add id="Forever_QuickView::index" title="QuickView Index" module="Forever_QuickView" sortOrder="10" action="quickview/index" resource="Forever_QuickView::index" parent="Forever_QuickView::parent"/> -->
+		
+    </menu>
+</config>

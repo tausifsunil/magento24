@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- <type name="Magento\Catalog\Ui\DataProvider\Product\ProductRenderCollectorComposite">
+        <arguments>
+            <argument name="productProviders" xsi:type="array">
+                <item name="sku" xsi:type="object">\Forever\QuickView\Ui\DataProvider\Product\Listing\Collector\Sku</item>
+            </argument>
+        </arguments>
+    </type> -->
+    <type name="Magento\Catalog\Block\Product\ListProduct">
+        <plugin name="Forever_QuickView::list_product" type="Forever\QuickView\Plugin\Catalog\Product\ListProductPluginNew"/>
+    </type>
+
+    <type name="Magento\CatalogWidget\Block\Product\ProductsList">
+        <plugin name="Forever_QuickView::catalog_widget" type="Forever\QuickView\Plugin\Catalog\Product\ListProductPlugin"/>
+    </type>
+ <!-- custom -->
+    <type name="Magento\Catalog\Block\Product\ProductList\Related">
+        <plugin name="Forever_QuickView::catalog_related" type="Forever\QuickView\Plugin\Catalog\Product\ListProductRelatedPlugin"/>
+    </type>
+
+
+    <!-- <type name="Magento\Catalog\Block\Product\ProductList\Upsell">
+        <plugin name="Forever_QuickView::catalog_related" type="Forever\QuickView\Plugin\Catalog\Product\ListProductUpsellPlugin"/>
+    </type> -->
+
+    <type name="Magento\Checkout\Block\Cart\Crosssell">
+        <plugin name="Forever_QuickView::catalog_crosssell" type="Forever\QuickView\Plugin\Catalog\Product\ListProductCrosssellPlugin"/>
+    </type>
+
+<!-- /custom -->
+    <type name="Magento\Catalog\Block\Product\AbstractProduct">
+        <plugin name="Forever_QuickView::redirect_to_cart_config" type="Forever\QuickView\Plugin\AbstractProductPlugin"/>
+    </type>    
+
+    <type name="Magento\Framework\App\Config\ScopeConfigInterface">
+        <plugin name="Forever_QuickView::prevent_pop_up_after_add_cart" type="Forever\QuickView\Plugin\ScopeConfigPlugin"/>
+    </type>
+
+    <type name="Magento\Checkout\Controller\Cart\Add">
+        <plugin name="Forever_QuickView::add_cart_from_pop_up" type="Forever\QuickView\Plugin\CartAddPlugin"/>
+    </type>
+
+    <type name="Magento\Framework\View\Page\Config\Structure">
+        <plugin name="Forever_QuickView::remove_asset_if_disabled" type="Forever\QuickView\Plugin\PageConfigStructurePlugin"/>
+    </type>
+
+    <type name="Magento\Framework\View\Result\Page">
+        <plugin name="Forever_QuickView::add_handle_resultpage" type="Forever\QuickView\Plugin\ResultPagePlugin"/>
+    </type>
+</config>

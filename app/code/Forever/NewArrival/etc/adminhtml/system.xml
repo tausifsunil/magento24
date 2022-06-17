@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="forever" translate="label" class="forever" sortOrder="1">
+            <label>FOREVER</label>
+        </tab>
+        <section id="forever_categories" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>New Arrival</label>
+            <class>separator-top</class>
+            <tab>forever</tab>
+            <resource>Forever_NewArrival::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <comment>Enables or disables extension.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            
+            <group id="home_page" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Home Page</label>
+                <field id="category_select" translate="label comment" type="multiselect" sortOrder="10"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Categories</label>
+                    <comment>Select the categories displayed on the home page.</comment>
+                    <source_model>Forever\NewArrival\Model\Config\Category</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

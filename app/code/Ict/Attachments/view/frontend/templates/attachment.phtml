@@ -1,0 +1,32 @@
+<?php
+$product = $block->getCurrentProduct();
+$collection = $block->getAttachmentCollection()->addFieldToFilter(
+	'products',
+	[
+		'like' => '%' . $product->getId() . '%'
+	]);
+$path = $block->getMedialUrl();
+$files = [];
+
+?>
+<?php if (count($collection->getData()) > 0): ?>
+	<?php foreach ($collection as $attachmentData): ?>
+	    <?php $files[] = explode(",", $attachmentData['file']); ?>
+	<?php endforeach; ?>
+	<?php $files = call_user_func_array('array_merge', $files); ?>
+
+	<ul class="product-attachment">
+	<?php foreach ($files as $file): ?>
+	        <li style="list-style: none;">
+	            <span>
+	                <a href="<?= $path . $file ?>" title="<?= $block->pathInformation($file, 'basename') ?>" target="_blank" >
+	                    <img src="<?= $block->getFileIcon($block->pathInformation($file, 'extension')) ?>" style="height: 40px;width: 40px;vertical-align: middle;" />
+	                    <?= $block->pathInformation($file, 'filename') ?>
+	                </a>
+	            </span>
+	        </li>
+	<?php endforeach; ?>
+	</ul>
+<?php else: ?>
+	<span>No Attachmens</span>
+<?php endif; ?>

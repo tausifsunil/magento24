@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_RMA
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+
+/** @var \Ict\RMA\Block\Index\View $block */
+?>
+
+<div class="rma_content">
+    <div class="add_new">
+        <a href="<?= /* @noEscape */ $block->getUrl('rma') ?>"><?= /* @noEscape */ __("Create New Return") ?></a>
+    </div>
+    <?php if (count($block->getRmaCollection()) == 0): ?>
+        <span class="no-records"><?= /* @noEscape */ __("No records.") ?></span>
+    <?php else: ?>
+        <div class="rma-collection">
+            <table class="row-content" >
+                <tr>    
+                    <th><?= /* @noEscape */ __("Return #"); ?></th>
+                    <th><?= /* @noEscape */ __("Order Id #"); ?></th>
+                    <th><?= /* @noEscape */ __("Customer Email"); ?></th>
+                    <th><?= /* @noEscape */ __("Resolution"); ?></th>
+                    <th><?= /* @noEscape */ __("Package Condition"); ?></th>
+                    <th><?= /* @noEscape */ __("Status"); ?></th>
+                    <th><?= /* @noEscape */ __("Created At"); ?></th>
+                    <th><?= /* @noEscape */ __("Updated At"); ?></th>
+                    <th><?= /* @noEscape */ __("Action"); ?></th>
+                </tr>
+                <?php foreach ($block->getRmaCollection() as $_rma): ?>
+                    <tr>
+                        <td><?= /* @noEscape */ $_rma->getRmaId(); ?></td>
+                        <td><?= /* @noEscape */ $_rma->getOrderId(); ?></td>
+                        <td><?= /* @noEscape */ $_rma->getCustomerEmail(); ?></td>
+                        <td><?= /* @noEscape */ $block->getResolution($_rma->getResolution()); ?></td>
+                        <td><?= /* @noEscape */ $block->getPackageCondition($_rma->getPackageCondition()); ?></td>
+                        <td><?= /* @noEscape */ $block->getStatuses($_rma->getStatus()); ?></td>
+                        <td><?= /* @noEscape */ $_rma->getCreatedAt(); ?></td>
+                        <td><?= /* @noEscape */ $_rma->getUpdatedAt(); ?></td>
+                        <td>
+                            <a href="
+                            <?= /* @noEscape */ $block->getUrl('rma/index/index')."rmaid/".$_rma->getRmaId(); ?>">
+                            <?= /* @noEscape */ __("View Detail") ?></a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </table>
+        </div>
+    <?php endif; ?>
+<?php if ($block->getPagerHtml()): ?>
+    <div class="order-products-toolbar toolbar bottom"><?= /* @noEscape */ $block->getPagerHtml(); ?></div>
+<?php endif ?>
+</div>

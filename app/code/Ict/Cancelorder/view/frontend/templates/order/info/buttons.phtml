@@ -1,0 +1,47 @@
+<?php
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Cancelorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+?>
+<?php $viewModel = $block->getData('viewModel'); ?>
+<div class="actions">
+<?php $enableIctCancelOrder = $viewModel->getConfig("cancelorder/general/enable"); ?>
+    <?php $_order = $block->getOrder() ?>
+    <?php if ($viewModel->getReorder($_order->getEntityId())): ?>
+        <a 
+            href="#"
+            data-post='<?= /* @noEscape */ $viewModel->getPostData($block->getReorderUrl($_order)) ?>'
+            class="action order">
+            <span><?= /* @noEscape */ __('Reorder') ?></span>
+        </a>
+    <?php endif; ?>
+    <?php if ($_order->canCancel() && $enableIctCancelOrder == 1): ?>
+        <a 
+            href="javascript:void(0)" 
+            class="cancel-btn" 
+            data-id="<?= /* @noEscape */ $_order->getEntityId() ?>" 
+            data-action="<?= /* @noEscape */ $block->getBaseUrl() . 'cancelorder/index/orderdetails'; ?>">
+            <?= /* @noEscape */ __('Cancel Order') ?>
+        </a>
+        <div class="cancelorder-popup"></div>
+    <?php endif; ?>
+    <p></p>
+    <a class="action print"
+       href="<?= /* @noEscape */ $block->getPrintUrl($_order) ?>"
+       onclick="this.target='_blank';">
+        <span><?= /* @noEscape */ __('Print Order') ?></span>
+    </a>
+    <?= $block->getChildHtml(); ?>
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "#cancel-form": {
+            "validation": {}
+        }
+    }
+</script>

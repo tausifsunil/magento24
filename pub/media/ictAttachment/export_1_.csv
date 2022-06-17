@@ -1,0 +1,3 @@
+"Menu Name","Category Name","Right Content","Left Content",Image,Status
+,Chairs,"<p><img src=""{{media url=&quot;wysiwyg/redchair_1.jpeg&quot;}}"" alt=""""></p>","<p>Test Demo</p>",,Enabled
+Custom," --Please Select--",,,rbi.jpeg,Enabled

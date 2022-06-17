@@ -1,0 +1,279 @@
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Controller/Adminhtml/Menu/Save.php
+--------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 1 LINE
+--------------------------------------------------------------------------------------
+ 24 | WARNING | [x] Expected 1 space after closing brace; 0 found
+ 24 | WARNING | [ ] Expected "} else {\n"; found "}else {\n"
+--------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Controller/Adminhtml/Menu/Upload.php
+----------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------------------------
+ 52 | WARNING | [x] Expected 1 newline at end of file; 0 found
+----------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Controller/Adminhtml/Menu/Addrow.php
+----------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------------------------
+ 25 | WARNING | [x] Opening brace must be the last content on the line
+----------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Model/DataProvider.php
+--------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 5 WARNINGS AFFECTING 3 LINES
+--------------------------------------------------------------------------------------
+ 42 | WARNING | [x] Expected 1 space after closing brace; newline found
+ 43 | WARNING | [ ] Expected "} else {\n"; found "}\n            else{            \n"
+ 43 | WARNING | [x] Expected 1 space(s) after ELSE keyword; 0 found
+ 43 | WARNING | [x] Whitespace found at end of line
+ 58 | WARNING | [ ] Line exceeds 120 characters; contains 143 characters
+--------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Model/ImageUploader.php
+---------------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+---------------------------------------------------------------------------
+ 300 | WARNING | [x] Expected 1 newline at end of file; 0 found
+---------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Block/Menu.php
+---------------------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 152 WARNINGS AFFECTING 90 LINES
+---------------------------------------------------------------------------------------------------------------------------
+  88 | WARNING | [ ] Line exceeds 120 characters; contains 161 characters
+  91 | WARNING | [x] Multi-line function call not indented correctly; expected 12 spaces but found 16
+  92 | WARNING | [x] Multi-line function call not indented correctly; expected 8 spaces but found 12
+  96 | WARNING | [x] Function closing brace must go on the next line following the body; found 1 blank lines before brace
+ 120 | WARNING | [x] Short array syntax must be used to define arrays
+ 137 | WARNING | [ ] Expected "if (...) {\n"; found "if(...){\n"
+ 137 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 137 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 149 | WARNING | [ ] Use ::class notation instead.
+ 154 | WARNING | [ ] Expected "if (...) {\n"; found "if(...){\n"
+ 154 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 154 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 156 | WARNING | [x] Whitespace found at end of line
+ 166 | WARNING | [ ] Function's nesting level (7) exceeds 5; consider refactoring the function
+ 168 | WARNING | [x] Inline control structures are not allowed
+ 168 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 172 | WARNING | [ ] Line exceeds 120 characters; contains 164 characters
+ 175 | WARNING | [ ] Expected "if (...) {\n"; found "if(...){\n"
+ 175 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 175 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 178 | WARNING | [ ] Use ::class notation instead.
+ 181 | WARNING | [ ] Expected "if (...) {\n"; found "if(...){\n"
+ 181 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 181 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 187 | WARNING | [x] Inline control structures are not allowed
+ 188 | WARNING | [x] Inline control structures are not allowed
+ 190 | WARNING | [x] Whitespace found at end of line
+ 191 | WARNING | [ ] Expected "if (...) {\n"; found "if(...){\n"
+ 191 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 191 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 192 | WARNING | [ ] Expected "if (...) {\n"; found "if(...){\n"
+ 192 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 192 | WARNING | [x] Expected 0 spaces after opening bracket; 1 found
+ 192 | WARNING | [x] Expected 0 spaces before closing bracket; 1 found
+ 192 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 193 | WARNING | [ ] Line exceeds 120 characters; contains 163 characters
+ 197 | WARNING | [ ] Expected "if (...) {\n"; found "if(...){\n"
+ 197 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 197 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 199 | WARNING | [ ] Line exceeds 120 characters; contains 170 characters
+ 206 | WARNING | [x] Inline control structures are not allowed
+ 206 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 206 | WARNING | [x] Whitespace found at end of line
+ 216 | WARNING | [x] Inline control structures are not allowed
+ 216 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 234 | WARNING | [ ] Expected "foreach (...) {\n"; found "foreach (...){\n"
+ 234 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 236 | WARNING | [x] Inline control structures are not allowed
+ 236 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 240 | WARNING | [x] Whitespace found at end of line
+ 241 | WARNING | [ ] Line exceeds 120 characters; contains 186 characters
+ 243 | WARNING | [x] Whitespace found at end of line
+ 246 | WARNING | [ ] Line exceeds 120 characters; contains 235 characters
+ 253 | WARNING | [x] Short array syntax must be used to define arrays
+ 254 | WARNING | [x] Line indented incorrectly; expected 12 spaces, found 16
+ 254 | WARNING | [ ] Expected "if (...) {\n"; found "if(...){\n"
+ 254 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 254 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 255 | WARNING | [x] Line indented incorrectly; expected 16 spaces, found 20
+ 257 | WARNING | [x] Space after opening parenthesis of function call prohibited
+ 258 | WARNING | [x] Inline control structures are not allowed
+ 258 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 259 | WARNING | [x] Line indented incorrectly; expected 16 spaces, found 20
+ 261 | WARNING | [x] Short array syntax must be used to define arrays
+ 262 | WARNING | [x] Line indented incorrectly; expected 16 spaces, found 20
+ 264 | WARNING | [x] Line indented incorrectly; expected 16 spaces, found 20
+ 267 | WARNING | [x] Line indented incorrectly; expected 12 spaces, found 16
+ 270 | WARNING | [x] Inline control structures are not allowed
+ 270 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 272 | WARNING | [ ] Line exceeds 120 characters; contains 157 characters
+ 273 | WARNING | [ ] Line exceeds 120 characters; contains 141 characters
+ 274 | WARNING | [x] Whitespace found at end of line
+ 279 | WARNING | [ ] Code must not contain multiple empty lines in a row; found 2 empty lines.
+ 286 | WARNING | [x] Whitespace found at end of line
+ 290 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 290 | WARNING | [x] Expected 0 space(s) after closing parenthesis; found 1
+ 295 | WARNING | [x] Line indented incorrectly; expected 12 spaces, found 24
+ 295 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 295 | WARNING | [x] Expected 0 space(s) after closing parenthesis; found 1
+ 302 | WARNING | [x] Line indented incorrectly; expected 16 spaces, found 28
+ 303 | WARNING | [x] Inline control structures are not allowed
+ 303 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 305 | WARNING | [ ] Line exceeds 120 characters; contains 151 characters
+ 306 | WARNING | [ ] Line exceeds 120 characters; contains 141 characters
+ 308 | WARNING | [ ] Line exceeds 120 characters; contains 153 characters
+ 309 | WARNING | [ ] Line exceeds 120 characters; contains 140 characters
+ 312 | WARNING | [x] Line indented incorrectly; expected 16 spaces, found 28
+ 321 | WARNING | [x] Short array syntax must be used to define arrays
+ 326 | WARNING | [x] Inline control structures are not allowed
+ 326 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 330 | WARNING | [ ] Expected "if (...) {\n"; found "if(...){\n"
+ 330 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 330 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 331 | WARNING | [x] Each PHP statement must be on a line by itself
+ 333 | WARNING | [x] Whitespace found at end of line
+ 334 | WARNING | [ ] Expected "if (...) {\n"; found "if(...){\n"
+ 334 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 334 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 336 | WARNING | [x] Short array syntax must be used to define arrays
+ 336 | WARNING | [ ] Line exceeds 120 characters; contains 121 characters
+ 338 | WARNING | [x] Whitespace found at end of line
+ 339 | WARNING | [ ] Line exceeds 120 characters; contains 216 characters
+ 341 | WARNING | [x] Whitespace found at end of line
+ 345 | WARNING | [x] Inline control structures are not allowed
+ 345 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 345 | WARNING | [ ] Line exceeds 120 characters; contains 180 characters
+ 346 | WARNING | [x] Line indented incorrectly; expected 20 spaces, found 24
+ 346 | WARNING | [x] Inline control structures are not allowed
+ 346 | WARNING | [ ] Line exceeds 120 characters; contains 141 characters
+ 347 | WARNING | [x] Whitespace found at end of line
+ 351 | WARNING | [x] Whitespace found at end of line
+ 495 | WARNING | [x] Short array syntax must be used to define arrays
+ 496 | WARNING | [x] No space found after comma in argument list
+ 499 | WARNING | [x] Whitespace found at end of line
+ 504 | WARNING | [ ] Use ::class notation instead.
+ 511 | WARNING | [x] Short array syntax must be used to define arrays
+ 514 | WARNING | [x] No space found after comma in argument list
+ 514 | WARNING | [x] Short array syntax must be used to define arrays
+ 514 | WARNING | [x] Short array syntax must be used to define arrays
+ 514 | WARNING | [x] Short array syntax must be used to define arrays
+ 515 | WARNING | [x] No space found after comma in argument list
+ 516 | WARNING | [x] Whitespace found at end of line
+ 520 | WARNING | [ ] Expected "function abc(...)"; found "function  abc(...)"
+ 520 | WARNING | [x] Expected 1 space after FUNCTION keyword; 2 found
+ 520 | WARNING | [x] Incorrect spacing between argument "$count" and equals sign; expected 1 but found 0
+ 520 | WARNING | [x] Incorrect spacing between default value and equals sign for argument "$count"; expected 1 but found 0
+ 520 | WARNING | [ ] Line exceeds 120 characters; contains 129 characters
+ 524 | WARNING | [ ] Expected "foreach (...) {\n"; found "foreach(...) {\n"
+ 524 | WARNING | [x] Expected 1 space(s) after FOREACH keyword; 0 found
+ 525 | WARNING | [x] Inline control structures are not allowed
+ 525 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 526 | WARNING | [ ] Expected "if (...) {\n"; found "if(...) {\n"
+ 526 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 528 | WARNING | [x] Whitespace found at end of line
+ 538 | WARNING | [ ] Line exceeds 120 characters; contains 201 characters
+ 543 | WARNING | [x] Inline control structures are not allowed
+ 543 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 552 | WARNING | [x] Inline control structures are not allowed
+ 552 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 561 | WARNING | [x] Inline control structures are not allowed
+ 561 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 561 | WARNING | [ ] The use of function file_exists() is discouraged
+ 561 | WARNING | [ ] Line exceeds 120 characters; contains 121 characters
+ 562 | WARNING | [x] Inline control structures are not allowed
+ 562 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 562 | WARNING | [ ] Line exceeds 120 characters; contains 167 characters
+ 569 | WARNING | [x] Inline control structures are not allowed
+ 569 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 569 | WARNING | [ ] The use of function file_exists() is discouraged
+ 569 | WARNING | [ ] Line exceeds 120 characters; contains 124 characters
+ 570 | WARNING | [x] Inline control structures are not allowed
+ 570 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+---------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 110 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Block/Adminhtml/Helper/Renderer/Grid/Categorys.php
+------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 5 WARNINGS AFFECTING 3 LINES
+------------------------------------------------------------------------------------------------------
+ 26 | WARNING | [ ] This comment is 88% valid code; is this commented out code?
+ 28 | WARNING | [ ] Expected "if (...) {\n"; found "if(...){\n"
+ 28 | WARNING | [x] Expected 1 space(s) after IF keyword; 0 found
+ 28 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 30 | WARNING | [x] Line indented incorrectly; expected at least 16 spaces, found 12
+------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Setup/Patch/Data/CreateCategoryAttr.php
+-------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 3 WARNINGS AFFECTING 3 LINES
+-------------------------------------------------------------------------------------------
+  2 | WARNING | [x] There must be one blank line after the namespace declaration
+ 59 | WARNING | [ ] Use ::class notation instead.
+ 91 | WARNING | [x] Expected 1 newline at end of file; 0 found
+-------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Ui/Component/Listing/Megamenu/Column/Thumbnail.php
+------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+------------------------------------------------------------------------------------------------------
+ 52 | WARNING | [ ] This comment is 87% valid code; is this commented out code?
+ 83 | WARNING | [x] Expected 1 newline at end of file; 0 found
+------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/view/frontend/templates/aio-topmenu.phtml
+---------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 15 WARNINGS AFFECTING 12 LINES
+---------------------------------------------------------------------------------------------
+ 21 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 22 | WARNING | [ ] Line exceeds 120 characters; contains 127 characters
+ 24 | WARNING | [ ] Line exceeds 120 characters; contains 133 characters
+ 30 | WARNING | [x] Expected 1 space after closing brace; 0 found
+ 30 | WARNING | [x] Expected 1 space(s) after ELSE keyword; 0 found
+ 31 | WARNING | [ ] Line exceeds 120 characters; contains 131 characters
+ 33 | WARNING | [ ] Line exceeds 120 characters; contains 137 characters
+ 39 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 42 | WARNING | [x] Whitespace found at end of line
+ 43 | WARNING | [x] Line indented incorrectly; expected 0 spaces, found 4
+ 46 | WARNING | [x] Line indented incorrectly; expected at least 4 spaces, found 0
+ 47 | WARNING | [x] Line indented incorrectly; expected 4 spaces, found 5
+ 47 | WARNING | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 55 | WARNING | [x] Expected 1 space after closing brace; 0 found
+ 55 | WARNING | [x] Expected 1 space(s) after ELSE keyword; 0 found
+---------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 11 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------------------------
+
+Time: 839ms; Memory: 12MB
+

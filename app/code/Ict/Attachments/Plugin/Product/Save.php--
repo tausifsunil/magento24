@@ -1,0 +1,42 @@
+<?php
+
+namespace Ict\Attachments\Plugin\Product;
+
+class Save
+{
+    public function __construct(
+        \Magento\Framework\App\RequestInterface $request
+    )
+    {
+        $this->_request = $request;
+    }
+
+    public function afterExecute(\Magento\Catalog\Controller\Adminhtml\Product\Save $subject, $result)
+    {
+        echo "<pre>"; print_r($this->_request->getParams()); die();
+        echo "<pre>"; print_r($this->_request->getPost()); die();
+        // AB-18 -fudu- update news_to_day take data from news_to_date in catalog_product_flat_32 table after "saved product" in admin page
+        /*$productId = $subject->productId;
+
+        $post = $this->_request->getPost();
+        var_dump($post); exit;
+        // $news_to_date = $subject->getProduct()->getNewsToDate();
+
+        $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $resource = $objectManager->get('\Magento\Framework\App\ResourceConnection');
+        $connection = $resource->getConnection();
+        $tableName = $resource->getTableName('catalog_product_flat_32');
+
+        $query = "SELECT * FROM " . $tableName . " WHERE entity_id = " . $productId;
+
+        $product = $connection->query($query);
+
+        foreach ($product as $rows) {
+            var_dump($rows);
+        }
+        var_dump('doesnt work');
+        exit;
+        $update_to_db = "UPDATE " . $tableName . " SET news_to_day = '" . $news_to_date . "'  WHERE entity_id = " . $productId;
+        $connection->query($update_to_db);*/
+    }
+}

@@ -1,0 +1,619 @@
+<root>
+   <blocks>
+      <cms_item>
+         <title>Footer Middle Section</title>
+         <identifier>footer-2-footer-middle-section</identifier>
+         <content><![CDATA[<div class="footer-container__middle">
+<div class="footer-container__middle__inner footer_common_container">
+<div class="newsletter-block">
+<h4 class="mt-0">RECEIVE EMAIL UPDATES</h4>
+{{block class="Magento\Newsletter\Block\Subscribe" name="static.newsletter" template="Magento_Newsletter::subscribe.phtml"}}</div>
+<div class="newsletter-block">&nbsp;</div>
+<div class="page-links d-flex w-100">
+<div>
+<h4>SHOP</h4>
+<ul>
+<li><a href="#">Shop</a></li>
+<li><a href="#">Collections</a></li>
+<li><a href="#">Outlet</a></li>
+<li><a href="#">Lookbook</a></li>
+</ul>
+</div>
+<div>
+<h4>HELP</h4>
+<ul>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Privacy policy</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Returns &amp; Exchanges</a></li>
+</ul>
+</div>
+<div>
+<h4>ABOUT</h4>
+<ul>
+<li><a href="#">Journal</a></li>
+<li><a href="#">Our Story</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Store Locator</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright-section d-flex align-items-center">
+<div class="copyright">© Copyright 2022<strong>FurnitureForever</strong></div>
+<div class="payment-icon"><img src="{{media url="wysiwyg/forever/white-payment-icons.png"}}" alt="payment-icon" width="200" height="30"></div>
+</div>
+</div>
+</div>
+<div class="top-bottom-arrow">&nbsp;</div>]]></content>
+      </cms_item>
+      <cms_item>
+         <title>Footer Bottom Section</title>
+         <identifier>footer-1-footer-bottom-section</identifier>
+         <content><![CDATA[<div class="footer-container__bottom">
+<div class="footer_common_container d-flex align-items-center justify-content-between flex-wrap">
+<div class="footer-container__bottom__left w-50">© 2022 FurnitureForever. All Rights Reserved.</div>
+<div class="footer-container__bottom__right w-50  d-flex justify-content-end align-items-center">Please Include Your Reference Number:
+<h4 class="mt-0 mb-0">DNYDOJBI1B</h4>
+</div>
+</div>
+</div>
+<div class="top-bottom-arrow">&nbsp;</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Footer Middle Section </title>
+         <identifier>footer-1-footer-middle-section</identifier>
+         <content><![CDATA[<div class="footer-container__middle">
+<div class="footer_common_container d-flex flex-wrap">
+<div class="footer-container__middle__first">
+<div class="logo"><a href="#"><img src="{{media url="wysiwyg/forever/logo-furniture.png"}}" alt="logo" width="170" height="40"></a></div>
+<div class="contact-detail">Place Your Orders At
+<h3>+1 246-345-0695</h3>
+</div>
+<div class="address-detail">1418 River Drive, Suite 35 Cottonhall, CA 9622<br>United States</div>
+<div class="email"><a href="#">Shop@Autopart.Com</a></div>
+</div>
+<div class="footer-container__middle__second">
+<h4 class="footer-middle-head">Information</h4>
+<ul>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Customer Service</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Search Terms</a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Order &amp; Returns</a></li>
+<li><a href="#">Our Sitemap</a></li>
+</ul>
+</div>
+<div class="footer-container__middle__third">
+<h4 class="footer-middle-head">Get To Know Us</h4>
+<ul>
+<li><a href="#">Our Company</a></li>
+<li><a href="#">Store Directory</a></li>
+<li><a href="#">Digital Museum</a></li>
+<li><a href="#">Our Suppliers</a></li>
+<li><a href="#">Sell on Walmart.com</a></li>
+<li><a href="#">Advertise With Us</a></li>
+<li><a href="#">Careers</a></li>
+</ul>
+</div>
+<div class="footer-container__middle__fourth">
+<h4 class="footer-middle-head">Help</h4>
+<ul>
+<li><a href="#">Customer Service</a></li>
+<li><a href="#">My Account</a></li>
+<li><a href="#">Find a Store</a></li>
+<li><a href="#">Legal &amp; Privacy</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Gift Card</a></li>
+</ul>
+</div>
+<div class="footer-container__middle__fifth">
+<h4 class="footer-middle-head">Opening Time</h4>
+<ul>
+<li>Mon – Fri: 8AM – 9PM</li>
+<li>Sat: 9 AM – 8 PM</li>
+<li>Sun: Closed</li>
+</ul>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>New Arrival Products</title>
+         <identifier>new-arrival-products</identifier>
+         <content><![CDATA[<p>{{block class="Forever\NewArrival\Block\CategoryList" name="newarrival" template="Forever_NewArrival::product-filter.phtml"}}</p>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Best Seller Products</title>
+         <identifier>best-seller-products</identifier>
+         <content><![CDATA[<p>{{block class="Forever\BestSeller\Block\BestsellerProduct" name="bestseller" template="Forever_BestSeller::BestsellerProduct.phtml"}}</p>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Homepage brand slider</title>
+         <identifier>homepage-brand-slider</identifier>
+         <content><![CDATA[<div class="brand-holder-container">
+<div class="brand-title">
+<h3>Brands</h3>
+</div>
+<div class="owl-carousel owl-theme brand-slider">
+<div class="item">
+<div class="brand-wraper d-flex align-items-center justify-content-center"><a class="brand-link" href="#" target="_self"> <img class="brand-image-hover" src="{{media url="wysiwyg/forever/client-1-hover.png"}}" alt="a" width="210" height="83"> </a></div>
+</div>
+<div class="item">
+<div class="brand-wraper d-flex align-items-center justify-content-center"><a class="brand-link" href="#" target="_self"> <img class="brand-image-hover" src="{{media url="wysiwyg/forever/client-2-hover.png"}}" alt="a" width="210" height="83"> </a></div>
+</div>
+<div class="item">
+<div class="brand-wraper d-flex align-items-center justify-content-center"><a class="brand-link" href="#" target="_self"> <img class="brand-image-hover" src="{{media url="wysiwyg/forever/client-3-hover.png"}}" alt="a" width="210" height="83"> </a></div>
+</div>
+<div class="item">
+<div class="brand-wraper d-flex align-items-center justify-content-center"><a class="brand-link" href="#" target="_self"> <img class="brand-image-hover" src="{{media url="wysiwyg/forever/client-4-hover.png"}}" alt="a" width="210" height="83"> </a></div>
+</div>
+<div class="item">
+<div class="brand-wraper d-flex align-items-center justify-content-center"><a class="brand-link" href="#" target="_self"> <img class="brand-image-hover" src="{{media url="wysiwyg/forever/client-1-hover.png"}}" alt="a" width="210" height="83"> </a></div>
+</div>
+<div class="item">
+<div class="brand-wraper d-flex align-items-center justify-content-center"><a class="brand-link" href="#" target="_self"> <img class="brand-image-hover" src="{{media url="wysiwyg/forever/client-2-hover.png"}}" alt="a" width="210" height="83"> </a></div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Homepage Blog</title>
+         <identifier>Homepage-blog</identifier>
+         <content><![CDATA[<div class="blog-wrapper-container">
+<h3 class="blog-heading">Blog</h3>
+<div class="blog-holder">
+<div class="blog-items owl-carousel owl-theme">
+<div class="item">
+<div class="article-thumbnail owl-carousel owl-theme"><img class="attachment-drile_blog_thumb size-drile_blog_thumb wp-post-image" src="https://drile-be87.kxcdn.com/drile/wp-content/uploads/2019/08/blog_1-1170x940.jpg" alt="blog_1" width="1170" height="940">
+<p class="blog-meta-date">12/12/2022</p>
+<p class="blog-meta-message">3 comments</p>
+<p class="blog-list">in<a href="#">how to choose</a></p>
+<a class="blog-title" href="#">How to Choose the right Color Palette for Home</a>
+<p class="blog-excerpt">The small round table in the dinette may be great for casual meals with your family, but inviting overnight guests</p>
+<a class="blog-button action primary" href="#">read more</a></div>
+</div>
+<div class="item">
+<div class="article-thumbnail owl-carousel owl-theme"><img class="attachment-drile_blog_thumb size-drile_blog_thumb wp-post-image" src="https://drile-be87.kxcdn.com/drile/wp-content/uploads/2019/08/blog_1-1170x940.jpg" alt="blog_1" width="1170" height="940">
+<p class="blog-meta-date">12/12/2022</p>
+<p class="blog-meta-message">3 comments</p>
+<p class="blog-list">in<a href="#">how to choose</a></p>
+<a class="blog-title" href="#">How to Choose the right Color Palette for Home</a>
+<p class="blog-excerpt">The small round table in the dinette may be great for casual meals with your family, but inviting overnight guests</p>
+<a class="blog-button action primary" href="#">read more</a></div>
+</div>
+<div class="item">
+<div class="article-thumbnail owl-carousel owl-theme"><img class="attachment-drile_blog_thumb size-drile_blog_thumb wp-post-image" src="https://drile-be87.kxcdn.com/drile/wp-content/uploads/2019/08/blog_1-1170x940.jpg" alt="blog_1" width="1170" height="940">
+<p class="blog-meta-date">12/12/2022</p>
+<p class="blog-meta-message">3 comments</p>
+<p class="blog-list">in<a href="#">how to choose</a></p>
+<a class="blog-title" href="#">How to Choose the right Color Palette for Home</a>
+<p class="blog-excerpt">The small round table in the dinette may be great for casual meals with your family, but inviting overnight guests</p>
+<a class="blog-button action primary" href="#">read more</a></div>
+</div>
+<div class="item">
+<div class="article-thumbnail owl-carousel owl-theme"><img class="attachment-drile_blog_thumb size-drile_blog_thumb wp-post-image" src="https://drile-be87.kxcdn.com/drile/wp-content/uploads/2019/08/blog_1-1170x940.jpg" alt="blog_1" width="1170" height="940">
+<p class="blog-meta-date">12/12/2022</p>
+<p class="blog-meta-message">3 comments</p>
+<p class="blog-list">in<a href="#">how to choose</a></p>
+<a class="blog-title" href="#">How to Choose the right Color Palette for Home</a>
+<p class="blog-excerpt">The small round table in the dinette may be great for casual meals with your family, but inviting overnight guests</p>
+<a class="blog-button action primary" href="#">read more</a></div>
+</div>
+<div class="item">
+<div class="article-thumbnail owl-carousel owl-theme"><img class="attachment-drile_blog_thumb size-drile_blog_thumb wp-post-image" src="https://drile-be87.kxcdn.com/drile/wp-content/uploads/2019/08/blog_1-1170x940.jpg" alt="blog_1" width="1170" height="940">
+<p class="blog-meta-date">12/12/2022</p>
+<p class="blog-meta-message">3 comments</p>
+<p class="blog-list">in<a href="#">how to choose</a></p>
+<a class="blog-title" href="#">How to Choose the right Color Palette for Home</a>
+<p class="blog-excerpt">The small round table in the dinette may be great for casual meals with your family, but inviting overnight guests</p>
+<a class="blog-button action primary" href="#">read more</a></div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Forever Newslettee Popup</title>
+         <identifier>forever_newsletter_popup</identifier>
+         <content><![CDATA[<div class="newsletter-popup-top">
+<div class="popup-static-content">
+<div class="popup-icon">&nbsp;</div>
+<div class="popup-title">
+<h2>subscribe Emails</h2>
+Get Latest News &amp; Update</div>
+<div class="popup-desc">also the leap into electronic typesetting, remaining essentially</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Homepage meet our team</title>
+         <identifier>Homepage-meet-our-team</identifier>
+         <content><![CDATA[<div class="meet-our-team-wraper-container">
+<div class="meet-our-team-wraper">
+<div class="meet-our-team-text-block">
+<p>Our Creative Force</p>
+<h3>Meet our team</h3>
+</div>
+<div class="meet-our-team-detail-block">
+<div class="meet-our-team-margin">
+<div class="meet-our-team-equal-box">
+<div class="meet-our-team-image"><img src="{{media url="wysiwyg/forever/team-img-1.jpg" alt="Image" width="800" height="1078"></div>
+<div class="meet-our-team-name-designation">
+<h2>Nately Port</h2>
+<h4>Fine ceramics</h4>
+</div>
+</div>
+<div class="meet-our-team-equal-box">
+<div class="meet-our-team-image"><img class="attachment-full size-full wp-post-image" src="{{media url="wysiwyg/forever/team-img-2.jpg"}}" alt="Image" width="800" height="1078"></div>
+<div class="meet-our-team-name-designation">
+<h2>Jonathan Mark</h2>
+<h4>Store manager</h4>
+</div>
+</div>
+<div class="meet-our-team-equal-box">
+<div class="meet-our-team-image"><img class="attachment-full size-full wp-post-image" src="{{media url="wysiwyg/forever/team-img-3.jpg"}}" alt="Image" width="800" height="1078"></div>
+<div class="meet-our-team-name-designation">
+<h2>Alia Denn</h2>
+<h4>Architect</h4>
+</div>
+</div>
+<div class="meet-our-team-equal-box">
+<div class="meet-our-team-image"><img class="attachment-full size-full wp-post-image" src="{{media url="wysiwyg/forever/team-img-4.jpg"}}" alt="Image" width="800" height="1078"></div>
+<div class="meet-our-team-name-designation">
+<h2>Nicolas Jen</h2>
+<h4>Designer</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Homepage testimonial slider</title>
+         <identifier>Homepage-testimonial-slider</identifier>
+         <content><![CDATA[<div class="testimonial-container">
+<div class="testimonial-title-block">
+<h3>Our Lucky Customers</h3>
+</div>
+<div class="testimonial-slider-container owl-carousel owl-theme">
+<div class="testimonial-wraper">
+<div class="customer">
+<div class="customer-inner">
+<div class="testimonial-avatar"><img src="{{media url="wysiwyg/forever/avatar.jpg" alt="customer" width="160" height="160"></div>
+<div class="testimonial-detail">
+<h4 class="entry-name">Teresa Holland</h4>
+<div class="stars">
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+</div>
+<div class="entry-comment">
+<p>Vestibulum ut maximus magna. Duis neque risus, varius nec efficitur ut, interdum vel risus. Fusce rutrum purus leo, a imperdiet erat sagittis ac.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="customer">
+<div class="customer-inner">
+<div class="testimonial-avatar"><img src="{{media url="wysiwyg/forever/avatar-2.jpg" alt="customer" width="160" height="160"></div>
+<div class="testimonial-detail">
+<h4 class="entry-name">Teresa Holland</h4>
+<div class="stars">
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+</div>
+<div class="entry-comment">
+<p>Vestibulum ut maximus magna. Duis neque risus, varius nec efficitur ut, interdum vel risus. Fusce rutrum purus leo, a imperdiet erat sagittis ac.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="customer">
+<div class="customer-inner">
+<div class="testimonial-avatar"><img src="{{media url="wysiwyg/forever/avatar-3.jpg" alt="customer" width="160" height="160"></div>
+<div class="testimonial-detail">
+<h4 class="entry-name">Teresa Holland</h4>
+<div class="stars">
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+</div>
+<div class="entry-comment">
+<p>Vestibulum ut maximus magna. Duis neque risus, varius nec efficitur ut, interdum vel risus. Fusce rutrum purus leo, a imperdiet erat sagittis ac.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="customer">
+<div class="customer-inner">
+<div class="testimonial-avatar"><img src="{{media url="wysiwyg/forever/avatar.jpg" alt="customer" width="160" height="160"></div>
+<div class="testimonial-detail">
+<h4 class="entry-name">Teresa Holland</h4>
+<div class="stars">
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+</div>
+<div class="entry-comment">
+<p>Vestibulum ut maximus magna. Duis neque risus, varius nec efficitur ut, interdum vel risus. Fusce rutrum purus leo, a imperdiet erat sagittis ac.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="customer">
+<div class="customer-inner">
+<div class="testimonial-avatar"><img src="{{media url="wysiwyg/forever/avatar-2.jpg" alt="customer" width="160" height="160"></div>
+<div class="testimonial-detail">
+<h4 class="entry-name">Teresa Holland</h4>
+<div class="stars">
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+<div class="review">Created with Fabric.js 1.7.22</div>
+</div>
+<div class="entry-comment">
+<p>Vestibulum ut maximus magna. Duis neque risus, varius nec efficitur ut, interdum vel risus. Fusce rutrum purus leo, a imperdiet erat sagittis ac.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Home Page Upcoming collection</title>
+         <identifier>homepage-upcoming-collection</identifier>
+         <content><![CDATA[<div class="custom-pralax-bg-img"><img src="{{media url="wysiwyg/forever/parallax-img.jpg"}}" alt="bg-img" width="1920" height="527">
+<div class="black-overlay">
+<div class="parallax-elements-holder__title d-flex flex-direction-column justify-content-center align-items-center">
+<h2 class="parallax-elements-holder__title__one">Upcoming collection</h2>
+<h4 class="parallax-elements-holder__title__two">Ut enim ad minim veniam, quis nostrud exercitation ullamco ommodo consequat. Duis aute irure dolor in reprehenderits.</h4>
+<a class="parallax-elements-holder__title__button action primary" href="chairs.html" target="_self">View more</a></div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Homepage promo banner section two</title>
+         <identifier>homepage-promo-banner-section-two</identifier>
+         <content><![CDATA[<div class="promo-banner-second-section-container">
+<div class="promo-holder-block-second d-flex justify-content-between">
+<div class="promo-banner-block-one pb-box">
+<div class="promo-baner-second-section-image-container"><a title="sofa" href="sofa.html"><img src="{{media url="wysiwyg/forever/furniture-image-one.jpeg"}}" alt="" width="866" height="1300"></a></div>
+<div class="promo-baner-second-section-wrapper-info">
+<h3 class="promo-second-section-title">New Arrivals</h3>
+<div class="promo-second-section-subtitle">Sofa Style 2020</div>
+</div>
+</div>
+<div class="promo-banner-block-two pb-box">
+<div class="promo-baner-second-section-image-container"><a title="sofa" href="sofa.html"><img src="{{media url="wysiwyg/forever/furniture-image-three.jpeg"}}" alt="" width="1880" height="1255"></a></div>
+<div class="promo-baner-second-section-wrapper-info">
+<h3 class="promo-second-section-title">New Arrivals</h3>
+<div class="promo-second-section-subtitle max-width">
+<p class="max-wid">Perfect fit for your home</p>
+</div>
+</div>
+</div>
+<div class="promo-banner-block-three pb-box">
+<div class="promo-baner-second-section-image-container"><a title="sofa" href="sofa.html"><img src="{{media url="wysiwyg/forever/furniture-image-two.jpeg"}}" alt="" width="867" height="1300"></a></div>
+<div class="promo-baner-second-section-wrapper-info">
+<h3 class="promo-second-section-title">New Arrivals</h3>
+<div class="promo-second-section-subtitle">Sofa Style 2020</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Homepage promo banner section one</title>
+         <identifier>homepage-promo-banner-section-one</identifier>
+         <content><![CDATA[<div class="promo-banner-container">
+<div class="promo-holder-block d-flex justify-content-between">
+<div class="promo-banner-wrapper">
+<div class="promo-image-container"><a title="sofa" href="sofa.html"><img src="{{media url="wysiwyg/forever/promo-banner-one.jpg"}}" alt="promo-banner-one" width="930" height="405"></a></div>
+<div class="promo-banner-wrapper-info">
+<div class="promo-discount">20% off</div>
+<h3 class="promo-title">Standout Storage</h3>
+<div class="promo-subtitle">Get Organized With Our Shelves &amp; Sideboards</div>
+</div>
+</div>
+<div class="promo-banner-wrapper-two">
+<div class="position-block">
+<div class="promo-image-container"><a title="sofa" href="sofa.html"><img src="{{media url="wysiwyg/forever/promo-banner-two.jpg"}}" alt="promo-banner-two" width="451" height="405"></a></div>
+<div class="promo-banner-wrapper-info-two">
+<div class="promo-border-block">
+<h3 class="promo-title">Living in style</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Header All Categories Block</title>
+         <identifier>all-category-block</identifier>
+         <content><![CDATA[<div class="all-categories-section ui-menu-item" role="presentation">
+<div class="all-categories-section__content">
+<div class="all-categories-section__content__heading">Browse Categories</div>
+<div class="all-categories-section__content__details">
+<ul>
+<li><a href="#"> Shop</a></li>
+<li><a href="#"> Chair</a></li>
+<li><a href="#"> Accessories</a></li>
+<li><a href="#"> Sofa</a></li>
+<li><a href="#"> Stool</a></li>
+<li><a href="#"> Tables</a></li>
+</ul>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Homepage sale end</title>
+         <identifier>homepage-sale-end</identifier>
+         <content><![CDATA[<div class="sales-end-main">
+<div class="sales-end-main__image"><img class="desktop-image" src="{{media url=wysiwyg/forever/banner-sale-off-1920.jpg}}" alt="sale-ends" width="1920" height="500">
+<div class="sales-end-main__title">
+<div class="sales-end-main__title__discount">50%</div>
+<h6 class="sales-end-main__title__largetext">WINDSOR CHAIRS FOR SALE</h6>
+<h2 class="sales-end-main__title__smalltext">SALE ENDS IN 1 DAY</h2>
+<div class="sales-banner-button"><a class="sales action primary" title="" href="chair.html" target="_blank" rel="noopener">Shop Now</a></div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Homepage payment method</title>
+         <identifier>homepage-payment-method</identifier>
+         <content><![CDATA[<div class="payment-full-block">
+<div class="payment-inner-block">
+<div class="payment-content-holder d-flex justify-content-between">
+<div class="payment-wrapper d-flex justify-content-between flex-direction-column">
+<div class="payment-image-text d-flex flex-direction-row justify-content-start align-items-center">
+<div class="payment-image">Created with Fabric.js 1.7.22</div>
+<div class="payment-short-description">
+<p>Shop online</p>
+</div>
+</div>
+<div class="payment-full-description">
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco ommodo consequat.</p>
+</div>
+</div>
+<div class="payment-wrapper d-flex justify-content-between flex-direction-column">
+<div class="payment-image-text d-flex flex-direction-row justify-content-start align-items-center">
+<div class="payment-image">Created with Fabric.js 1.7.22</div>
+<div class="payment-short-description">
+<p>Free shipping</p>
+</div>
+</div>
+<div class="payment-full-description">
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco ommodo consequat.</p>
+</div>
+</div>
+<div class="payment-wrapper d-flex justify-content-between flex-direction-column">
+<div class="payment-image-text d-flex flex-direction-row justify-content-start align-items-center">
+<div class="payment-image">Created with Fabric.js 1.7.22</div>
+<div class="payment-short-description">
+<p>Return policy</p>
+</div>
+</div>
+<div class="payment-full-description">
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco ommodo consequat.</p>
+</div>
+</div>
+<div class="payment-wrapper d-flex justify-content-between flex-direction-column">
+<div class="payment-image-text d-flex flex-direction-row justify-content-start align-items-center">
+<div class="payment-image">Created with Fabric.js 1.7.22</div>
+<div class="payment-short-description">
+<p>Payment methods</p>
+</div>
+</div>
+<div class="payment-full-description">
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco ommodo consequat.</p>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>header-two-top</title>
+         <identifier>header-two-top</identifier>
+         <content><![CDATA[<div class="header-top">
+<div class="header-top-inner">
+<div class="top-left">
+<ul>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Reviews</a></li>
+<li><a href="#">Support</a></li>
+</ul>
+</div>
+<div class="top-right">
+<ul>
+<li><a>+1 86.36.166</a></li>
+<li><a>contact@furnitureforever.com</a></li>
+</ul>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Header Call Us</title>
+         <identifier>header-call-us</identifier>
+         <content><![CDATA[<div class="header-contact-detail"><a href="#">Call us (+1) 866 540 3229</a></div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Footer Top Section</title>
+         <identifier>footer-2-footer-top-section</identifier>
+         <content><![CDATA[<div class="footer-container__top">
+<div class="footer-container__top__inner footer_common_container">
+<div class="logo"><a href="#"><img src="{{media url="wysiwyg/forever/logo-furniture-white.png"}}" alt="logo" width="170" height="40"></a></div>
+<div class="address-detail">17 Irving Pl, New York, NY 10003</div>
+<div class="contact-detail"><a href="#">care@reytheme.com</a>
+<h3 class="mt-0">778 568 999</h3>
+</div>
+<div class="socialmedia-icon d-flex align-items-center">&nbsp;</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Header Wishlist</title>
+         <identifier>header-wishlist</identifier>
+         <content><![CDATA[<p>{{block class="Magento\Wishlist\Block\Link" name="wishlist" template="Magento_Wishlist::link.phtml"}}</p>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>header welcome message</title>
+         <identifier>header-welcome-message</identifier>
+         <content><![CDATA[<div class="welcome-message">
+<p>Free shipping for orders over $59 !</p>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Footer Top Section</title>
+         <identifier>footer-1-footer-top-section</identifier>
+         <content><![CDATA[<div class="footer-container__top">
+<div class="footer_common_container d-flex align-items-center justify-content-between flex-wrap">
+<div class="footer-container__top__left">
+<h3>We hace Recommendation For you</h3>
+<p>Take 30% When You Spend $150 Or More With Code Autima 11</p>
+</div>
+<div class="footer-container__top__right">{{block class="Magento\Newsletter\Block\Subscribe" name="static.newsletter" template="Magento_Newsletter::subscribe.phtml"}}</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+   </blocks>
+</root>

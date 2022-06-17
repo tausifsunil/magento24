@@ -1,0 +1,147 @@
+Array
+(
+    [0] => Array
+        (
+            [product_id] => 42
+            [options] => Array
+                (
+                    [0] => Array
+                        (
+                            [perent_id] => 93
+                            [option_id] => 4
+                            [product_id] => 42
+                            [qty] => 2
+                        )
+
+                    [1] => Array
+                        (
+                            [perent_id] => 211
+                            [option_id] => 8
+                            [product_id] => 42
+                            [qty] => 2
+                        )
+
+                )
+
+            [qty] => 2
+        )
+
+    [1] => Array
+        (
+            [product_id] => 42
+            [options] => Array
+                (
+                    [0] => Array
+                        (
+                            [perent_id] => 93
+                            [option_id] => 6
+                            [product_id] => 42
+                            [qty] => 3
+                        )
+
+                    [1] => Array
+                        (
+                            [perent_id] => 211
+                            [option_id] => 9
+                            [product_id] => 42
+                            [qty] => 3
+                        )
+
+                )
+
+            [qty] => 3
+        )
+
+)
+
+after return value 
+Array
+(
+    [product] => 42
+    [super_attribute] => Array
+        (
+            [93] => 4
+            [211] => 8
+        )
+
+    [qty] => 2
+)
+Array
+(
+    [product] => 42
+    [super_attribute] => Array
+        (
+            [93] => 4
+            [211] => 9
+        )
+
+    [qty] => 3
+)
+
+
+
+
+vendor cart
+before cart :
+Array
+(
+    [uenc] => aHR0cDovL2xvY2FsLm0yNDNwLmNvbS9iYWdiamJram4uaHRtbA,,
+    [product] => 18
+    [selected_configurable_option] => 
+    [related_product] => 
+    [item] => 18
+    [form_key] => x92C4a2thCqyUBTm
+    [super_attribute] => Array
+        (
+            [93] => 6
+        )
+
+    [qty] => 1
+)
+
+After :
+Array
+(
+    [uenc] =>   
+    [product] => 18
+    [selected_configurable_option] => 
+    [related_product] => 
+    [item] => 18
+    [form_key] => x92C4a2thCqyUBTm
+    [super_attribute] => Array
+        (
+            [93] => 6
+        )
+
+    [qty] => 1
+)
+
+
+
+***********************
+Array
+(
+    [uenc] => aHR0cDovL2xvY2FsLm0yNDNwLmNvbS90ZXN0Lmh0bWw,
+    [product] => 42
+    [form_key] => x92C4a2thCqyUBTm
+    [super_attribute] => Array
+        (
+            [93] => 7
+            [211] => 9
+        )
+
+)
+
+Array
+(
+    [uenc] => aHR0cDovL2xvY2FsLm0yNDNwLmNvbS90ZXN0Lmh0bWw,
+    [product] => 42
+    [form_key] => x92C4a2thCqyUBTm
+    [super_attribute] => Array
+        (
+            [93] => 7
+            [211] => 9
+        )
+
+)
+****************************

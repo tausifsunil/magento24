@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Cancelorder
+ * @copyright : Copyright © Icreative Technologies (http://icreativetechnologies.com/)
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <tab id="ict" translate="label" sortOrder="1">
+            <label>Ict Extension</label>
+        </tab>
+        <section id="cancelorder" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Cancel Order</label>
+            <tab>ict</tab>
+            <resource>Ict_Cancelorder::config_cancelorder</resource>
+
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Configuration</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Cancel Order</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="recipient" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Recipient Email</label>
+                    <depends>
+                        <field id="cancelorder/general/enable">1</field>
+                    </depends>
+                </field>
+                <field id="formtitle" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Form Title</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="cancelorder/general/enable">1</field>
+                    </depends>
+                </field>
+                <field id="commentlabel" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Comment Label</label>
+                    <comment>It would be displayed as a label above popup message box.</comment>
+                    <depends>
+                        <field id="cancelorder/general/enable">1</field>
+                    </depends>
+                </field>
+                <field id="commentnote" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Comment Note</label>
+                    <depends>
+                        <field id="cancelorder/general/enable">1</field>
+                    </depends>
+                </field>
+                <field id="buttonlabel" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Button Text</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="cancelorder/general/enable">1</field>
+                    </depends>
+                </field>
+                <field id="cancelordertemplate" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Cancel Order Template</label>
+                    <source_model>Ict\Cancelorder\Model\Config\Source\Email\CustomTemplate</source_model>
+                    <depends>
+                        <field id="cancelorder/general/enable">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

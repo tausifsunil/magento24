@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_RMA
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account"/>
+    <head>
+        <title>RMA</title>
+        <css src="Ict_RMA::css/RMA.css"/>
+    </head> 
+    <body>
+        <referenceContainer name="content">
+            <block class="Ict\RMA\Block\Index\Index" name="rma_index_index" ifconfig="ict_rma/rma/enabled" template="Ict_RMA::rma_index_index.phtml" cacheable="false"/>
+        </referenceContainer>
+    </body>
+</page>

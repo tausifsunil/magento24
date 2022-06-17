@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/** 
+ * @package   Forever_Testimonials
+ * @author    Ricky Thakur (Kapil Dev Singh)
+ * @copyright Copyright (c) 2018 Ricky Thakur
+ * @license   MIT license (see LICENSE.txt for details)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add 
+        id="Forever_Testimonials::elements" 
+        title="Testimonials" 
+        module="Forever_Testimonials" 
+        sortOrder="10" 
+        resource="Forever_Testimonials::elements" />
+        
+        <add 
+        id="Forever_Testimonials::index" 
+        title="Testimonials" 
+        module="Forever_Testimonials" 
+        sortOrder="20" 
+        parent="Forever_Testimonials::elements" 
+        action="testimonials/index" 
+        resource="Forever_Testimonials::index"/>
+    </menu>
+</config>

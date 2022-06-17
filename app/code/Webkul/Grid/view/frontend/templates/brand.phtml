@@ -1,0 +1,23 @@
+<?php
+$product = $block->getProduct();
+
+// here added
+/*$om = \Magento\Framework\App\ObjectManager::getInstance();
+$productCollection = $om->create('Webkul\Grid\Model\ResourceModel\Grid\Collection');
+$collection = $productCollection->addAttributeToSelect('*')->load();
+echo'<pre>';print_r($collection);die;*/
+// here ended
+
+$data=$product->getBrandselect();
+$demo=$product->getData('brandselect');
+$hello=$block->getBrand($demo);
+// echo'<pre>';print_r($hello->getData());die;
+    ?><a href="<?php echo $demo; ?>"><?php 
+    if($hello && !$hello->getImage())
+        {
+            echo $hello->getName();
+        }else{
+            $imagename='pub/media/codextblog/tmp/feature/'.$hello->getImage();
+            ?>
+            <img src="<?php echo $imagename;  ?>" height="50" width="50" />
+        <?php } ?></a>

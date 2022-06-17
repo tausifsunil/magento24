@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Forever_Core::forever" title="Forever" module="Forever_Core" sortOrder="51" resource="Forever_Core::forever"/>
+        <add id="Forever_Core::forever_configuration" title="Configuration" module="Forever_Core" sortOrder="99" parent="Forever_Core::forever" action="adminhtml/system_config/edit/section/forever" resource="Forever_Core::forever_configuration"/>
+    </menu>
+</config>

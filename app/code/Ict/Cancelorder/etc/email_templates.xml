@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Cancelorder
+ * @copyright : Copyright © Icreative Technologies (http://icreativetechnologies.com/)
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="cancel_order_template"
+        label="Cancel Order"
+        file="cancel_order_template.html"
+        type="html"
+        module="Ict_Cancelorder"
+        area="frontend"
+    />
+</config>

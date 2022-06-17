@@ -1,0 +1,99 @@
+& when (@media-common = true) {
+	.quickview-catalog_product-view {
+		.product-next-prev {
+			display: none;
+		}
+		.product-info-main .box-tocart .actions {
+			margin-left:0px;
+		}
+		.product-info-main .product-social-links .product-addto-links a {
+			@media(max-width:787px) {
+				width: ~"calc(50% - 7px)";
+			}
+		}
+		.product-info-main .product-social-links {
+			margin-left: 0px;
+			@media(max-width:787px) {
+				width: 100%;
+		      	margin-top: 15px;
+		      	text-align: left;
+			}
+		}
+		.product-addto-links {
+			@media(max-width:787px) {
+				padding-right: 10px;
+    			display: block;
+			}
+		}
+		.btn-plus button,.btn-minus button {
+			width:100%;
+		    height:44px;
+		    line-height:44px;
+		    border-radius:0px;
+		    &:hover:before {
+		    	border-radius:0px;
+		    }
+		}
+		.btn-plus,.btn-minus {
+			min-width:40px;
+		}
+		.custom-qty {
+			display:flex;
+    		margin-bottom:15px;
+		}
+		.fieldset {
+			flex-direction:column;
+		}
+		.add-to-cart {
+			flex-wrap:wrap;
+		}
+		.field.qty {
+			flex:0 0 100%;
+    		max-width:100%;
+		}
+		.btn-cart {
+			flex:0 0 48%;
+		    max-width:48%;
+		    margin-right:10px;
+		}
+		.buynow-button {
+			flex:0 0 48%;
+    		max-width:48%;  
+    		button {
+    			display:flex;
+			    align-items: center;
+			    justify-content: center;
+    		}
+		}
+	}
+	body.catalog-product-view.quickview-catalog_product-view {
+		.box-tocart .actions .buynow-button {
+		    flex:0 0 48%;
+		    max-width:48%;
+		    margin:0px;
+		}
+	}
+	.catalog-product-view.quickview-catalog_product-view  {
+		.product-info-main .box-tocart .actions {
+			margin-left:0px;
+		}
+		.product-info-main .product-social-links {
+			@media(max-width:787px) {
+				width: 100%;
+		      	margin-top: 15px;
+		      	text-align: left;
+			}
+		}
+		.product-info-main .product-social-links .product-addto-links a {
+			@media(max-width:787px) {
+				width: ~"calc(50% - 7px)";
+			}
+		}
+	}
+	button.mfp-close:before {
+	    display:none !important;
+	}
+	button.mfp-close:hover:before {
+	    transform:none;
+	} 
+}

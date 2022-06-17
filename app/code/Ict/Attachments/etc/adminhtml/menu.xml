@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Ict_Attachments::top_level"
+            title="Attachments"
+            module="Ict_Attachments"
+            sortOrder="30"
+            resource="Ict_Attachments::manage"
+            parent="Magento_Catalog::catalog"
+        />
+        <add id="Ict_Attachments::manageProductAttachment"
+            title="Manage Attachments"
+            module="Ict_Attachments"
+            sortOrder="10"
+            parent="Ict_Attachments::top_level"
+            action="attachment/index/index"
+            resource="Ict_Attachments::manage"
+        />
+    </menu>
+</config>

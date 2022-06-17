@@ -1,0 +1,87 @@
+<?php
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Trackorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<div class="block">
+    <p><?= $block->escapeHtml(__('Enter your email address and Order Id to review your order details.')); ?></p>
+    <div class="block-content">
+    <form class="form form-trackorder"
+              action="<?= /* @noEscape */ $block->getBaseUrl() . 'trackorder/order/ajaxview'; ?>"
+              method="post"
+              id="trackorder-form"
+              data-mage-init='{"validation":{}}'>
+            <?= /* @noEscape */ $block->getBlockHtml('formkey'); ?>
+            <fieldset
+                class="fieldset trackorder"
+                data-hasrequired="<?= $block->escapeHtml(__('* Required Fields')); ?>">
+                <div class="field text required">
+                    <label for="orderid" class="label">
+                        <span><?= $block->escapeHtml(__('Order ID')); ?></span>
+                    </label>
+                    <div class="control">
+                        <input 
+                          name="order_id" 
+                          type="text" 
+                          class="input-text" 
+                          id="order_id" 
+                          title="<?= $block->escapeHtml(__('Order ID')); ?>" 
+                          data-validate="{required:true}">
+                    </div>
+                </div>
+                
+                <div class="field email required">
+                    <label class="label" for="email"><span><?= $block->escapeHtml(__('Email')); ?></span></label>
+                    <div class="control">
+                        <input
+                          name="email_id"
+                          value="<?= $block->escapeHtml($block->getUsername()); ?>"
+                          id="email_id"
+                          type="email"
+                          class="input-text"
+                          title="<?= $block->escapeHtml(__('Email ID')); ?>"
+                          data-validate="{required:true, 'validate-email':true}">
+                    </div>
+                </div>
+                
+                <div class="actions-toolbar">
+                    <div class="primary">
+                      <button type="button" class="action primary " name="submitorder" id="submitorder">
+                        <span><?= $block->escapeHtml(__('Track Your Order')); ?></span>
+                      </button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div id="ajax_loader" style="display:none;" class="ajax_loading">
+        <img 
+          src="<?= /* @noEscape */ $block->getViewFileUrl('Ict_Trackorder::images/loading.gif'); ?>" 
+          alt="Content-Loading" 
+          title='Content-Loading' 
+          height="50px" 
+          width="50px"/> 
+    </div>
+</div>
+
+<div id="order-details" class="order-track-details">
+    <div id="order-status" class="order-statuses"></div>
+    <div id="order-info" class="order-info"></div>
+    <div id="order-items" class="order-items"></div>
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "trackcall": {
+                "actionUrl": "<?= /* @noEscape */ $block->getBaseUrl().'trackorder/order/ajaxview?order_id=' ?>"
+            }
+        }
+    }
+</script>

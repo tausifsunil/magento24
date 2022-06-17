@@ -1,0 +1,108 @@
+<?php
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Trackorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+ 
+/** @var \Magento\Sales\Block\Order\Info $block */
+
+?>
+<?php
+$order_status = $block->getOrder()->getStatusLabel();
+if ($order_status == 'Pending') {
+    $pendingClass = " active";
+} elseif ($order_status =='Processing' || $order_status =='Complete' || $order_status =='On Hold') {
+    $pendingClass = " complete";
+} else {
+    $pendingClass = " pending";
+}
+
+if ($order_status =='On Hold') {
+    $holdClass = " onhold";
+} elseif ($order_status =='Complete') {
+    $holdClass = " complete";
+} else {
+    $holdClass = " pending";
+}
+
+if ($order_status == 'Processing') {
+    $processingClass = " active";
+} elseif ($order_status =='Complete') {
+    $processingClass = " complete";
+} else {
+    $processingClass = " pending";
+}
+
+if ($order_status =='Complete') {
+    $completeClass = " active";
+} else {
+    $completeClass = " pending";
+}
+
+if ($order_status =='Canceled') {
+    $canceledClass = " cancel";
+} ?>
+<div class="order-stauts-progress">
+    <span class="order_state<?= /* @noEscape */ $pendingClass; ?> ">
+        <?= $block->escapeHtml(__('Pending')); ?>
+    </span>
+
+    <?php if ($order_status =='On Hold'): ?>
+        <span class="order_state<?= /* @noEscape */ $holdClass; ?> ">
+            <?= $block->escapeHtml(__('On Hold')); ?>
+        </span>
+    <?php endif; ?>
+
+    <span class="order_state<?= /* @noEscape */ $processingClass; ?> ">
+        <?= $block->escapeHtml(__('Processing')); ?>
+    </span>
+
+    <span class="order_state<?= /* @noEscape */ $completeClass; ?> ">
+        <?= $block->escapeHtml(__('Complete')); ?>
+    </span>
+
+    <?php if ($order_status =='Canceled'): ?>
+        <span class="order_state<?= /* @noEscape */ $canceledClass; ?> ">
+            <?= $block->escapeHtml(__('Canceled')); ?>
+        </span>
+    <?php endif; ?>
+</div>
+
+<div class="order-state-text"><?= $block->escapeHtml(__("Your Order is $order_status.")); ?></div>
+<?php
+$block->getOrder()->getStatusLabel();
+$activeColor = $block->getConfigValue('trackorder/general/active_status_color');
+$active = ($activeColor != '') ? $activeColor : '#3ee63e';
+
+$completeColor = $block->getConfigValue('trackorder/general/complete_status_color');
+$complete = ($completeColor != '') ? $completeColor : '#675cff';
+
+$pendingColor = $block->getConfigValue('trackorder/general/pending_status_color');
+$pending = ($pendingColor != '') ? $pendingColor : '#c4abc4';
+
+$cancelColor = $block->getConfigValue('trackorder/general/cancel_status_color');
+$cancel = ($cancelColor != '') ? $cancelColor : '#14a894';
+
+$onholdColor = $block->getConfigValue('trackorder/general/onhold_status_color');
+$onhold = ($onholdColor != '') ? $onholdColor : '#d10722';
+?>
+<style>
+    .active{
+        background-color:<?= /* @noEscape */ $active; ?>;
+    }
+    .complete{
+        background-color:<?= /* @noEscape */ $complete; ?>;
+    }
+    .pending{
+        background-color:<?= /* @noEscape */ $pending; ?>;
+    }
+    .cancel{
+        background-color:<?= /* @noEscape */ $cancel; ?>;
+    }
+    .onhold{
+        background-color:<?= /* @noEscape */ $onhold; ?>;
+    }
+</style>

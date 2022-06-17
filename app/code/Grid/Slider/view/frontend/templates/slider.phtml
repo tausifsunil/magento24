@@ -1,0 +1,70 @@
+<?php 
+$currentFullAction = $block->getRequest()->getFullActionName();
+$collection=$block->getSliderCollection();
+$collectionDAta=$collection->getData();
+if($collectionDAta[0]['position']==0 && $currentFullAction =='cms_index_index')
+{
+?>
+<section class="regular slider">
+    <?php
+        $collection=$block->getSliderCollection();
+        $url=$block->getImageurl();
+        foreach($collection as $_slider){       
+        $bannerCollection = $block->getAllBanners($_slider->getBlogId());
+        $bannerCollection=$bannerCollection->getData();
+        for($i=0;$i<sizeof($bannerCollection);$i++)
+        {
+            ?>
+                <img src="<?php echo $url.$bannerCollection[$i]['logo']; ?>" height=150px; width=60px;>
+            <?php
+        }
+
+        
+    } ?>
+</section >
+ <?php }       
+ if($collectionDAta[0]['position']==1 && $currentFullAction =='catalog_category_view')
+{
+?>
+<section class="regular slider">
+    <?php
+        $collection=$block->getSliderCollection();
+        $url=$block->getImageurl();
+        foreach($collection as $_slider){       
+        $bannerCollection = $block->getAllBanners($_slider->getBlogId());
+        $bannerCollection=$bannerCollection->getData();
+        for($i=0;$i<sizeof($bannerCollection);$i++)
+        {
+            ?>
+                <img src="<?php echo $url.$bannerCollection[$i]['logo']; ?>" height=150px; width=60px;>
+            <?php
+        }
+
+        
+    } ?>
+</section >
+ <?php }        
+ if($collectionDAta[0]['position']==2 && $currentFullAction =='catalog_product_view')
+{
+?>
+<section class="regular slider">
+    <?php
+        $collection=$block->getSliderCollection();
+        $url=$block->getImageurl();
+        foreach($collection as $_slider){       
+        $bannerCollection = $block->getAllBanners($_slider->getBlogId());
+        $bannerCollection=$bannerCollection->getData();
+        for($i=0;$i<sizeof($bannerCollection);$i++)
+        {
+            ?>
+                <img src="<?php echo $url.$bannerCollection[$i]['logo']; ?>" height=150px; width=60px;>
+            <?php
+        }
+
+        
+    } ?>
+</section >
+ <?php }         
+    
+
+

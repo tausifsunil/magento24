@@ -1,0 +1,99 @@
+.admin__field__rma .admin__field-label {
+    width: calc( (100%) * 0.25 - 30px );
+    float: left;
+    margin-left: 30px;
+}
+.admin__field__rma .admin__field-control {
+    float: left;
+    margin-left: 30px;
+}
+.admin__field-control.product-column {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.admin__scope-old {
+    float: left;
+    width: 100%;
+}
+.parent-container.products {
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+.admin__field__rma .child-container.product-detail {
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+.admin__field__rma .admin__field-label {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.rma-products {
+    margin-bottom: 20px;
+    display: block;
+    float: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.admin__field-control.parent-container.products {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.admin__field__rma .child-container.product-detail span {
+    display: block;
+}
+.admin__field__rma .child-container.product-detail span.product-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+.admin__field__rma {
+    float: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.admin__field__rma .product-title.admin__field-label {
+    margin-bottom: 20px;
+}
+.message-lefts .messages{
+    background: #373330;
+}
+.message-rights .messages {
+    background: #eb5201;
+}
+.message-lefts .messages *, .message-rights .messages * {
+    color: #fff;
+}
+.message-lefts {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 15px 0;
+    float: left;
+}
+.message-rights {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 80%;
+    float: right;
+}
+.message-rights .customer_names {
+    text-align: right;
+}
+.messages {
+    display: flex;
+    flex-direction: column;
+        padding: 8px 15px;
+    border-radius: 4px;
+
+}
+.messages span.created_at {
+    width: 100%;
+    text-align: right;
+}

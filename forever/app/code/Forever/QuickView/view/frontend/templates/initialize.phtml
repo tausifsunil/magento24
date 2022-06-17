@@ -1,0 +1,16 @@
+<?php
+// @codingStandardsIgnoreFile
+/** @var $block \Forever\Quickview\Block\Initialize */
+?>
+<div data-forever-js="js-init">
+    <script type="text/x-magento-init">
+        {
+            "[data-forever-js='quickview-item-default']": {
+                "foreverQuickViewDefault": {
+                   "baseUrl": "<?= $block->escapeHtml($block->getConfig()['baseUrl']); ?>"
+                }
+            }
+        }
+    </script>
+</div>
+

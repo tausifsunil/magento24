@@ -1,0 +1,5 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="newsletter_subscriber_save_before">
+        <observer name="bkFootware_newsletter_event_before_observer" instance="BkFootware\Newsletter\Observer\NewsletterField"/>
+    </event>
+</config>

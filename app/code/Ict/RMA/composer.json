@@ -1,0 +1,22 @@
+{
+    "name": "ict/rma",
+    "description": "Ict RMA",
+    "require": {
+      "php": "~7.3.0|~7.4.0|~8.1.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.1",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+	"autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ict\\RMA\\": ""
+        }
+    }
+    
+}

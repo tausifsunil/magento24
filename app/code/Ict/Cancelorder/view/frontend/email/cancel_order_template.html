@@ -1,0 +1,21 @@
+<!--
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Cancelorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+-->
+
+<!--@subject {{trans "Cancel Order Confirmation"}} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<h3>{{trans "Order Cancellation Notification"}}</h3>
+
+<p>Dear {{var data.customername}},</p>
+<p>{{trans "Your order "}}<strong>#{{var data.orderid}}</strong>{{trans " has been canceled for reasons indicated below."}}</p>
+<p><strong>{{trans "Cancellation Reason: "}} </strong> {{var data.comment}}</p>
+
+{{template config_path="design/email/footer_template"}}

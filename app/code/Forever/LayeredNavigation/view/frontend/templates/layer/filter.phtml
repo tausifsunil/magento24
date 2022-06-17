@@ -1,0 +1,81 @@
+<ol class="items">
+    <?php
+
+        // echo 123;die;
+        $viewModel = $block->getViewmodels();
+        $blockLayered = $block->getLayout()->createBlock(Forever\LayeredNavigation\Block\Layerednav::class);
+        $RangePrice   = $blockLayered->getCurrentCategoryMaxPrice();
+        $showCount    = $viewModel->shouldDisplayProductCountOnLayer();
+        $priceFormat  = $viewModel->getPriceFormat($block->getStore());
+        $jsonHelper   = $viewModel->getjsondata();
+
+    ?>
+    <?php foreach ($filterItems as $filterItem): ?>
+        <?php
+        $filter = $filterItem->getFilter();
+        $attributeModel = $filter->getData('attribute_model');
+        $inputName = $filter->getRequestVar();
+        $requestValue = $block->getRequest()->getParam($inputName);
+        $requestArray = $requestValue ? explode(',', $requestValue) : [];
+        $url = in_array($filterItem->getValue(), $requestArray) ? $filterItem->getRemoveUrl() : $filterItem->getUrl();
+        ?>
+        <li class="item">
+            <?php if ($attributeModel && $attributeModel->getFrontendInput() == 'price'): ?>
+                <?php
+                $min = $RangePrice['min'];
+                $max = $RangePrice['max'];
+
+                list($from, $to) = $requestValue ? explode('-', $requestValue) : [$min, $max];
+                ?>
+                <div id="layered_ajax_price_attribute">
+                    <div id="layered_ajax_price_text"></div>
+                    <div id="layerednav_price_slider"></div>
+                </div>
+                <script type="text/x-magento-init">
+                    {   
+                        "#layered_ajax_price_attribute": {
+                            "Forever_LayeredNavigation/js/priceslider": {
+                                "selectedFrom": <?= /* @noEscape */ $from ?>,
+                                "selectedTo": <?= /* @noEscape */ $to ?>,
+                                "minValue": <?= /* @noEscape */ $RangePrice['min']; ?>,
+                                "maxValue": <?= /* @noEscape */ $RangePrice['max']; ?>,
+                                "priceFormat": <?= /* @noEscape */ $priceFormat; ?>,
+                                "ajaxUrl": <?= /* @noEscape */ $jsonHelper->jsonEncode($filterItem->getUrl()) ?>
+                            }
+                        }
+                    }
+                </script>
+            <?php else: ?>
+                <?php if ($filterItem->getCount() > 0): ?>
+                <a <?= in_array($filterItem->getValue(), $requestArray) ? 'class="active"' : ''  ?> 
+                href="<?= $block->escapeUrl($url) ?>">
+                    <?php if ($attributeModel && $attributeModel->getFrontendInput() == 'multiselect'): ?>
+                        <input type="checkbox" <?= in_array($filterItem->getValue(), $requestArray)
+                         ? 'checked="checked"' : ''  ?> />
+                    <?php endif; ?>
+                    <?= /* @noEscape */ $filterItem->getLabel() ?>
+                    <?php if ($showCount): ?>
+                        <span class="count"><?= /* @noEscape */ $filterItem->getCount()?>
+                        <span class="filter-count-label">
+                                <?php if ($filterItem->getCount() == 1):?> 
+                                <?= /* @noEscape */ __('item')?><?php else:?> 
+                                <?= /* @noEscape */ __('items')?><?php endif;?>
+                                </span></span>
+                    <?php endif; ?>
+                </a>
+            <?php else:?>
+                <?php if ($attributeModel && $attributeModel->getFrontendInput() == 'multiselect'): ?>
+            <input type="checkbox" disabled="disabled" />
+            <?php endif; ?>
+                <?= /* @noEscape */ $filterItem->getLabel() ?>
+                <?php if ($showCount): ?>
+                <span class="count"><?= /* @noEscape */ $filterItem->getCount()?><span class="filter-count-label">
+                            <?php if ($filterItem->getCount() == 1):?>
+                                <?= /* @noEscape */ __('item')?><?php else:?>
+                                <?= /* @noEscape */__('items') ?><?php endif;?></span></span>
+            <?php endif; ?>
+            <?php endif; ?>
+            <?php endif; ?>
+        </li>
+    <?php endforeach ?>
+</ol>

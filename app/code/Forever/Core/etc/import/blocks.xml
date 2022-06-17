@@ -1,0 +1,741 @@
+<root>
+   <blocks>
+      <cms_item>
+         <title>Footer Top Section</title>
+         <identifier>footer-1-footer-top-section</identifier>
+         <content><![CDATA[<div class="footer-container__top">
+<div class="footer_common_container d-flex align-items-center justify-content-between flex-wrap">
+<div class="footer-container__top__left">
+<h3>We hace Recommendation For you</h3>
+<p>Take 30% When You Spend $150 Or More With Code Autima 11</p>
+</div>
+<div class="footer-container__top__right">{{block class="Magento\Newsletter\Block\Subscribe" name="static.newsletter" template="Magento_Newsletter::subscribe.phtml"}}</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Footer Middle Section </title>
+         <identifier>footer-1-footer-middle-section</identifier>
+         <content><![CDATA[<div class="footer-container__middle">
+<div class="footer_common_container d-flex flex-wrap">
+<div class="footer-container__middle__first">
+<div class="logo"><a href="#"><img src="{{media url="wysiwyg/forever/logo-furniture.png"}}" alt="logo" width="170" height="40"></a></div>
+<div class="contact-detail">Place Your Orders At
+<h3>+1 246-345-0695</h3>
+</div>
+<div class="address-detail">1418 River Drive, Suite 35 Cottonhall, CA 9622<br>United States</div>
+<div class="email"><a href="#">Shop@Autopart.Com</a></div>
+</div>
+<div class="footer-container__middle__second">
+<h4 class="footer-middle-head">Information</h4>
+<ul>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Customer Service</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Search Terms</a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Order &amp; Returns</a></li>
+<li><a href="#">Our Sitemap</a></li>
+</ul>
+</div>
+<div class="footer-container__middle__third">
+<h4 class="footer-middle-head">Get To Know Us</h4>
+<ul>
+<li><a href="#">Our Company</a></li>
+<li><a href="#">Store Directory</a></li>
+<li><a href="#">Digital Museum</a></li>
+<li><a href="#">Our Suppliers</a></li>
+<li><a href="#">Sell on Walmart.com</a></li>
+<li><a href="#">Advertise With Us</a></li>
+<li><a href="#">Careers</a></li>
+</ul>
+</div>
+<div class="footer-container__middle__fourth">
+<h4 class="footer-middle-head">Help</h4>
+<ul>
+<li><a href="#">Customer Service</a></li>
+<li><a href="#">My Account</a></li>
+<li><a href="#">Find a Store</a></li>
+<li><a href="#">Legal &amp; Privacy</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Gift Card</a></li>
+</ul>
+</div>
+<div class="footer-container__middle__fifth">
+<h4 class="footer-middle-head">Opening Time</h4>
+<ul>
+<li>Mon – Fri: 8AM – 9PM</li>
+<li>Sat: 9 AM – 8 PM</li>
+<li>Sun: Closed</li>
+</ul>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Footer Bottom Section</title>
+         <identifier>footer-1-footer-bottom-section</identifier>
+         <content><![CDATA[<div class="footer-container__bottom">
+<div class="footer_common_container d-flex align-items-center justify-content-between flex-wrap">
+<div class="footer-container__bottom__left w-50">© 2022 FurnitureForever. All Rights Reserved.</div>
+<div class="footer-container__bottom__right w-50  d-flex justify-content-end align-items-center">Please Include Your Reference Number:
+<h4 class="mt-0 mb-0">DNYDOJBI1B</h4>
+</div>
+</div>
+</div>
+<div class="top-bottom-arrow">&nbsp;</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Footer Top Section</title>
+         <identifier>footer-2-footer-top-section</identifier>
+         <content><![CDATA[<div class="footer-container__top">
+<div class="footer-container__top__inner footer_common_container">
+<div class="logo"><a href="#"><img src="{{media url="wysiwyg/forever/logo-furniture-white.png"}}" alt="logo" width="170" height="40"></a></div>
+<div class="address-detail">17 Irving Pl, New York, NY 10003</div>
+<div class="contact-detail"><a href="#">care@reytheme.com</a>
+<h3 class="mt-0">778 568 999</h3>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Footer Middle Section</title>
+         <identifier>footer-2-footer-middle-section</identifier>
+         <content><![CDATA[<div class="footer-container__middle">
+<div class="footer-container__middle__inner footer_common_container">
+<div class="newsletter-block">
+<h4 class="mt-0">RECEIVE EMAIL UPDATES</h4>
+{{block class="Magento\Newsletter\Block\Subscribe" name="static.newsletter" template="Magento_Newsletter::subscribe.phtml"}}</div>
+<div class="newsletter-block">&nbsp;</div>
+<div class="page-links d-flex w-100">
+<div>
+<h4>SHOP</h4>
+<ul>
+<li><a href="/shop.html">Shop</a></li>
+<li><a href="#">Collections</a></li>
+<li><a href="#">Outlet</a></li>
+<li><a href="#">Lookbook</a></li>
+</ul>
+</div>
+<div>
+<h4>HELP</h4>
+<ul>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Privacy policy</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Returns &amp; Exchanges</a></li>
+</ul>
+</div>
+<div>
+<h4>ABOUT</h4>
+<ul>
+<li><a href="#">Journal</a></li>
+<li><a href="#">Our Story</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/storelocator">Store Locator</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright-section d-flex align-items-center">
+<div class="copyright">© Copyright 2022<strong>FurnitureForever</strong></div>
+<div class="payment-icon"><img src="{{media url="wysiwyg/forever/white-payment-icons.png"}}" alt="payment-icon" width="200" height="30"></div>
+</div>
+</div>
+</div>
+<div class="top-bottom-arrow">&nbsp;</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>header welcome message</title>
+         <identifier>header-welcome-message</identifier>
+         <content><![CDATA[<div class="welcome-message">
+<p>Free shipping for orders over $59 !</p>
+</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Header Wishlist</title>
+         <identifier>header-wishlist</identifier>
+         <content><![CDATA[<p>{{block class="Magento\Wishlist\Block\Link" name="wishlist" template="Magento_Wishlist::link.phtml"}}</p>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Header All Categories Block</title>
+         <identifier>all-category-block</identifier>
+         <content><![CDATA[<div class="all-categories-section ui-menu-item" role="presentation">
+<div class="all-categories-section__content">
+<div class="all-categories-section__content__heading">Browse Categories</div>
+<div class="all-categories-section__content__details">
+<ul>
+<li><a href="#"> Shop</a></li>
+<li><a href="#"> Chair</a></li>
+<li><a href="#"> Accessories</a></li>
+<li><a href="#"> Sofa</a></li>
+<li><a href="#"> Stool</a></li>
+<li><a href="#"> Tables</a></li>
+</ul>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Homepage sale end</title>
+         <identifier>homepage-sale-end</identifier>
+         <content><![CDATA[<div class="sales-end-main">
+<div class="sales-end-main__image"><img class="desktop-image" src="{{media url=wysiwyg/forever/banner-sale-off-1920.jpg}}" alt="sale-ends" width="1920" height="500">
+<div class="sales-end-main__title">
+<div class="sales-end-main__title__discount">50%</div>
+<h6 class="sales-end-main__title__largetext">WINDSOR CHAIRS FOR SALE</h6>
+<h2 class="sales-end-main__title__smalltext">SALE ENDS IN 1 DAY</h2>
+<div class="sales-banner-button"><a class="sales action primary" title="" href="chair.html" target="_blank" rel="noopener">Shop Now</a></div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Homepage payment method</title>
+         <identifier>homepage-payment-method</identifier>
+         <content><![CDATA[<div class="payment-full-block reveal">
+<div class="payment-inner-block">
+<div class="payment-content-holder d-flex justify-content-between">
+<div class="payment-wrapper d-flex justify-content-between flex-direction-column">
+<div class="payment-image-text d-flex flex-direction-row justify-content-start align-items-center">
+<div class="payment-image">Created with Fabric.js 1.7.22</div>
+<div class="payment-short-description">
+<p>Shop online</p>
+</div>
+</div>
+<div class="payment-full-description">
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco ommodo consequat.</p>
+</div>
+</div>
+<div class="payment-wrapper d-flex justify-content-between flex-direction-column">
+<div class="payment-image-text d-flex flex-direction-row justify-content-start align-items-center">
+<div class="payment-image">Created with Fabric.js 1.7.22</div>
+<div class="payment-short-description">
+<p>Free shipping</p>
+</div>
+</div>
+<div class="payment-full-description">
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco ommodo consequat.</p>
+</div>
+</div>
+<div class="payment-wrapper d-flex justify-content-between flex-direction-column">
+<div class="payment-image-text d-flex flex-direction-row justify-content-start align-items-center">
+<div class="payment-image">Created with Fabric.js 1.7.22</div>
+<div class="payment-short-description">
+<p>Return policy</p>
+</div>
+</div>
+<div class="payment-full-description">
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco ommodo consequat.</p>
+</div>
+</div>
+<div class="payment-wrapper d-flex justify-content-between flex-direction-column">
+<div class="payment-image-text d-flex flex-direction-row justify-content-start align-items-center">
+<div class="payment-image">Created with Fabric.js 1.7.22</div>
+<div class="payment-short-description">
+<p>Payment methods</p>
+</div>
+</div>
+<div class="payment-full-description">
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco ommodo consequat.</p>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+        <cms_item>
+         <title>Homepage brand slider</title>
+         <identifier>homepage-brand-slider</identifier>
+         <content><![CDATA[<p>{{block class="Forever\Brand\Block\Home\Brand" template="Forever_Brand::Home/brand.phtml"}}</p>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Homepage promo banner section one</title>
+         <identifier>homepage-promo-banner-section-one</identifier>
+         <content><![CDATA[<div class="promo-banner-container reveal">
+<div class="promo-holder-block d-flex justify-content-between">
+<div class="promo-banner-wrapper">
+<div class="promo-image-container"><a title="sofa" href="sofa.html"><img src="{{media url="wysiwyg/forever/promo-banner-one.jpg"}}" alt="promo-banner-one" width="930" height="405"></a></div>
+<div class="promo-banner-wrapper-info">
+<div class="promo-discount">20% off</div>
+<h3 class="promo-title">Standout Storage</h3>
+<div class="promo-subtitle">Get Organized With Our Shelves &amp; Sideboards</div>
+</div>
+</div>
+<div class="promo-banner-wrapper-two">
+<div class="position-block">
+<div class="promo-image-container"><a title="sofa" href="sofa.html"><img src="{{media url="wysiwyg/forever/promo-banner-two.jpg"}}" alt="promo-banner-two" width="451" height="405"></a></div>
+<div class="promo-banner-wrapper-info-two">
+<div class="promo-border-block">
+<h3 class="promo-title">Living in style</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>header-two-top</title>
+         <identifier>header-two-top</identifier>
+         <content><![CDATA[<div class="header-top">
+<div class="header-top-inner">
+<div class="top-left">
+<ul>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Reviews</a></li>
+<li><a href="#">Support</a></li>
+</ul>
+</div>
+<div class="top-right">
+<ul>
+<li><a>+1 86.36.166</a></li>
+<li><a>contact@furnitureforever.com</a></li>
+</ul>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Homepage promo banner section two</title>
+         <identifier>homepage-promo-banner-section-two</identifier>
+         <content><![CDATA[<div class="promo-banner-second-section-container reveal">
+<div class="promo-holder-block-second d-flex justify-content-between">
+<div class="promo-banner-block-one pb-box">
+<div class="promo-baner-second-section-image-container"><a title="sofa" href="sofa.html"><img src="{{media url="wysiwyg/forever/furniture-image-one.jpeg"}}" alt="" width="866" height="1300"></a></div>
+<div class="promo-baner-second-section-wrapper-info">
+<h3 class="promo-second-section-title">New Arrivals</h3>
+<div class="promo-second-section-subtitle">Sofa Style 2020</div>
+</div>
+</div>
+<div class="promo-banner-block-two pb-box">
+<div class="promo-baner-second-section-image-container"><a title="sofa" href="sofa.html"><img src="{{media url="wysiwyg/forever/furniture-image-three.jpeg"}}" alt="" width="1880" height="1255"></a></div>
+<div class="promo-baner-second-section-wrapper-info">
+<h3 class="promo-second-section-title">New Arrivals</h3>
+<div class="promo-second-section-subtitle max-width">
+<p class="max-wid">Perfect fit for your home</p>
+</div>
+</div>
+</div>
+<div class="promo-banner-block-three pb-box">
+<div class="promo-baner-second-section-image-container"><a title="sofa" href="sofa.html"><img src="{{media url="wysiwyg/forever/furniture-image-two.jpeg"}}" alt="" width="867" height="1300"></a></div>
+<div class="promo-baner-second-section-wrapper-info">
+<h3 class="promo-second-section-title">New Arrivals</h3>
+<div class="promo-second-section-subtitle">Sofa Style 2020</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Homepage testimonial slider</title>
+         <identifier>Homepage-testimonial-slider</identifier>
+         <content><![CDATA[<div class="testimonial-container">
+<div class="testimonial-title-block">
+<h3>Testimonial</h3>
+</div>
+<div class="testimonial-slider-container owl-carousel owl-theme testimonial-one">{{block class="Forever\Testimonials\Block\Recent\RecentPost" template="Forever_Testimonials::Recent/recentPost.phtml"}}</div>
+<div class="view-all"><a class="view-all-btn action primary" href="/testimonials">View All</a></div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Homepage meet our team</title>
+         <identifier>Homepage-meet-our-team</identifier>
+         <content><![CDATA[<div class="meet-our-team-wraper-container reveal">{{block class="Forever\Team\Block\Home\Team" template="Forever_Team::Home/team.phtml"}}
+<div class="view-all"><a class="view-all-btn action primary" href="/team">View All</a></div>
+</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Forever Newslettee Popup</title>
+         <identifier>forever_newsletter_popup</identifier>
+         <content><![CDATA[<div class="newsletter-popup-top">
+<div class="popup-static-content">
+<div class="popup-icon">&nbsp;</div>
+<div class="popup-title">
+<h2>subscribe Emails</h2>
+Get Latest News &amp; Update</div>
+<div class="popup-desc">also the leap into electronic typesetting, remaining essentially</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Homepage Blog</title>
+         <identifier>Homepage-blog</identifier>
+         <content><![CDATA[<div class="blog-wrapper-container reveal">
+<h3 class="blog-heading">Blog</h3>
+<div class="blog-holder">{{block class="Forever\Blog\Block\BlogHome" template="Forever_Blog::blog.phtml"}}</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Best Seller Products</title>
+         <identifier>best-seller-products</identifier>
+         <content><![CDATA[<p>{{block class="Forever\BestSeller\Block\BestsellerProduct" name="bestseller" template="Forever_BestSeller::BestsellerProduct.phtml"}}</p>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>New Arrival Products</title>
+         <identifier>new-arrival-products</identifier>
+         <content><![CDATA[<p>{{block class="Forever\NewArrival\Block\CategoryList" name="newarrival" template="Forever_NewArrival::product-filter.phtml"}}</p>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Home Page Upcoming collection</title>
+         <identifier>homepage-upcoming-collection</identifier>
+         <content><![CDATA[<div class="custom-pralax-bg-img reveal"><img src="{{media url="wysiwyg/forever/parallax-img.jpg"}}" alt="bg-img" width="1920" height="527">
+<div class="black-overlay">
+<div class="parallax-elements-holder__title d-flex flex-direction-column justify-content-center align-items-center">
+<h2 class="parallax-elements-holder__title__one">Upcoming collection</h2>
+<h4 class="parallax-elements-holder__title__two">Ut enim ad minim veniam, quis nostrud exercitation ullamco ommodo consequat. Duis aute irure dolor in reprehenderits.</h4>
+<a class="parallax-elements-holder__title__button action primary" href="chairs.html" target="_self">View more</a></div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Header Call Us</title>
+         <identifier>header-call-us</identifier>
+         <content><![CDATA[<div class="header-contact-detail"><a href="#">Call us (+1) 866 540 3229</a></div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>contactpage-addressblock</title>
+         <identifier>contactpage-addressblock</identifier>
+         <content><![CDATA[<h1>contact page</h1>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Footer Top 3</title>
+         <identifier>footer-3-footer-top-section</identifier>
+         <content><![CDATA[<div class="footer-container__top">{{block class="Magento\Newsletter\Block\Subscribe" name="static.newsletter" template="Magento_Newsletter::subscribe.phtml"}}</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Footer 3 Middle </title>
+         <identifier>footer-3-footer-middle-section</identifier>
+         <content><![CDATA[<div class="footer-middle">
+<div class="footer-middle-content">
+<div class="footer-middle-inner">
+<h4>Shop</h4>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Collections</a></li>
+<li><a href="#">Shop</a></li>
+<li><a href="#">Accessories</a></li>
+<li><a href="#">Lookbook</a></li>
+</ul>
+</div>
+<div class="footer-middle-inner">
+<h4>About</h4>
+<ul>
+<li><a href="#">Our Story</a></li>
+<li><a href="#">Press</a></li>
+<li><a href="#">Blog</a></li>
+</ul>
+</div>
+<div class="footer-middle-inner">
+<h4>Customer Service</h4>
+<ul>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Shipping</a></li>
+<li><a href="#">Faqs</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="footer-middle-inner">
+<h4>Stay Connected</h4>
+<ul>
+<li><a href="mailto:sales@foreverfurniture.com">sales@foreverfurniture.com</a></li>
+<li><a href="tel:+201-123-2599">(201) 123-2599</a></li>
+<li><a href="#">Edison, NJ - USA</a></li>
+</ul>
+<ul class="social-icons">
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+</ul>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Footer 3 Bottom</title>
+         <identifier>footer-3-footer-bottom-section</identifier>
+         <content><![CDATA[<div class="footer-bottom">
+<div class="footer-bottom-content">
+<p>© 2022 Furniture Forever.</p>
+<div class="payment-method-section">
+<div class="footer-payment-icons">&nbsp;</div>
+</div>
+</div>
+</div>
+<div class="top-bottom-arrow">&nbsp;</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Home Page 2 Promo Banner</title>
+         <identifier>home-page2-promo-banner</identifier>
+         <content><![CDATA[<div class="home-page2-promo-banner reveal" style="background-image: url('{{media url="wysiwyg/forever/home-2-parallax-img.jpg"}}')">
+<div class="promo-banner-inner">
+<div class="promo-banner-info">
+<div class="service">
+<div class="service-content service-content1">
+<div class="icon" style="background-image: url('{{media url="wysiwyg/forever/home-2-prlx-icon.png"}}')">&nbsp;</div>
+<div class="service-content">
+<div class="title service-text">Lorem Ipsum</div>
+<div class="description other-font">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="promo-banner-info">
+<div class="service">
+<div class="service-content service-content2">
+<div class="icon" style="background-image: url('{{media url="wysiwyg/forever/home-2-prlx-icon.png"}}')">&nbsp;</div>
+<div class="service-content">
+<div class="title service-text">Lorem Ipsum</div>
+<div class="description other-font">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="promo-banner-info">
+<div class="service">
+<div class="service-content service-content3">
+<div class="icon" style="background-image: url('{{media url="wysiwyg/forever/home-2-prlx-icon.png"}}')">&nbsp;</div>
+<div class="service-content">
+<div class="title service-text">Lorem Ipsum</div>
+<div class="description other-font">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Home Page 2 Static Block Section</title>
+         <identifier>home-page2-static-block-section</identifier>
+         <content><![CDATA[<div class="home-page2-static-block-section reveal">
+<div class="home-page2-inner">
+<div class="home-page2-left-section">
+<div class="inner-data">
+<div class="content-data"><span class="">Products Essentials</span>
+<h4>Lorem Ipsum</h4>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+</div>
+<div class="content-img"><img src="{{media url="wysiwyg/forever/banner-main1.jpg"}}" alt=""></div>
+</div>
+</div>
+<div class="home-page2-right-section">
+<div class="inner-data">
+<div class="content-data"><span class="">Products Essentials</span>
+<h4>Lorem Ipsum</h4>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+</div>
+<div class="content-img"><img src="{{media url="wysiwyg/forever/banner-main2.jpg"}}" alt=""></div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Home Page 2 Blog</title>
+         <identifier>home-page-2-blog</identifier>
+         <content><![CDATA[<div class="blog-wrapper-container">
+<h3 class="blog-heading">Blog</h3>
+<div class="blog-holder">{{block class="Forever\Blog\Block\BlogHome" template="Forever_Blog::blog.phtml"}}</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Homepage 2 testimonial slider</title>
+         <identifier>homepage-2-testimonial-slider</identifier>
+         <content><![CDATA[<div class="testimonial-container">
+<div class="testimonial-title-block">
+<h3>Testimonial</h3>
+</div>
+<div class="testimonial-slider-container">
+<div class="testimonial-wraper">{{block class="Forever\Testimonials\Block\Recent\RecentPost" template="Forever_Testimonials::Recent/recentPost2.phtml"}}</div>
+</div>
+<div class="view-all"><a class="view-all-btn action primary" href="/testimonials">View All</a></div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Footer 4 Top Section</title>
+         <identifier>footer-4-footer-top-section</identifier>
+         <content><![CDATA[<div class="footer-container__top">
+<div class="footer-top-inner">
+<div class="footer_left_newsletter">
+<div class="news_inner_content">
+<div class="newsletter-title">
+<h1>Newsletter</h1>
+</div>
+<div class="news-text">
+<div class="text-content">Want to read more ? Sign up today... It's free !</div>
+</div>
+</div>
+</div>
+<div class="footer_right_newsletter">{{block class="Magento\Newsletter\Block\Subscribe" name="static.newsletter" template="Magento_Newsletter::subscribe.phtml"}}</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+      <cms_item>
+         <title>Footer 4 Middle Section</title>
+         <identifier>footer-4-footer-middle-section</identifier>
+         <content><![CDATA[<div class="footer-middle">
+<div class="footer-middle-content">
+<div class="footer_inner container-width">
+<div class="footer_inner1">
+<div class="inner-container">
+<div class="footer-percent footer-percent1">
+<div class="footer-percent-inner">
+<div class="icon">&nbsp;</div>
+<div class="service-content">
+<div class="title service-text">100% Satisfaction</div>
+<div class="description other-font">If your are unable.</div>
+</div>
+</div>
+</div>
+<div class="footer-percent footer-percent2">
+<div class="footer-percent-inner">
+<div class="icon">&nbsp;</div>
+<div class="service-content">
+<div class="title service-text">Save 20% when you</div>
+<div class="description other-font">use credit card.</div>
+</div>
+</div>
+</div>
+<div class="footer-percent footer-percent3">
+<div class="footer-percent-inner">
+<div class="icon">&nbsp;</div>
+<div class="service-content">
+<div class="title service-text">Fast Free Shipment</div>
+<div class="description other-font">Load any computers.</div>
+</div>
+</div>
+</div>
+<div class="footer-percent footer-percent4">
+<div class="footer-percent-inner">
+<div class="icon">&nbsp;</div>
+<div class="service-content">
+<div class="title service-text">14days Money back</div>
+<div class="description other-font">If your are unable.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer" class="footer_inner2 container-width">
+<div id="block_1" class="footer-area">
+<h6>My Account</h6>
+<ul>
+<li><a href="#">About Us</a></li>
+<li class="last_link"><a href="#">Brands</a></li>
+<li class="last_link"><a href="#">Orders and Returns</a></li>
+<li class="last_link"><a href="#">Advanced Search</a></li>
+<li class="last_link"><a href="#">Contact Us</a></li>
+</ul>
+</div>
+<div id="block_2" class="footer-area">
+<h6>Sellers</h6>
+<ul>
+<li><a href="#">Seller Login </a></li>
+<li><a href="#">Seller Signup</a></li>
+<li><a href="#">Seller Handbook</a></li>
+<li><a href="#">Shipping &amp; Refund</a></li>
+<li><a href="#">Wholesale Policy</a></li>
+</ul>
+</div>
+<div id="block_3" class="footer-area">
+<h6>Shop</h6>
+<ul>
+<li><a href="#">Accessories </a></li>
+<li><a href="#">Balcony Tables</a></li>
+<li><a href="#">Bar Units</a></li>
+<li><a href="#">Beds </a></li>
+<li><a href="#">Beside tables</a></li>
+</ul>
+</div>
+<div id="block_4" class="footer-area">
+<h6>Contact Us</h6>
+<ul>
+<li>
+<div class="address"><em class="fa fa-map-marker">&nbsp;</em>
+<div class="address_content">
+<div class="contact_address">507-Union Trade Centre, Beside Apple Hospital, Udhana Darwaja, India</div>
+</div>
+</div>
+</li>
+<li>
+<div class="phone"><em class="fa fa-phone">&nbsp;</em>
+<div class="contact_phone">(91)-261 3023333</div>
+</div>
+</li>
+<li>
+<div class="email"><em class="fa fa-envelope ">&nbsp;</em>
+<div class="contact_email"><a href="#" target="_blank" rel="noopener">support@forever.com</a></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>]]></content>
+      </cms_item>
+
+       <cms_item>
+         <title>Footer 4 Bottom Section</title>
+         <identifier>footer-4-footer-bottom-section</identifier>
+         <content><![CDATA[<div class="footer-bottom">
+<div class="footer-bottom-content">
+<div class="footer_bottom_inner  container-width">
+<div class="footer-bottom-left">
+<ul class="social-icon">
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+<li>&nbsp;</li>
+</ul>
+</div>
+<div class="footer-bottom-right"><address>© 2014 Magento Demo Store. All Rights Reserved.</address>
+<ul class="payment_icon">
+<li class="maestro"><a href="#">Maestro</a></li>
+<li class="mastercard"><a href="#">MasterCard</a></li>
+<li class="paypal"><a href="#">PayPal</a></li>
+<li class="visa"><a href="#">Visa</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="top-bottom-arrow">&nbsp;</div>]]></content>
+      </cms_item>
+   </blocks>
+</root>

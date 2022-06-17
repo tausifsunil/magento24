@@ -1,0 +1,443 @@
+<?php
+
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_RMA
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+
+/** @var \Ict\RMA\Block\Index\Index $block */
+$rmaId = $block->getRequest()->getParam('rmaid');
+$isBankDetailEnable = $block->isBankDetailEnable();
+?>
+
+<div class="column main">
+    <?php if ($rmaId): ?>
+        <form class="form rma form-rma"
+            action="<?= /* @noEscape */ $block->getUrl('rma/index/edit') ?>"
+            method="post"
+            id="form-rma-validate"
+            enctype="multipart/form-data"
+            autocomplete="off"
+            novalidate="novalidate">
+    <?php else: ?>
+        <form class="form rma form-rma"
+            action="<?= /* @noEscape */ $block->getUrl('rma/index/save') ?>"
+            method="post"
+            id="form-rma-validate"
+            enctype="multipart/form-data"
+            autocomplete="off"
+            novalidate="novalidate">
+    <?php endif; ?>
+        <input type="hidden"
+            name="customer_email"
+            id="customer_email" 
+            value="<?= /* @noEscape */ $block->getCustomerEmail(); ?>">
+        <input type="hidden"
+            name="customer_id"
+            id="customer_id"
+            value="<?= /* @noEscape */ $block->getCustomerId(); ?>">
+        <input type="hidden"
+            name="rmaid"
+            id="rmaid"
+            value="<?= /* @noEscape */ $rmaId ?>">
+        <?php if (!$rmaId): ?>
+            <input type="hidden" name="rmaid" id="rmaid" value="">
+            <div class="left-content">
+                <fieldset class="fieldset create info">
+                    <legend class="legend">
+                        <span><?= /* @noEscape */ __("General Information") ?></span>
+                    </legend>
+                    <input type="hidden" name="success_url" value="">
+                    <input type="hidden" name="error_url" value="">
+                    <div class="field field-name-firstname required">
+                        <label class="label" for="firstname">
+                            <span><?= /* @noEscape */ __("Order Id") ?></span>
+                        </label>
+                        <div class="control">
+                            <select name="order_id" id="order_id" title="<?= /* @noEscape */ __('Order Id') ?>" 
+                                class="input-text required-entry" data-validate="{required:true}">
+                                <option value=""><?= /* @noEscape */ __("--- Please Select ---") ?></option>
+                                <?= /* @noEscape */ $block->getOrderIds(); ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field field-name-resolution required">
+                        <label class="label" for="resolution">
+                            <span><?= /* @noEscape */ __("Resolution") ?></span>
+                        </label>
+                        <div class="control">
+                            <select name="resolution" title="<?= /* @noEscape */ __('Resolution') ?>"
+                                class="input-text required-entry" data-validate="{required:true}">
+                                <option value=""><?= /* @noEscape */ __("--- Please Select ---") ?></option>
+                                <option value="1"><?= /* @noEscape */ __("Refund") ?></option>
+                                <option value="2"><?= /* @noEscape */ __("Replacement") ?></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field field-name-package_condition required">
+                        <label class="label" for="package_condition">
+                            <span><?= /* @noEscape */ __("Package Condition") ?></span>
+                        </label>
+                        <div class="control">
+                            <select name="package_condition" title="<?= /* @noEscape */ __('Package Condition') ?>"
+                                class="input-text required-entry" data-validate="{required:true}">
+                                <option value=""><?= /* @noEscape */ __("--- Please Select ---") ?></option>
+                                <?= /* @noEscape */ $block->getPackageCondition(); ?>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset products" data-hasrequired="* Required Fields">
+                </fieldset>
+            </div>
+            <div class="right-content">
+                <?php if ($isBankDetailEnable): ?>
+                    <fieldset class="fieldset create account" data-hasrequired="* Required Fields">
+                        <legend class="legend">
+                            <span><?= /* @noEscape */ __("Bank Details") ?></span>
+                        </legend>
+                        <div class="field field-name-bankname required">
+                            <label class="label" for="bankname">
+                                <span><?= /* @noEscape */ __("Bank Name") ?></span>
+                            </label>
+                            <div class="control">
+                                <input type="text"
+                                    id="bankname"
+                                    name="bankname"
+                                    value=""
+                                    title="<?= /* @noEscape */ __('Bank Name') ?>"
+                                    class="input-text required-entry"
+                                    data-validate="{required:true}"
+                                    autocomplete="off"
+                                    aria-required="true">
+                            </div>
+                        </div>
+                        <div class="field field-name-account_no required">
+                            <label class="label" for="account_no">
+                                <span><?= /* @noEscape */ __("Account No.") ?></span>
+                            </label>
+                            <div class="control">
+                                <input type="text"
+                                    id="account_no"
+                                    name="account_no"
+                                    value=""
+                                    title="<?= /* @noEscape */ __('Account No.') ?>"
+                                    class="input-text required-entry"
+                                    data-validate="{required:true}"
+                                    autocomplete="off"
+                                    aria-required="true">
+                            </div>
+                        </div>
+                        <div class="field field-name-account_name required">
+                            <label class="label" for="account_name">
+                                <span><?= /* @noEscape */ __("Account Name") ?></span>
+                            </label>
+                            <div class="control">
+                                <input type="text"
+                                    id="account_name"
+                                    name="account_name"
+                                    value=""
+                                    title="<?= /* @noEscape */ __('Account Name') ?>"
+                                    class="input-text required-entry"
+                                    data-validate="{required:true}"
+                                    autocomplete="off"
+                                    aria-required="true">
+                            </div>
+                        </div>
+                        <div class="field field-name-branch required">
+                            <label class="label" for="branch">
+                                <span><?= /* @noEscape */ __("Branch") ?></span>
+                            </label>
+                            <div class="control">
+                                <input type="text"
+                                    id="branch"
+                                    name="branch"
+                                    value=""
+                                    title="<?= /* @noEscape */ __('Branch') ?>"
+                                    class="input-text required-entry"
+                                    data-validate="{required:true}"
+                                    autocomplete="off"
+                                    aria-required="true">
+                            </div>
+                        </div>
+                        <div class="field field-name-account_type required">
+                            <label class="label" for="account_type">
+                                <span><?= /* @noEscape */ __("Account Type") ?></span>
+                            </label>
+                            <div class="control">
+                                <input type="text"
+                                    id="account_type"
+                                    name="account_type"
+                                    value=""
+                                    title="<?= /* @noEscape */ __('Account Type') ?>"
+                                    class="input-text required-entry"
+                                    data-validate="{required:true}"
+                                    autocomplete="off"
+                                    aria-required="true">
+                            </div>
+                        </div>
+                    </fieldset>
+                <?php endif; ?>
+                <fieldset class="fieldset create account" data-hasrequired="* Required Fields">
+                    <legend class="legend">
+                        <span><?= /* @noEscape */ __("Other Details") ?></span>
+                    </legend>
+                    <div class="field field-name-file_upload ">
+                        <label class="label" for="file_upload">
+                            <span><?= /* @noEscape */ __("File Upload") ?></span>
+                        </label>
+                        <div class="control">
+                            <input type="file"
+                                id="file_upload"
+                                name="file_upload"
+                                value=""
+                                title="<?= /* @noEscape */ __('File Upload') ?>"
+                                class="input-text"
+                                autocomplete="off"
+                                aria-required="true">
+                        </div>
+                    </div>
+                    <div class="field field-name-additional_info ">
+                        <label class="label" for="additional_info">
+                            <span><?= /* @noEscape */ __("Additional Information") ?></span>
+                        </label>
+                        <div class="control">
+                            <textarea type="text"
+                                id="additional_info"
+                                name="additional_info"
+                                value=""
+                                title="<?= /* @noEscape */ __('Additional Information') ?>"
+                                class="input-text"
+                                autocomplete="off"
+                                aria-required="true">
+                            </textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        <?php else: ?>
+            <?php $rma = $block->getCollection(); ?>
+            <div class="left-content">
+                <fieldset class="fieldset create account" data-hasrequired="* Required Fields">
+                    <input type="hidden" name="rmaid" id="rmaid" value="<?= /* @noEscape */ $rma->getId() ?>">
+                    <legend class="legend">
+                        <span><?= /* @noEscape */ __("Manage RMA Request #").$rmaId ?></span>
+                    </legend>
+                    <div class="field order_id">
+                        <label class="label">
+                            <span><?= /* @noEscape */ __("Order Id : ") ?></span>
+                        </label>
+                        <span class="label"><?= /* @noEscape */ "#".$rma->getOrderId(); ?></span>
+                    </div>
+                    <div class="field customer_email">
+                        <label class="label">
+                            <span><?= /* @noEscape */ __("Customer Email : ") ?></span>
+                        </label>
+                        <span class="label"><?= /* @noEscape */ $rma->getCustomerEmail(); ?></span>
+                    </div>
+                    <div class="field resolution">
+                        <label class="label">
+                            <span><?= /* @noEscape */ __("Resolution : ") ?></span>
+                        </label>
+                        <span class="label"><?= /* @noEscape */ $block->getResolution($rma->getResolution()); ?></span>
+                    </div>
+                    <div class="field package_condition">
+                        <label class="label">
+                            <span><?= /* @noEscape */ __("Package Condition : ") ?></span>
+                        </label>
+                        <span class="label">
+                            <?= /* @noEscape */ $block->getPackageConditions($rma->getPackageCondition()); ?>
+                        </span>
+                    </div>
+                    <div class="field status">
+                        <label class="label">
+                            <span><?= /* @noEscape */ __("Status : ") ?></span>
+                        </label>
+                        <span class="label"><?= /* @noEscape */ $block->getStatuses($rma->getStatus()); ?></span>
+                    </div>
+                    <?php if ($rma->getFileUploads() != 'null'): ?>
+                    <div class="field flie_uploads">
+                        <label class="label">
+                            <span><?= /* @noEscape */ __("Image : ") ?></span>
+                        </label>
+                            <span class="label">
+                                <img src="<?= /* @noEscape */ $block->getFileUploads($rma->getFileUploads()) ?>">
+                            </span>
+                    </div>
+                    <?php endif; ?>
+                    <div class="rma_product">
+                        <h3 class="pro-info"><?= /* @noEscape */ __("Products") ?></h3>
+                        <?= /* @noEscape */ $block->getproducts($rma->getProductId(), $rma->getReason()) ?>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="right-content">
+                <?php if ($isBankDetailEnable): ?>
+                <fieldset class="fieldset create account" data-hasrequired="* Required Fields">
+                    <legend class="legend">
+                        <span><?= /* @noEscape */ __("Bank Detail"); ?></span>
+                    </legend>
+                    <div class="field field-name-bankname">
+                        <label class="label">
+                            <span><?= /* @noEscape */ __("Bank Name : ") ?></span>
+                        </label>
+                        <span class="label"><?= /* @noEscape */ $rma->getBankName(); ?></span>
+                    </div>
+                    <div class="field account_no">
+                        <label class="label">
+                            <span><?= /* @noEscape */ __("Account No. : ") ?></span>
+                        </label>
+                        <span class="label"><?= /* @noEscape */ $rma->getAccountNo(); ?></span>
+                    </div>
+                    <div class="field branch">
+                        <label class="label">
+                            <span><?= /* @noEscape */ __("Branch Name : ") ?></span>
+                        </label>
+                        <span class="label"><?= /* @noEscape */ $rma->getBranch(); ?></span>
+                    </div>
+                    <div class="field account_name">
+                        <label class="label">
+                            <span><?= /* @noEscape */ __("Account Holder : ") ?></span>
+                        </label>
+                        <span class="label"><?= /* @noEscape */ $rma->getAccountName(); ?></span>
+                    </div>
+                    <div class="field account_type">
+                        <label class="label">
+                            <span><?= /* @noEscape */ __("Account Type : ") ?></span>
+                        </label>
+                        <span class="label"><?= /* @noEscape */ $rma->getAccountType(); ?></span>
+                    </div>
+                </fieldset>
+                <?php endif; ?>
+                <fieldset class="fieldset create account" data-hasrequired="* Required Fields">
+                <legend class="legend">
+                    <span><?= /* @noEscape */ __("Other Details") ?></span>
+                </legend>
+                    <div class="field field-name-additional_info ">
+                        <label class="label" for="additional_info">
+                            <span><?= /* @noEscape */ __("Additional Information") ?></span>
+                        </label>
+                        <div class="control">
+                            <textarea type="text"
+                                id="additional_info"
+                                name="additional_info"
+                                value=""
+                                title="<?= /* @noEscape */ __('Additional Information') ?>"
+                                class="input-text"
+                                autocomplete="off"
+                                aria-required="true">
+                            </textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        <?php endif; ?>
+        <div class="actions-toolbar">
+            <div class="primary">
+                <button type="submit"
+                    class="action submit primary"
+                    title="<?= /* @noEscape */ __('Create an Account') ?>">
+                    <span><?= /* @noEscape */ __("Submit") ?></span>
+                </button>
+            </div>
+        </div>
+    </form>
+    <?php if ($rmaId): ?>
+        <div class="message-container">
+            <fieldset class="fieldset create account" data-hasrequired="* Required Fields">
+            <legend class="legend">
+                <span><?= /* @noEscape */ __("Additional Info"); ?></span>
+            </legend>
+            <?php $messageCollection = $block->getMessageCollection($rmaId); ?>
+                <?php if (count($messageCollection)): ?>
+                    <?php foreach ($messageCollection as $_message): ?>
+                        <?php if ($_message->getType() == 'customer'): ?>
+                            <div class="message-left">
+                                <div class="customer_names">
+                                    <span class="customer_name">
+                                        <?= /* @noEscape */ $block->getCustomerName(); ?>
+                                    </span>
+                                </div>
+                                <div class="messages">
+                                    <span class="message"><?= /* @noEscape */ $_message->getMessage(); ?></span>
+                                    <span class="created_at"><?= /* @noEscape */ $_message->getCreatedAt(); ?></span>
+                                </div>
+                            </div>
+                        <?php elseif ($_message->getType() == 'admin'): ?>
+                            <div class="message-right">
+                                <div class="customer_names">
+                                    <span class="customer_name"><?= /* @noEscape */ __("ADMIN"); ?></span>
+                                </div>
+                                <div class="messages">
+                                    <span class="message"><?= /* @noEscape */ $_message->getMessage(); ?></span>
+                                    <span class="created_at"><?= /* @noEscape */ $_message->getCreatedAt(); ?></span>
+                                </div>
+                            </div>
+                        <?php endif; ?>    
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <span><?= /* @noEscape */ __('No Records') ?></span>
+                <?php endif; ?>
+            </fieldset>
+        </div>
+    <?php endif; ?>
+<script>
+require([
+    'jquery',
+    'mage/mage'
+], function($){
+
+    var dataForm = $('#form-rma-validate');
+    var ignore = null;
+    
+    dataForm.mage('validation', {
+            ignore: ignore ? ':hidden:not(' + ignore + ')' : ':hidden'
+        }).find('input:text').attr('autocomplete', 'off');
+
+    jQuery("#order_id").change(function(){
+        jQuery("#loading-mask").show();
+        var sendInfos = {
+           orderids: jQuery(this).val()
+        };
+        jQuery.ajax({
+            type: "POST",
+            url: "<?= /* @noEscape */ $block->getUrl('rma/index/productload') ?>",
+            data: sendInfos,
+            dataType: "json",
+            success: function (response) {
+                if (response.status == false) {
+                    jQuery("#order_id").val('');
+                    jQuery(".fieldset.products").html('');
+                    jQuery("#loading-mask").hide();
+                } else {
+                    jQuery(".fieldset.products").html(response.html);
+                    jQuery("#loading-mask").hide();
+                    if(jQuery(".all_products").is(":visible")){
+                        jQuery("input[type='checkbox']").change(function(){
+                            var t = jQuery(this).val();
+                            var parentclass = jQuery(this).parent().parent().parent().attr("class");
+                            if(jQuery(this).is(":checked")){
+                            jQuery("."+parentclass+" select").show();
+                            } else {
+                            jQuery("."+parentclass+" select").hide();
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    });
+
+
+});
+</script>
+
+</div>
+<div id="loading-mask" style="display:none">
+    <p class="loader" id="loading_mask_loader">
+        <img src="<?= /* @noEscape */ $block->getViewFileUrl('Ict_RMA::images/ajax-loader.gif'); ?>" />
+    </p>
+</div>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add 
+        id="Forever_Brand::elements" 
+        title="Brand" 
+        module="Forever_Brand" 
+        sortOrder="10" 
+        resource="Forever_Brand::elements" />
+        
+        <add 
+        id="Forever_Brand::index" 
+        title="Brand" 
+        module="Forever_Brand" 
+        sortOrder="20" 
+        parent="Forever_Brand::elements" 
+        action="brand/index" 
+        resource="Forever_Brand::index"/>
+    </menu>
+</config>

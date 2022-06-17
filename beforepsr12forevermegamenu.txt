@@ -1,0 +1,716 @@
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Controller/Adminhtml/Action.php
+---------------------------------------------------------------------------------------------------------------------------------
+FOUND 2 ERRORS AND 9 WARNINGS AFFECTING 11 LINES
+---------------------------------------------------------------------------------------------------------------------------------
+  1 | ERROR   | [x] Header blocks must be separated by a single blank line
+  9 | WARNING | [ ] Property name "$_jsHelper" should not be prefixed with an underscore to indicate visibility
+ 14 | WARNING | [ ] Property name "$_resultForwardFactory" should not be prefixed with an underscore to indicate visibility
+ 19 | WARNING | [ ] Property name "$_resultLayoutFactory" should not be prefixed with an underscore to indicate visibility
+ 28 | WARNING | [ ] Property name "$_resultPageFactory" should not be prefixed with an underscore to indicate visibility
+ 33 | WARNING | [ ] Property name "$_resultRedirectFactory" should not be prefixed with an underscore to indicate visibility
+ 35 | WARNING | [ ] Property name "$_megamenuFactory" should not be prefixed with an underscore to indicate visibility
+ 37 | WARNING | [ ] Property name "$_megamenuCollectionFactory" should not be prefixed with an underscore to indicate visibility
+ 43 | WARNING | [ ] Property name "$_coreRegistry" should not be prefixed with an underscore to indicate visibility
+ 50 | WARNING | [ ] Property name "$_fileFactory" should not be prefixed with an underscore to indicate visibility
+ 76 | ERROR   | [ ] Method name "_isAllowed" must not be prefixed with an underscore to indicate visibility
+---------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Controller/Adminhtml/Menu/Save.php
+--------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------------
+  1 | ERROR | [x] Header blocks must be separated by a single blank line
+ 25 | ERROR | [x] Blank line found at start of control structure
+--------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Controller/Adminhtml/Menu/Addrow.php
+----------------------------------------------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------------------------------------------
+  1 | ERROR | [x] Header blocks must be separated by a single blank line
+ 34 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 34 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 39 | ERROR | [ ] Method name "_isAllowed" must not be prefixed with an underscore to indicate visibility
+----------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Controller/Adminhtml/Menu/Edit.php
+--------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+--------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Controller/Adminhtml/Menu/Index.php
+---------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+---------------------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+---------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Controller/Adminhtml/Menu/Delete.php
+----------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+----------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Controller/Adminhtml/Menu/MassDelete.php
+-------------------------------------------------------------------------------------------------------------------------
+FOUND 2 ERRORS AND 2 WARNINGS AFFECTING 4 LINES
+-------------------------------------------------------------------------------------------------------------------------
+  1 | ERROR   | [x] Header blocks must be separated by a single blank line
+ 15 | WARNING | [ ] Property name "$_filter" should not be prefixed with an underscore to indicate visibility
+ 17 | WARNING | [ ] Property name "$_collectionFactory" should not be prefixed with an underscore to indicate visibility
+ 44 | ERROR   | [ ] Method name "_isAllowed" must not be prefixed with an underscore to indicate visibility
+-------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Model/Statuses.php
+------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Model/DataProvider.php
+--------------------------------------------------------------------------
+FOUND 9 ERRORS AFFECTING 5 LINES
+--------------------------------------------------------------------------
+  1 | ERROR | [x] Header blocks must be separated by a single blank line
+ 31 | ERROR | [x] Expected at least 1 space before "="; 0 found
+ 31 | ERROR | [x] Expected at least 1 space after "="; 0 found
+ 39 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 39 | ERROR | [x] Expected at least 1 space after "."; 0 found
+ 47 | ERROR | [x] Expected at least 1 space before "="; 0 found
+ 47 | ERROR | [x] Expected at least 1 space after "="; 0 found
+ 58 | ERROR | [x] Expected at least 1 space before "."; 0 found
+ 58 | ERROR | [x] Expected at least 1 space after "."; 0 found
+--------------------------------------------------------------------------
+PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Model/System/Config/Mobilepos.php
+-------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+-------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Model/System/Config/Category.php
+-----------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AND 5 WARNINGS AFFECTING 6 LINES
+-----------------------------------------------------------------------------------------------------------------------
+  1 | ERROR   | [x] Header blocks must be separated by a single blank line
+ 10 | WARNING | [ ] Property name "$_categoryFactory" should not be prefixed with an underscore to indicate visibility
+ 15 | WARNING | [ ] Property name "$_category" should not be prefixed with an underscore to indicate visibility
+ 17 | WARNING | [ ] Property name "$_request" should not be prefixed with an underscore to indicate visibility
+ 19 | WARNING | [ ] Property name "$_storeManager" should not be prefixed with an underscore to indicate visibility
+ 21 | WARNING | [ ] Property name "$_options" should not be prefixed with an underscore to indicate visibility
+-----------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-----------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Model/System/Config/Desktoppos.php
+--------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+--------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Model/Linktype.php
+------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Model/Megamenu.php
+--------------------------------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AND 1 WARNING AFFECTING 2 LINES
+--------------------------------------------------------------------------------------------------------------------------------
+ 1 | ERROR   | [x] Header blocks must be separated by a single blank line
+ 6 | WARNING | [ ] Property name "$_megamenuCollectionFactory" should not be prefixed with an underscore to indicate visibility
+--------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Model/ResourceModel/Megamenu/Collection.php
+---------------------------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+---------------------------------------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+ 7 | ERROR | [ ] Method name "_construct" must not be prefixed with an underscore to indicate visibility
+---------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Model/ResourceModel/Megamenu.php
+---------------------------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+---------------------------------------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+ 7 | ERROR | [ ] Method name "_construct" must not be prefixed with an underscore to indicate visibility
+---------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Model/ImageUploader.php
+-------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 2 LINES
+-------------------------------------------------------------------------------------------------------
+ 23 | WARNING | Visibility must be declared on all constants if your project supports PHP 7.1 or later
+ 26 | WARNING | Visibility must be declared on all constants if your project supports PHP 7.1 or later
+-------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Block/Menu.php
+-----------------------------------------------------------------------------------------------------------------------------------
+FOUND 91 ERRORS AND 7 WARNINGS AFFECTING 56 LINES
+-----------------------------------------------------------------------------------------------------------------------------------
+   1 | ERROR   | [x] Header blocks must be separated by a single blank line
+  12 | WARNING | [ ] Visibility must be declared on all constants if your project supports PHP 7.1 or later
+  24 | WARNING | [ ] Property name "$_menu" should not be prefixed with an underscore to indicate visibility
+  41 | WARNING | [ ] Property name "$_magicmenuCollectionFactory" should not be prefixed with an underscore to indicate visibility
+  43 | WARNING | [ ] Property name "$_urlMedia" should not be prefixed with an underscore to indicate visibility
+  45 | WARNING | [ ] Property name "$_dirMedia" should not be prefixed with an underscore to indicate visibility
+  49 | WARNING | [ ] Property name "$_sysCfg" should not be prefixed with an underscore to indicate visibility
+  54 | WARNING | [ ] Property name "$_helper" should not be prefixed with an underscore to indicate visibility
+  80 | ERROR   | [x] Expected at least 1 space before "="; 0 found
+ 129 | ERROR   | [x] Expected at least 1 space before "=>"; 0 found
+ 129 | ERROR   | [x] Expected at least 1 space after "=>"; 0 found
+ 129 | ERROR   | [x] Expected at least 1 space before "=>"; 0 found
+ 129 | ERROR   | [x] Expected at least 1 space after "=>"; 0 found
+ 142 | ERROR   | [ ] Method name "_getActiveClasses" must not be prefixed with an underscore to indicate visibility
+ 151 | ERROR   | [x] Blank line found at end of control structure
+ 183 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 183 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 183 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 183 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 184 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 184 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 209 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 209 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 210 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 210 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 218 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 218 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 226 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 226 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 267 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 267 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 273 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 273 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 273 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 274 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 281 | ERROR   | [x] Expected at least 1 space before "=>"; 0 found
+ 281 | ERROR   | [x] Expected at least 1 space after "=>"; 0 found
+ 281 | ERROR   | [x] Expected at least 1 space before "=>"; 0 found
+ 281 | ERROR   | [x] Expected at least 1 space after "=>"; 0 found
+ 284 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 285 | ERROR   | [x] Expected at least 1 space after "="; 0 found
+ 287 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 287 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 287 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 287 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 291 | ERROR   | [x] Expected at least 1 space before "=>"; 0 found
+ 291 | ERROR   | [x] Expected at least 1 space after "=>"; 0 found
+ 291 | ERROR   | [x] Expected at least 1 space before "=>"; 0 found
+ 291 | ERROR   | [x] Expected at least 1 space after "=>"; 0 found
+ 291 | ERROR   | [x] Expected at least 1 space before "=>"; 0 found
+ 291 | ERROR   | [x] Expected at least 1 space after "=>"; 0 found
+ 300 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 304 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 322 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 324 | ERROR   | [x] Expected at least 1 space after ".="; 0 found
+ 327 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 335 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 341 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 342 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 379 | ERROR   | [x] Expected at least 1 space before "=>"; 0 found
+ 379 | ERROR   | [x] Expected at least 1 space after "=>"; 0 found
+ 384 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 384 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 384 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 384 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 384 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 388 | ERROR   | [x] Expected at least 1 space after ".="; 0 found
+ 390 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 391 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 391 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 392 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 392 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 393 | ERROR   | [x] Expected 1 space(s) after ELSE keyword; 0 found
+ 395 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 395 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 579 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 582 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 592 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 594 | ERROR   | [x] Expected at least 1 space after "-"; 0 found
+ 601 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 602 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 602 | ERROR   | [x] Expected at least 1 space after "-"; 0 found
+ 602 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 612 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 613 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 613 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 613 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 613 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 613 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 613 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 613 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 613 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 622 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 623 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 626 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 635 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 636 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 639 | ERROR   | [x] Expected 1 space(s) after closing parenthesis; found 0
+-----------------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 90 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Block/Adminhtml/Helper/Renderer/Grid/Categorys.php
+--------------------------------------------------------------------------------------------------------------------
+FOUND 4 ERRORS AND 2 WARNINGS AFFECTING 5 LINES
+--------------------------------------------------------------------------------------------------------------------
+  1 | ERROR   | [x] Header blocks must be separated by a single blank line
+  7 | WARNING | [ ] Property name "$_categories" should not be prefixed with an underscore to indicate visibility
+  8 | WARNING | [ ] Property name "$_storeManager" should not be prefixed with an underscore to indicate visibility
+ 27 | ERROR   | [x] Expected at least 1 space before "=="; 0 found
+ 27 | ERROR   | [x] Expected at least 1 space after "=="; 0 found
+ 30 | ERROR   | [x] Blank line found at end of control structure
+--------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Block/Adminhtml/Menu/Edit/Save.php
+--------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+--------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Block/Adminhtml/Menu/Edit/Generic.php
+-----------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-----------------------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+-----------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-----------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Setup/Patch/Data/CreateCategoryAttr.php
+-------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+-------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Ui/Component/Listing/Megamenu/Column/Block.php
+-----------------------------------------------------------------------------------------------------------------------
+FOUND 9 ERRORS AND 3 WARNINGS AFFECTING 8 LINES
+-----------------------------------------------------------------------------------------------------------------------
+  1 | ERROR   | [x] Header blocks must be separated by a single blank line
+ 12 | WARNING | [ ] Property name "$_storeManager" should not be prefixed with an underscore to indicate visibility
+ 14 | WARNING | [ ] Property name "$_blockFactory" should not be prefixed with an underscore to indicate visibility
+ 16 | WARNING | [ ] Property name "$_categoryFactory" should not be prefixed with an underscore to indicate visibility
+ 39 | ERROR   | [x] Expected at least 1 space before "="; 0 found
+ 39 | ERROR   | [x] Expected at least 1 space after "="; 0 found
+ 48 | ERROR   | [x] Expected at least 1 space before "="; 0 found
+ 48 | ERROR   | [x] Expected at least 1 space after "="; 0 found
+ 50 | ERROR   | [x] Expected at least 1 space before "="; 0 found
+ 50 | ERROR   | [x] Expected at least 1 space after "="; 0 found
+ 64 | ERROR   | [x] Expected at least 1 space before "="; 0 found
+ 64 | ERROR   | [x] Expected at least 1 space after "="; 0 found
+-----------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-----------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Ui/Component/Listing/Megamenu/Column/Thumbnail.php
+-----------------------------------------------------------------------------------------------------------
+FOUND 16 ERRORS AND 2 WARNINGS AFFECTING 7 LINES
+-----------------------------------------------------------------------------------------------------------
+  1 | ERROR   | [x] Header blocks must be separated by a single blank line
+  9 | WARNING | [ ] Visibility must be declared on all constants if your project supports PHP 7.1 or later
+ 11 | WARNING | [ ] Visibility must be declared on all constants if your project supports PHP 7.1 or later
+ 57 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 57 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 57 | ERROR   | [x] Expected at least 1 space before "."; 0 found
+ 57 | ERROR   | [x] Expected at least 1 space after "."; 0 found
+ 58 | ERROR   | [x] Expected at least 1 space before "?"; 0 found
+ 58 | ERROR   | [x] Expected at least 1 space after "?"; 0 found
+ 58 | ERROR   | [x] Expected at least 1 space before ":"; 0 found
+ 58 | ERROR   | [x] Expected at least 1 space after ":"; 0 found
+ 59 | ERROR   | [x] Expected at least 1 space before "?"; 0 found
+ 59 | ERROR   | [x] Expected at least 1 space after "?"; 0 found
+ 59 | ERROR   | [x] Expected at least 1 space after ":"; 0 found
+ 66 | ERROR   | [x] Expected at least 1 space before "?"; 0 found
+ 66 | ERROR   | [x] Expected at least 1 space after "?"; 0 found
+ 66 | ERROR   | [x] Expected at least 1 space before ":"; 0 found
+ 66 | ERROR   | [x] Expected at least 1 space after ":"; 0 found
+-----------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 16 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-----------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Ui/Component/Listing/Megamenu/Column/Action.php
+--------------------------------------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 3 WARNINGS AFFECTING 3 LINES
+--------------------------------------------------------------------------------------------------------------
+ 12 | WARNING | Visibility must be declared on all constants if your project supports PHP 7.1 or later
+ 14 | WARNING | Property name "$_urlBuilder" should not be prefixed with an underscore to indicate visibility
+ 16 | WARNING | Property name "$_editUrl" should not be prefixed with an underscore to indicate visibility
+--------------------------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/view/adminhtml/web/js/form/element/type.js
+----------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------------------------------
+ 10 | ERROR | [x] Expected 1 space before opening brace; found 0
+----------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/view/frontend/requirejs-config.js
+-------------------------------------------------------------------------------------
+FOUND 10 ERRORS AFFECTING 10 LINES
+-------------------------------------------------------------------------------------
+  2 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+  3 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+  4 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+  5 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+  6 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+  7 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+  8 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+  9 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+ 10 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+ 12 | ERROR | [x] Spaces must be used to indent lines; tabs are not allowed
+-------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 10 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/view/frontend/web/js/megamenu.js
+------------------------------------------------------------------------------------
+FOUND 254 ERRORS AFFECTING 144 LINES
+------------------------------------------------------------------------------------
+   1 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+   1 | ERROR | [x] Expected 1 space before opening brace; found 0
+   3 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+   4 | ERROR | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+   5 | ERROR | [x] Line indented incorrectly; expected at least 8 spaces, found 4
+   5 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+   6 | ERROR | [x] Line indented incorrectly; expected at least 12 spaces, found 8
+   7 | ERROR | [x] Line indented incorrectly; expected 16 spaces, found 12
+   8 | ERROR | [x] Line indented incorrectly; expected 16 spaces, found 12
+   9 | ERROR | [x] Line indented incorrectly; expected 16 spaces, found 12
+  10 | ERROR | [x] Line indented incorrectly; expected 16 spaces, found 12
+  11 | ERROR | [x] Line indented incorrectly; expected 16 spaces, found 12
+  12 | ERROR | [x] Line indented incorrectly; expected 16 spaces, found 12
+  13 | ERROR | [x] Line indented incorrectly; expected 12 spaces, found 8
+  14 | ERROR | [x] Line indented incorrectly; expected at least 12 spaces, found 8
+  15 | ERROR | [x] Line indented incorrectly; expected 16 spaces, found 12
+  15 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+  16 | ERROR | [x] Line indented incorrectly; expected at least 20 spaces, found 16
+  16 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+  17 | ERROR | [x] Line indented incorrectly; expected at least 24 spaces, found 20
+  18 | ERROR | [x] Line indented incorrectly; expected at least 24 spaces, found 20
+  19 | ERROR | [x] Line indented incorrectly; expected 20 spaces, found 16
+  20 | ERROR | [x] Line indented incorrectly; expected 16 spaces, found 12
+  21 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+  23 | ERROR | [x] Inline control structures are not allowed
+  25 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+  30 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+  40 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+  44 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+  50 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+  58 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+  66 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+  68 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+  76 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+  86 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+  94 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+  96 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 103 | ERROR | [x] Line indented incorrectly; expected 12 spaces, found 8
+ 104 | ERROR | [x] Line indented incorrectly; expected 12 spaces, found 8
+ 105 | ERROR | [x] Line indented incorrectly; expected at least 16 spaces, found 12
+ 106 | ERROR | [x] Line indented incorrectly; expected 12 spaces, found 8
+ 107 | ERROR | [x] Line indented incorrectly; expected at least 16 spaces, found 12
+ 108 | ERROR | [x] Line indented incorrectly; expected 12 spaces, found 8
+ 109 | ERROR | [x] Line indented incorrectly; expected at least 16 spaces, found 12
+ 110 | ERROR | [x] Line indented incorrectly; expected 12 spaces, found 8
+ 111 | ERROR | [x] Line indented incorrectly; expected 8 spaces, found 4
+ 112 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found 0
+ 138 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 144 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 147 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 148 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 158 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 158 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 158 | ERROR | [x] Opening brace must be the last content on the line
+ 160 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 161 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 168 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 168 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 168 | ERROR | [x] Opening brace must be the last content on the line
+ 169 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 169 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 169 | ERROR | [x] Opening brace must be the last content on the line
+ 171 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 171 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 171 | ERROR | [x] Opening brace must be the last content on the line
+ 172 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 172 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 172 | ERROR | [x] Opening brace must be the last content on the line
+ 173 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 173 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 173 | ERROR | [x] Opening brace must be the last content on the line
+ 178 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 178 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 180 | ERROR | [x] Opening brace must be the last content on the line
+ 196 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 196 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 197 | ERROR | [x] Inline control structures are not allowed
+ 205 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 205 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 208 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 208 | ERROR | [x] Opening brace must be the last content on the line
+ 208 | ERROR | [x] Whitespace found at end of line
+ 209 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 209 | ERROR | [x] Opening brace must be the last content on the line
+ 214 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 214 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 214 | ERROR | [x] Whitespace found at end of line
+ 215 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 215 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 216 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 216 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 224 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 226 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 226 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 228 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 228 | ERROR | [x] Inline control structures are not allowed
+ 229 | ERROR | [x] Inline control structures are not allowed
+ 240 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 240 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 241 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 243 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 243 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 244 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 244 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 245 | ERROR | [x] Whitespace found at end of line
+ 246 | ERROR | [x] Expected 1 space after closing brace; 0 found
+ 255 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 255 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 257 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 257 | ERROR | [x] Inline control structures are not allowed
+ 264 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 264 | ERROR | [x] Inline control structures are not allowed
+ 264 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 264 | ERROR | [x] Inline control structures are not allowed
+ 266 | ERROR | [x] Expected at least 1 space before "*"; 0 found
+ 266 | ERROR | [x] Expected at least 1 space after "*"; 0 found
+ 266 | ERROR | [x] Expected at least 1 space before "/"; 0 found
+ 266 | ERROR | [x] Expected at least 1 space after "/"; 0 found
+ 267 | ERROR | [x] Expected at least 1 space before "*"; 0 found
+ 267 | ERROR | [x] Expected at least 1 space after "*"; 0 found
+ 267 | ERROR | [x] Expected at least 1 space before "/"; 0 found
+ 267 | ERROR | [x] Expected at least 1 space after "/"; 0 found
+ 268 | ERROR | [x] Expected at least 1 space before "*"; 0 found
+ 268 | ERROR | [x] Expected at least 1 space after "*"; 0 found
+ 268 | ERROR | [x] Expected at least 1 space before "/"; 0 found
+ 268 | ERROR | [x] Expected at least 1 space after "/"; 0 found
+ 273 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 273 | ERROR | [x] Opening brace must be the last content on the line
+ 273 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 273 | ERROR | [x] Inline control structures are not allowed
+ 273 | ERROR | [x] Expected at least 1 space after "=="; 0 found
+ 275 | ERROR | [x] Whitespace found at end of line
+ 281 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 281 | ERROR | [x] Inline control structures are not allowed
+ 284 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 284 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 288 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 288 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 289 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 289 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 291 | ERROR | [x] Line indented incorrectly; expected 32 spaces, found 36
+ 294 | ERROR | [x] Line indented incorrectly; expected 32 spaces, found 36
+ 301 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 301 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 307 | ERROR | [x] Expected at least 1 space before "*"; 0 found
+ 307 | ERROR | [x] Expected at least 1 space after "*"; 0 found
+ 308 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 308 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 310 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 310 | ERROR | [x] Inline control structures are not allowed
+ 310 | ERROR | [x] Expected at least 1 space before "*"; 0 found
+ 310 | ERROR | [x] Expected at least 1 space after "*"; 0 found
+ 312 | ERROR | [x] Expected at least 1 space before "*"; 0 found
+ 312 | ERROR | [x] Expected at least 1 space after "*"; 0 found
+ 312 | ERROR | [x] Expected at least 1 space before "/"; 0 found
+ 312 | ERROR | [x] Expected at least 1 space after "/"; 0 found
+ 313 | ERROR | [x] Expected at least 1 space before "*"; 0 found
+ 313 | ERROR | [x] Expected at least 1 space after "*"; 0 found
+ 313 | ERROR | [x] Expected at least 1 space before "/"; 0 found
+ 313 | ERROR | [x] Expected at least 1 space after "/"; 0 found
+ 314 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 314 | ERROR | [x] Inline control structures are not allowed
+ 316 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 316 | ERROR | [x] Inline control structures are not allowed
+ 316 | ERROR | [x] Expected at least 1 space before "*"; 0 found
+ 316 | ERROR | [x] Expected at least 1 space after "*"; 0 found
+ 319 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 319 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 323 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 323 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 330 | ERROR | [x] Whitespace found at end of line
+ 334 | ERROR | [x] Whitespace found at end of line
+ 338 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 338 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 340 | ERROR | [x] Expected 1 space after closing brace; 0 found
+ 348 | ERROR | [x] Expected 1 space before opening brace; found 2
+ 349 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 349 | ERROR | [x] Inline control structures are not allowed
+ 351 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 351 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 355 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 355 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 356 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 356 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 358 | ERROR | [x] Line indented incorrectly; expected 32 spaces, found 36
+ 361 | ERROR | [x] Line indented incorrectly; expected 32 spaces, found 36
+ 366 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 366 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 373 | ERROR | [x] Expected at least 1 space before "*"; 0 found
+ 373 | ERROR | [x] Expected at least 1 space after "*"; 0 found
+ 374 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 374 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 376 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 376 | ERROR | [x] Inline control structures are not allowed
+ 376 | ERROR | [x] Expected at least 1 space before "*"; 0 found
+ 376 | ERROR | [x] Expected at least 1 space after "*"; 0 found
+ 378 | ERROR | [x] Expected at least 1 space before "*"; 0 found
+ 378 | ERROR | [x] Expected at least 1 space after "*"; 0 found
+ 378 | ERROR | [x] Expected at least 1 space before "/"; 0 found
+ 378 | ERROR | [x] Expected at least 1 space after "/"; 0 found
+ 379 | ERROR | [x] Expected at least 1 space before "*"; 0 found
+ 379 | ERROR | [x] Expected at least 1 space after "*"; 0 found
+ 379 | ERROR | [x] Expected at least 1 space before "/"; 0 found
+ 379 | ERROR | [x] Expected at least 1 space after "/"; 0 found
+ 380 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 380 | ERROR | [x] Inline control structures are not allowed
+ 383 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 383 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 388 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 388 | ERROR | [x] Inline control structures are not allowed
+ 388 | ERROR | [x] Expected at least 1 space before "*"; 0 found
+ 388 | ERROR | [x] Expected at least 1 space after "*"; 0 found
+ 394 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 400 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 400 | ERROR | [x] Inline control structures are not allowed
+ 400 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 400 | ERROR | [x] Opening brace must be the last content on the line
+ 402 | ERROR | [x] Inline control structures are not allowed
+ 432 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 432 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 437 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 437 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 439 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 443 | ERROR | [x] Line indented incorrectly; expected 24 spaces, found 23
+ 443 | ERROR | [x] Whitespace found at end of line
+ 451 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 451 | ERROR | [x] Inline control structures are not allowed
+ 453 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 458 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 458 | ERROR | [x] Inline control structures are not allowed
+ 461 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 461 | ERROR | [x] Inline control structures are not allowed
+ 461 | ERROR | [x] Whitespace found at end of line
+ 462 | ERROR | [x] Inline control structures are not allowed
+ 464 | ERROR | [x] Inline control structures are not allowed
+ 465 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 466 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 466 | ERROR | [x] Blank line found at start of control structure
+ 470 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 470 | ERROR | [x] Inline control structures are not allowed
+ 471 | ERROR | [x] Blank line found at start of control structure
+ 475 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 475 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
+ 477 | ERROR | [x] Whitespace found at end of line
+ 478 | ERROR | [x] Expected 1 space after closing brace; 0 found
+ 478 | ERROR | [x] Inline control structures are not allowed
+ 482 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 482 | ERROR | [x] Expected 1 space before opening brace; found 0
+ 482 | ERROR | [x] Opening brace must be the last content on the line
+ 484 | ERROR | [x] Whitespace found at end of line
+ 485 | ERROR | [x] Whitespace found at end of line
+ 490 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
+ 501 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
+ 501 | ERROR | [x] Opening brace must be the last content on the line
+------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 254 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/m243p/app/code/Forever/Megamenu/Helper/Data.php
+------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------
+ 1 | ERROR | [x] Header blocks must be separated by a single blank line
+------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------
+
+Time: 230ms; Memory: 18MB
+

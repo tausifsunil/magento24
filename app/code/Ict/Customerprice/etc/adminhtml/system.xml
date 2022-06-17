@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Customerprice
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <tab id="ict" sortOrder="1">
+            <label>Ict Extension</label>
+        </tab>
+        <section id="ict_customerprice" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Customer Price</label>
+            <tab>ict</tab>
+            <resource>Ict_Customerprice::config_customerprice</resource>
+
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1"
+                   showInWebsite="1" showInStore="1">
+                <label>Customer Price Configuration</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Customer Price</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="buttontext" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Price Button Text</label>
+                    <validate>required-entry</validate> 
+                    <comment>This text will be appeared in place of price.</comment>
+                    <depends>
+                        <field id="ict_customerprice/general/enable">1</field>
+                    </depends>
+                </field>
+                <field id="enablecontactquote" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Contact Quote Button</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>It will add a Contact Quote button in product detail page if you enable it.</comment>
+                    <depends>
+                        <field id="ict_customerprice/general/enable">1</field>
+                    </depends>
+                </field>
+                <field id="contactquote" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Contact Quote Button Text</label>
+                    <validate>required-entry</validate> 
+                    <comment>This text will be appeared on product page in place of price.</comment>
+                    <depends>
+                        <field id="ict_customerprice/general/enable">1</field>
+                        <field id="ict_customerprice/general/enablecontactquote">1</field>
+                    </depends>
+                </field>
+                <field id="successmsg" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Contact Quote Success Message</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="ict_customerprice/general/enable">1</field>
+                        <field id="ict_customerprice/general/enablecontactquote">1</field>
+                    </depends> 
+                </field>
+                <field id="errormsg" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Contact Quote Error Message</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="ict_customerprice/general/enable">1</field>
+                        <field id="ict_customerprice/general/enablecontactquote">1</field>
+                    </depends>
+                </field>
+                <field id="recipientemail" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Recipient's Email</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="ict_customerprice/general/enable">1</field>
+                    </depends>
+                </field>
+                <field id="quotetemplate" translate="label" type="select" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Contact Quote Template</label>
+                    <source_model>Ict\Customerprice\Model\Config\Source\Email\CustomTemplate</source_model>
+                    <depends>
+                        <field id="ict_customerprice/general/enable">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ *
+ * Created By: MageDelight Pvt. Ltd.
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+   <argument name="data" xsi:type="array">
+      <item name="js_config" xsi:type="array">
+         <item name="provider" xsi:type="string">slider_form.slider_form_data_source</item>
+         <item name="deps" xsi:type="string">slider_form.slider_form_data_source</item>
+      </item>
+      <item name="label" xsi:type="string" translate="true">General Information</item>
+      <item name="config" xsi:type="array">
+         <item name="dataScope" xsi:type="string">data</item>
+         <item name="namespace" xsi:type="string">slider_form</item>
+      </item>
+      <item name="spinner" xsi:type="string">general_information</item>
+      <item name="buttons" xsi:type="array">
+         <item name="back" xsi:type="string">Grid\Slider\Block\Adminhtml\Index\Edit\Button\Back</item>
+         <item name="delete" xsi:type="string">Grid\Slider\Block\Adminhtml\Index\Edit\Button\Delete</item>
+         <item name="reset" xsi:type="string">Grid\Slider\Block\Adminhtml\Index\Edit\Button\Reset</item>
+         <item name="save" xsi:type="string">Grid\Slider\Block\Adminhtml\Index\Edit\Button\Save</item>
+      </item>
+      <item name="template" xsi:type="string">templates/form/collapsible</item>
+   </argument>
+   <dataSource name="slider_form_data_source">
+      <argument name="dataProvider" xsi:type="configurableObject">
+         <argument name="class" xsi:type="string">Grid\Slider\Model\DataProvider</argument>
+         <argument name="name" xsi:type="string">slider_form_data_source</argument>
+         <argument name="primaryFieldName" xsi:type="string">id</argument>
+         <argument name="requestFieldName" xsi:type="string">id</argument>
+         <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+               <item name="submit_url" xsi:type="url" path="*/*/save" />
+            </item>
+         </argument>
+      </argument>
+      <argument name="data" xsi:type="array">
+         <item name="js_config" xsi:type="array">
+            <item name="component" xsi:type="string">Magento_Ui/js/form/provider</item>
+         </item>
+      </argument>
+   </dataSource>
+   <fieldset name="general_information">
+      <argument name="data" xsi:type="array">
+         <item name="config" xsi:type="array">
+            <item name="collapsible" xsi:type="boolean">false</item>
+            <item name="label" xsi:type="string" translate="true">General Information</item>
+            <item name="sortOrder" xsi:type="number">20</item>
+         </item>
+      </argument>
+
+     <!--  <argument name="data" xsi:type="array">
+        <item name="config" xsi:type="array">
+            <item name="label" xsi:type="string" translate="true">Banners Grid</item>
+            <item name="collapsible" xsi:type="boolean">true</item>
+            <item name="sortOrder" xsi:type="number">30</item>
+        </item>
+      </argument>
+      <container name="assign_products_container" >
+         <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+               <item name="sortOrder" xsi:type="number">170</item>
+            </item>
+         </argument>
+         <htmlContent name="html_content">
+            <argument name="block" xsi:type="object">Grid\Slider\Block\Adminhtml\AssignProducts</argument>
+         </htmlContent>
+      </container> -->
+
+       <field name="name">
+         <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+               <item name="dataType" xsi:type="string">text</item>
+               <item name="label" xsi:type="string" translate="true">name</item>
+               <item name="formElement" xsi:type="string">input</item>
+               <item name="source" xsi:type="string">name</item>
+               <item name="dataScope" xsi:type="string">name</item>
+               <item name="sortOrder" xsi:type="number">20</item>
+            </item>
+         </argument>
+      </field>
+      <field name="status">
+         <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+               <item name="sortOrder" xsi:type="number">10</item>
+               <item name="dataType" xsi:type="string">boolean</item>
+               <item name="formElement" xsi:type="string">checkbox</item>
+               <item name="prefer" xsi:type="string">toggle</item>
+               <item name="label" xsi:type="string" translate="true">status</item>
+               <item name="valueMap" xsi:type="array">
+                  <item name="true" xsi:type="number">1</item>
+                  <item name="false" xsi:type="number">0</item>
+               </item>
+               <item name="valuesForOptions" xsi:type="array">
+                  <item name="boolean" xsi:type="string">boolean</item>
+               </item>
+               <item name="default" xsi:type="number">1</item>
+               <item name="dataScope" xsi:type="string">status</item>
+               <!-- <item name="sortOrder" xsi:type="number">40</item> -->
+            </item>
+         </argument>
+      </field>
+      <field name="position">
+         <argument name="data" xsi:type="array">
+         <item name="options" xsi:type="object">Grid\Slider\Model\Config\Source\Pagelist</item>
+         <item name="config" xsi:type="array">
+            <item name="dataType" xsi:type="string">text</item>
+            <item name="label" xsi:type="string" translate="true">position</item>
+            <item name="formElement" xsi:type="string">select</item>
+            <item name="source" xsi:type="string">grid_slider</item>
+            <item name="dataScope" xsi:type="string">position</item>
+            <item name="default" xsi:type="string">0</item>
+            <!-- <item name="validation" xsi:type="array">
+                <item name="required-entry" xsi:type="boolean">true</item>
+            </item> -->
+         </item>
+         </argument>
+      </field>
+      <!-- <field name="position">
+         <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+               <item name="dataType" xsi:type="string">text</item>
+               <item name="label" xsi:type="string" translate="true">position</item>
+               <item name="formElement" xsi:type="string">input</item>
+               <item name="source" xsi:type="string">position</item>
+               <item name="dataScope" xsi:type="string">position</item> -->
+               <!-- <item name="sortOrder" xsi:type="number">50</item> -->
+            <!-- </item> -->
+         <!-- </argument> -->
+      <!-- </field> -->
+      <!-- <field name="discription">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="formElement" xsi:type="string">wysiwyg</item>
+                    <item name="source" xsi:type="string">sample_shop</item>
+                    <item name="label" xsi:type="string">discription</item>
+
+                    <item name="template" xsi:type="string">ui/form/field</item>
+                    <item name="wysiwyg" xsi:type="boolean">true</item>
+                    <item name="dataScope" xsi:type="string">discription</item>
+                    <item name="sortOrder" xsi:type="number">50</item>
+                    <item name="rows" xsi:type="number">8</item>
+                     <item name="sortOrder" xsi:type="number">60</item> -->
+             <!--    </item>
+            </argument>
+      </field>
+      <field name="logo">
+         <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+            <item name="dataType" xsi:type="string">string</item>
+            <item name="source" xsi:type="string">helloworld</item>
+            <item name="label" xsi:type="string" translate="true">Logo</item>
+            <item name="visible" xsi:type="boolean">true</item>
+            <item name="formElement" xsi:type="string">imageUploader</item>
+            <item name="elementTmpl" xsi:type="string">ui/form/element/uploader/uploader</item>
+            <item name="previewTmpl" xsi:type="string">Grid_Slider/image-preview</item>
+            <item name="required" xsi:type="boolean">false</item>
+            <item name="sortOrder" xsi:type="number">40</item>
+            <item name="uploaderConfig" xsi:type="array">
+                <item name="url" xsi:type="url" path="slider/index/uploader"/>
+            </item>
+            </item>
+         </argument>
+      </field> --> 
+   </fieldset>
+   <fieldset name="assign_banners_grid">
+    <argument name="data" xsi:type="array">
+        <item name="config" xsi:type="array">
+            <item name="label" xsi:type="string" translate="true">Products Fieldset</item>
+            <item name="collapsible" xsi:type="boolean">true</item>
+            <item name="sortOrder" xsi:type="number">30</item>
+        </item>
+    </argument>
+    <container name="assign_banners_container" >
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="sortOrder" xsi:type="number">170</item>
+            </item>
+        </argument>
+        <htmlContent name="html_content">
+            <argument name="block" xsi:type="object">Grid\Slider\Block\Adminhtml\AssignProducts</argument>
+        </htmlContent>
+    </container>
+</fieldset>
+</form>

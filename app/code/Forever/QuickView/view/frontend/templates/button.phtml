@@ -1,0 +1,29 @@
+<?php // @codingStandardsIgnoreFile ?>
+<?php
+    /** @var \Magento\Catalog\Model\Product  $product */
+    /** @var \forever\Quickview\Block\QuickViewButton  $block */
+
+    $product = $block->getProduct();
+    $productId = $block->getProduct()->getId();
+    $key = $product->getTypeId() . '-' . $productId;
+    // echo "<pre>";print_r($key);die();
+?>
+<div class="forever-quickview-container
+            forever-quickview-container-<?= $block->escapeHtml($key); ?>
+            forever-quickview-for-<?= $block->escapeHtml($productId); ?>"
+     style="display: none;"
+     data-mage-init='{"Forever_QuickView/js/initQuickView":{
+         "mode": "cat",
+         "isAdminArea": "<?= /* @noEscape */ $block->isAdminArea(); ?>",
+         "config": <?= /* @noEscape */ $block->getJsonConfig(); ?>,
+         "productId": "<?= $block->escapeHtml($productId); ?>",
+         "selector": "<?= $block->escapeHtml('.forever-quickview-container-' . $key); ?>"
+     }}'>
+    <div class="quickview forever-quickview forever-quickview-text"
+        data-quickview-url="<?= /* @escapeNotVerified */ $block->getUrl('quickview/catalog_product/view', ['id' => $product->getId()]) ?>"
+        data-forever-js="quickview-item-default">
+        <?= /* @escapeNotVerified */ __("Quick View") ?>
+    </div>
+</div>
+
+

@@ -1,0 +1,22 @@
+<?php
+
+	$collection=$block->getCollection()->setOrder('position', 'asc')->getData();
+	// print_r($collection);
+	// die();
+	$url=$block->getLogo();
+	for($i=0;$i<sizeof($collection);$i++)
+	{
+		if($collection[$i]['status'])
+		{
+			echo "NAME : ".$collection[$i]['name'];
+			$content = $collection[$i]['discription'];
+			echo $this->getContentFromStaticBlock($content);
+			echo "<br>";
+			?>
+			<img src="<?php echo $url.$collection[$i]['logo']; ?>" height=60px; width=60px;>
+			<?php
+		}
+		echo "<br>";
+	}
+
+?>

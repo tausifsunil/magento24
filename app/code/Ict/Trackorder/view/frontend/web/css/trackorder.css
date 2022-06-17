@@ -1,0 +1,167 @@
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Trackorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+ 
+.trackorder-order-index .order-stauts-progress span {
+    color: #fff;
+    display: inline;
+    padding: 7px 10px 7px 11px;
+}
+.trackorder-order-index .order-stauts-progress{
+    margin-bottom: 24px;
+}
+.trackorder-order-index .order-state-text {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.trackorder-order-index .box.box-order-shipping-address {
+    width: 25%;
+    float: left;
+}
+.trackorder-order-index .box.box-order-shipping-method {
+    width: 25%;
+    float: left;
+}
+.trackorder-order-index .box.box-order-billing-address{
+    width: 25%;
+    float: left;
+}
+.trackorder-order-index .box.box-order-billing-method{
+    width: 25%;
+    float: left;
+}
+.trackorder-order-index #order-items {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-top: 33px;
+}
+.trackorder-order-index .order-details-items{
+    border:none !important;
+    padding:0px !important;
+}
+.trackorder-order-index .table-wrapper.order-items #my-orders-table tbody tr td {
+    padding-bottom: 6px !important;
+    padding-top: 19px !important;
+    letter-spacing: 1px;
+}
+.trackorder-order-index #my-orders-table tfoot .subtotal th {
+    line-height: 17px;
+    letter-spacing: 1px;
+}
+.trackorder-order-index #my-orders-table thead tr th.col {
+    padding-bottom: 16px !important;
+    padding-top: 16px !important;
+    padding-left: 11px !important;
+    padding-right: 11px !important;
+    letter-spacing: 1px;
+}
+.trackorder-order-index #my-orders-table{
+    border: 1px solid #b6a3a3 !important;
+}
+.trackorder-order-index #my-orders-table tbody tr td strong {
+    font-size: 14px !important;
+    padding-left: 11px;
+    padding-right: 11px !important;
+    letter-spacing: 1px;
+}
+.trackorder-order-index #my-orders-table tbody tr td.col {
+    padding-right: 11px !important;
+}
+.trackorder-order-index .block.block-order-details-view .block-content {
+    margin-top: 14px;
+}
+.trackorder-order-index .fieldset.trackorder .control .input-text {
+    width: 50% !important;
+}
+.trackorder-order-index .box-content {
+    padding-top: 17px;
+    min-height: 154px;
+}
+.trackorder-order-index .order-title {
+    display: block !important;
+}
+.trackorder-order-index .order-title strong {
+    font-weight: bold !important;
+    font-size:20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 12px !important;
+}
+.trackorder-order-index .block-order-details-view .box-title {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.trackorder-order-index tfoot th.mark {
+    letter-spacing: 1px;
+}
+.trackorder-order-index span.price {
+    letter-spacing: 1px;
+    color: #333;
+    font-weight: 500 !important;
+    font-size: 16px;
+}
+.trackorder-order-index .block{
+    margin-bottom:0px !important;
+}
+.trackorder-order-index div#order-info {
+    margin-top: 5px;
+}
+.trackorder-order-index div#ajax_loader{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(88, 89, 91, 0.5);
+    position: fixed;
+    z-index: 9999;
+}
+.trackorder-order-index div#ajax_loader img{
+     max-width: 385px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    bottom: auto;
+    position: absolute;
+    transform: translatey(-50%);
+}
+.trackorder-order-index #order-status {
+    margin-top: 30px;
+}
+@media(max-width:767px){
+    .trackorder-order-index .box.box-order-shipping-address{
+        width:50%;
+    }
+    .trackorder-order-index .box.box-order-shipping-method{
+        width:50%;
+    }
+    .trackorder-order-index .box.box-order-billing-address{
+        width:50%;
+        min-height: 193px;
+    }
+    .trackorder-order-index .box.box-order-billing-method{
+        width:50%;
+    }
+    .trackorder-order-index .fieldset.trackorder .control .input-text{
+        width:100% !important;
+    }
+    .trackorder-order-index .order-details-items .order-title{
+        border-bottom:none !important;
+    }
+    .trackorder-order-index table#my-orders-table{
+        width:98% !important;
+    }
+    .trackorder-order-index table#my-orders-table tr#order-item-row-1 td {
+        display: flex;
+    }
+    .trackorder-order-index .table-wrapper.order-items #my-orders-table tbody tr td{
+        padding-top:0px !important;
+    }
+}

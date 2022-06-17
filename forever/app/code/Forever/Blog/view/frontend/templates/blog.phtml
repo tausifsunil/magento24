@@ -1,0 +1,42 @@
+<?php
+/**
+ * @var $block Forever\Blog\Block\BlogHome
+ */
+
+$colletion = $block->getBlogCollection();
+?>
+<div class="blog-items owl-carousel owl-theme">
+    <?php if (count($colletion)): ?>
+        <?php foreach ($colletion as $row): ?>
+            <div class="item">
+                <div class="article-thumbnail owl-carousel owl-theme">
+                    <div class="img-inner">
+                        <img class="attachment-drile_blog_thumb size-drile_blog_thumb wp-post-image"
+                            src="<?= $block->getBlogImage($row->getBlogImage()) ?>"
+                            alt="<?= $row->getBlogImage() ?>"
+                            width="1170"
+                            height="940" 
+                        />
+                    </div>
+                    <p class="blog-meta-date">
+                        <?= $block->getBlogDate($row->getPublishTime()) ?>
+                    </p>
+                    <p class="blog-list">
+                        <a href="<?= $block->getViewUrl($row->getUrlKey()) ?>">
+                            <?= $row->getAuthor() ?>
+                        </a>
+                    </p>
+                    <a class="blog-title" href="<?= $block->getViewUrl($row->getUrlKey()) ?>">
+                        <?= $row->getTitle() ?>
+                    </a>
+                    <p class="blog-excerpt">
+                        <?= $block->getBlogShortContent($row->getContentHeading()) ?>
+                    </p>
+                    <a class="blog-button action primary" href="<?= $block->getViewUrl($row->getUrlKey()) ?>">
+                        <?= __('Read More') ?>
+                    </a>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    <?php endif;?>
+</div>

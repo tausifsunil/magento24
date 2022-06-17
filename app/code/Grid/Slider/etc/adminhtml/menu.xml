@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Grid_Slider::menu" title="Slider" module="Grid_Slider" sortOrder="20" parent="Grid_Banners::view" action="slider/index/index" resource="Grid_Slider::menu"/>
+    </menu>
+</config>

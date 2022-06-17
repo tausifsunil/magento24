@@ -1,0 +1,39 @@
+<?php
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_Quickorder
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+
+$_product = $block->getProductOptions();
+$_product = $_product->getFirstItem();
+?>
+<div class="main-product-option" product-id="<?= $block->escapeHtml($_product->getId()); ?>">
+<div class="option-title"><?= $block->escapeHtml(__('Configurable Options')) ?> :</div>
+<?php
+
+$attributes = $_product->getTypeInstance(true)->getConfigurableAttributesAsArray($_product);
+
+if (!empty($attributes)) {
+    foreach ($attributes as $key => $attribute) { ?>
+    <div class="product-option-select">
+        <select name="super_attribute[<?= $block->escapeHtml($key); ?>]"
+            data-selector="super_attribute[<?= $block->escapeHtml($key); ?>]"
+            data-validate="{required:true}"
+            id="attribute<?= $block->escapeHtml($key); ?>"
+            parent-id="<?= $block->escapeHtml($key); ?>"
+            class="super-attribute-select"
+            aria-required="true">
+            <option value=""><?= $block->escapeHtml(__('Choose an Option...')) ?></option>
+            <?php
+            foreach ($attribute['values'] as $i => $value) { ?>
+                <option value="<?= $block->escapeHtml($value['value_index']); ?>">
+                    <?= $block->escapeHtml($value['label']); ?>
+                </option>  
+            <?php } ?>
+        </select>
+    </div>
+<?php } } ?>
+</div>

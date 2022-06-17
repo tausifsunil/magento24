@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Copyright © Icreative Technologies. All rights reserved.
+ *
+ * @author : Icreative Technologies
+ * @package : Ict_RMA
+ * @copyright : Copyright © Icreative Technologies (https://www.icreativetechnologies.com/)
+ */
+
+/** @var \Ict\RMA\Block\Adminhtml\Edit\RmaImage $block */
+
+$rmaImage = $block->getRmaImage();
+?>
+<?php if ($rmaImage): ?>
+<div class="admin__field__rma rma-products">
+    <div class="rma-image-label admin__field-label"><?= /* @noEscape */ __('RMA Image') ?></div>
+    <img class="rma-image admin__field-control"
+        src="<?= /* @noEscape */ $rmaImage ?>"
+        alt="<?= /* @noEscape */ __('RMA Image') ?>"
+        width="100px" height="100px">
+</div>
+<?php endif; ?>

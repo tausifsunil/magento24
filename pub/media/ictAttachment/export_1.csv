@@ -1,0 +1,4 @@
+"Menu Name","Category Name",Right,Left,Image,Status
+TESTWE,3,"<p><img src=""{{media url=&quot;wysiwyg/img.jpeg&quot;}}"" alt=""""></p>",welcome,redchair_9.jpeg,Enabled
+DEMO,3,test,"to the",redchair_9.jpeg,Enabled
+URBAN,3,hello,Dept,redchair_9.jpeg,Disabled
